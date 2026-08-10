@@ -3,12 +3,16 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useIntl } from 'react-intl'
-import { getLocaleFromPathname } from '@/lib/i18n'
+import { getLocaleFromPathname, type Locale } from '@/lib/i18n'
 
-export default function Navigation() {
+type NavigationProps = {
+  locale?: Locale
+}
+
+export default function Navigation({ locale }: NavigationProps) {
   const pathname = usePathname()
   const intl = useIntl()
-  const currentLocale = getLocaleFromPathname(pathname)
+  const currentLocale = locale ?? getLocaleFromPathname(pathname)
   const currentPath = pathname?.replace(/^\/([a-z]{2})(?=\/|$)/, '') || '/'
 
   const navItems = [

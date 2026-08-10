@@ -1,18 +1,18 @@
 'use client'
 
+import { use } from 'react'
 import Link from 'next/link'
-import { useIntl } from 'react-intl'
 import { Heart, Calendar, BookOpen, Megaphone, Clock, Mail } from 'lucide-react'
 
 type HomePageProps = {
-  params: {
+  params: Promise<{
     locale: string
-  }
+  }>
 }
 
 export default function HomePage({ params }: HomePageProps) {
-  const intl = useIntl()
-  const { locale } = params
+  const { locale } = use(params)
+  const safeLocale = typeof locale === 'string' ? locale : 'id'
 
   return (
     <div className="space-y-0">
@@ -33,14 +33,14 @@ export default function HomePage({ params }: HomePageProps) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href={`/${locale}/public/events`}
+              href={`/${safeLocale}/public/events`}
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-all duration-200 transform hover:scale-105"
             >
               <Calendar className="w-5 h-5 mr-2" />
               Explore Events
             </Link>
             <Link
-              href={`/${locale}/contact`}
+              href={`/${safeLocale}/contact`}
               className="inline-flex items-center justify-center px-8 py-4 bg-blue-700 text-white font-bold rounded-lg hover:bg-blue-800 transition-all duration-200 transform hover:scale-105"
             >
               <Mail className="w-5 h-5 mr-2" />
@@ -83,7 +83,7 @@ export default function HomePage({ params }: HomePageProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Events Card */}
             <Link
-              href={`/${locale}/public/events`}
+              href={`/${safeLocale}/public/events`}
               className="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition-all duration-300 transform hover:translate-y-[-8px] cursor-pointer border border-gray-100"
             >
               <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
@@ -100,7 +100,7 @@ export default function HomePage({ params }: HomePageProps) {
 
             {/* Sermons Card */}
             <Link
-              href={`/${locale}/public/sermons`}
+              href={`/${safeLocale}/public/sermons`}
               className="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition-all duration-300 transform hover:translate-y-[-8px] cursor-pointer border border-gray-100"
             >
               <div className="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-600 transition-colors">
@@ -117,7 +117,7 @@ export default function HomePage({ params }: HomePageProps) {
 
             {/* News Card */}
             <Link
-              href={`/${locale}/public/news`}
+              href={`/${safeLocale}/public/news`}
               className="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition-all duration-300 transform hover:translate-y-[-8px] cursor-pointer border border-gray-100"
             >
               <div className="w-14 h-14 bg-pink-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-pink-600 transition-colors">
@@ -134,7 +134,7 @@ export default function HomePage({ params }: HomePageProps) {
 
             {/* Schedule Card */}
             <Link
-              href={`/${locale}/schedule`}
+              href={`/${safeLocale}/schedule`}
               className="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition-all duration-300 transform hover:translate-y-[-8px] cursor-pointer border border-gray-100"
             >
               <div className="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-600 transition-colors">
@@ -151,7 +151,7 @@ export default function HomePage({ params }: HomePageProps) {
 
             {/* Donate Card */}
             <Link
-              href={`/${locale}/donate`}
+              href={`/${safeLocale}/donate`}
               className="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition-all duration-300 transform hover:translate-y-[-8px] cursor-pointer border border-gray-100"
             >
               <div className="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-red-600 transition-colors">
@@ -168,7 +168,7 @@ export default function HomePage({ params }: HomePageProps) {
 
             {/* Contact Card */}
             <Link
-              href={`/${locale}/contact`}
+              href={`/${safeLocale}/contact`}
               className="group bg-white p-8 rounded-xl shadow hover:shadow-xl transition-all duration-300 transform hover:translate-y-[-8px] cursor-pointer border border-gray-100"
             >
               <div className="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-indigo-600 transition-colors">
@@ -194,7 +194,7 @@ export default function HomePage({ params }: HomePageProps) {
             Whether you&apos;re new to our faith or looking to deepen your spiritual journey, we&apos;d love to welcome you.
           </p>
           <Link
-            href={`/${locale}/contact`}
+            href={`/${safeLocale}/contact`}
             className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-all duration-200 transform hover:scale-105"
           >
             <Mail className="w-5 h-5 mr-2" />

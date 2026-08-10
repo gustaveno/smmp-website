@@ -1,0 +1,100 @@
+{
+  "common": {
+    "navigation": {
+      "home": "Accueil",
+      "events": "Événements",
+      "sermons": "Sermons",
+      "news": "Actualités",
+      "schedule": "Horaires",
+      "donate": "Faire un don",
+      "contact": "Contact",
+      "admin": "Admin"
+    },
+    "language": "Langue",
+    "languages": {
+      "id": "Bahasa Indonesia",
+      "en": "English",
+      "fr": "Français"
+    },
+    "loading": "Chargement...",
+    "error": "Une erreur s&apos;est produite",
+    "tryAgain": "Réessayer",
+    "backHome": "Retour à l&apos;accueil",
+    "noResults": "Aucun résultat trouvé",
+    "readMore": "Lire la suite",
+    "viewDetails": "Voir les détails"
+  },
+  "pages": {
+    "home": {
+      "title": "Notre Église",
+      "description": "Bienvenue dans notre communauté"
+    },
+    "events": {
+      "title": "Événements",
+      "description": "Voir les événements à venir",
+      "noEvents": "Aucun événement prévu",
+      "upcoming": "Événements à venir",
+      "date": "Date",
+      "time": "Heure",
+      "location": "Lieu",
+      "attendees": "Participants"
+    },
+    "sermons": {
+      "title": "Sermons",
+      "description": "Écoutez le sermon de cette semaine",
+      "noSermons": "Aucun sermon disponible",
+      "speaker": "Prédicateur",
+      "series": "Série",
+      "listen": "Écouter",
+      "watch": "Regarder",
+      "transcript": "Transcription"
+    },
+    "news": {
+      "title": "Actualités",
+      "description": "Dernières actualités de notre communauté",
+      "noNews": "Aucune actualité disponible",
+      "by": "Par",
+      "on": "Le"
+    },
+    "schedule": {
+      "title": "Horaires des services",
+      "description": "Notre horaire de services hebdomadaires",
+      "day": "Jour",
+      "time": "Heure",
+      "activity": "Activité",
+      "location": "Lieu"
+    },
+    "donate": {
+      "title": "Faire un don",
+      "description": "Soutenir notre mission",
+      "amount": "Montant",
+      "currency": "EUR",
+      "method": "Méthode de paiement",
+      "continue": "Continuer",
+      "privacy": "Politique de confidentialité"
+    },
+    "contact": {
+      "title": "Nous contacter",
+      "description": "Nous aimerions vous entendre",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "send": "Envoyer",
+      "success": "Merci de nous avoir contactés",
+      "error": "Échec de l&apos;envoi du message"
+    }
+  },
+  "footer": {
+    "copyright": "Droits d&apos;auteur © 2024",
+    "allRights": "Tous droits réservés",
+    "contact": "Contact",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "Email",
+    "followUs": "Nous suivre",
+    "quickLinks": "Liens rapides",
+    "legal": "Mentions légales",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d&apos;utilisation"
+  }
+}

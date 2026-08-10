@@ -1,0 +1,100 @@
+{
+  "common": {
+    "navigation": {
+      "home": "Home",
+      "events": "Events",
+      "sermons": "Sermons",
+      "news": "News",
+      "schedule": "Schedule",
+      "donate": "Donate",
+      "contact": "Contact",
+      "admin": "Admin"
+    },
+    "language": "Language",
+    "languages": {
+      "id": "Bahasa Indonesia",
+      "en": "English",
+      "fr": "Français"
+    },
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "tryAgain": "Try Again",
+    "backHome": "Back to Home",
+    "noResults": "No results found",
+    "readMore": "Read More",
+    "viewDetails": "View Details"
+  },
+  "pages": {
+    "home": {
+      "title": "Our Church",
+      "description": "Welcome to our community"
+    },
+    "events": {
+      "title": "Events",
+      "description": "View upcoming events",
+      "noEvents": "No events scheduled",
+      "upcoming": "Upcoming Events",
+      "date": "Date",
+      "time": "Time",
+      "location": "Location",
+      "attendees": "Attendees"
+    },
+    "sermons": {
+      "title": "Sermons",
+      "description": "Listen to this week's sermon",
+      "noSermons": "No sermons available",
+      "speaker": "Speaker",
+      "series": "Series",
+      "listen": "Listen",
+      "watch": "Watch",
+      "transcript": "Transcript"
+    },
+    "news": {
+      "title": "News",
+      "description": "Latest updates from our community",
+      "noNews": "No news available",
+      "by": "By",
+      "on": "On"
+    },
+    "schedule": {
+      "title": "Service Schedule",
+      "description": "Our weekly service schedule",
+      "day": "Day",
+      "time": "Time",
+      "activity": "Activity",
+      "location": "Location"
+    },
+    "donate": {
+      "title": "Donate",
+      "description": "Support our mission",
+      "amount": "Amount",
+      "currency": "USD",
+      "method": "Payment Method",
+      "continue": "Continue",
+      "privacy": "Privacy Policy"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "We&apos;d love to hear from you",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send",
+      "success": "Thank you for contacting us",
+      "error": "Failed to send message"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2024",
+    "allRights": "All rights reserved",
+    "contact": "Contact",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "followUs": "Follow Us",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}

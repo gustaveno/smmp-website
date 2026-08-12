@@ -19,12 +19,12 @@ export default function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
   }
 
   return (
-    <div className="flex items-center space-x-1">
+    <div className="flex shrink-0 items-center gap-0.5 rounded-md border border-border/60 p-0.5">
       {locales.map((lang) => (
         <button
           key={lang}
           onClick={() => handleLanguageChange(lang)}
-          className={`px-2 py-1 rounded text-sm font-medium transition-colors ${
+          className={`rounded px-1.5 py-1 text-xs font-medium transition-colors sm:px-2 sm:text-sm ${
             currentLocale === lang
               ? 'bg-primary text-primary-foreground'
               : 'text-foreground hover:bg-accent'

@@ -26,11 +26,13 @@ export default function Header({ locale }: HeaderProps) {
             <span className="hidden sm:inline">Congregation</span>
           </Link>
 
-          {/* Navigation */}
-          <Navigation locale={locale} />
+          <div className="ml-auto flex shrink-0 items-center gap-1 sm:gap-2">
+            {/* Navigation */}
+            <Navigation locale={locale} />
 
-          {/* Language Switcher */}
-          <LanguageSwitcher locale={locale} />
+            {/* Language Switcher */}
+            <LanguageSwitcher locale={locale} />
+          </div>
         </div>
       </div>
     </header>

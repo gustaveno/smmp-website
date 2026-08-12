@@ -36,10 +36,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html suppressHydrationWarning data-scroll-behavior="smooth" className={`scroll-smooth ${lora.className}`}>
-      <body className="antialiased bg-background text-foreground">
+    <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth" className="scroll-smooth">
+      <body suppressHydrationWarning className={`antialiased bg-background text-foreground ${lora.className}`}>
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        {process.env.NODE_ENV === 'production' ? <Analytics /> : null}
       </body>
     </html>
   )

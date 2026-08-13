@@ -66,10 +66,9 @@ export default function Footer({ locale }: FooterProps) {
             <h4 className="mb-4 text-base font-semibold">Follow Us</h4>
             <div className="flex flex-wrap gap-3">
               {[
-                { label: 'Instagram', href: 'https://example.com/instagram', Icon: Camera },
-                { label: 'YouTube', href: 'https://example.com/youtube', Icon: Video },
-                { label: 'Facebook', href: 'https://example.com/facebook', Icon: MessageCircle },
-                { label: 'LinkedIn', href: 'https://example.com/linkedin', Icon: BriefcaseBusiness },
+                { label: 'Instagram', href: 'https://instagram.com/instagram', Icon: Camera },
+                { label: 'YouTube', href: 'https://youtube.com/', Icon: Video },
+                { label: 'Facebook', href: 'https://facebook.com/facebook', Icon: MessageCircle },
               ].map(({ label, href, Icon }) => (
                 <Link
                   key={label}

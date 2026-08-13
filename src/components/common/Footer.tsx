@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useIntl } from 'react-intl'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, Camera, Video, MessageCircle, BriefcaseBusiness } from 'lucide-react'
 import { type Locale } from '@/lib/i18n'
 
 type FooterProps = {
@@ -61,27 +61,28 @@ export default function Footer({ locale }: FooterProps) {
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Social Media */}
           <div>
-            <h4 className="font-semibold text-base mb-4">Legal</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
+            <h4 className="mb-4 text-base font-semibold">Follow Us</h4>
+            <div className="flex flex-wrap gap-3">
+              {[
+                { label: 'Instagram', href: 'https://example.com/instagram', Icon: Camera },
+                { label: 'YouTube', href: 'https://example.com/youtube', Icon: Video },
+                { label: 'Facebook', href: 'https://example.com/facebook', Icon: MessageCircle },
+                { label: 'LinkedIn', href: 'https://example.com/linkedin', Icon: BriefcaseBusiness },
+              ].map(({ label, href, Icon }) => (
                 <Link
-                  href={`/${locale}/privacy`}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Visit our ${label} profile`}
+                  className="inline-flex size-10 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:bg-background hover:text-foreground"
                 >
-                  Privacy Policy
+                  <Icon aria-hidden="true" />
                 </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${locale}/terms`}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Terms of Service
-                </Link>
-              </li>
-            </ul>
+              ))}
+            </div>
           </div>
         </div>
 

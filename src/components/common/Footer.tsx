@@ -11,7 +11,7 @@ type FooterProps = {
 
 export default function Footer({ locale }: FooterProps) {
   const intl = useIntl()
-  const currentYear = new Date().getFullYear()
+  const currentYear = 2026
 
   return (
     <footer className="border-t border-border bg-muted">

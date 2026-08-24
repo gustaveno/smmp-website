@@ -3,7 +3,7 @@
 import { use } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Heart, Calendar, BookOpen, Megaphone, Clock, Mail, ArrowRight, Quote, ChevronDown } from 'lucide-react'
+import { Heart, Calendar, BookOpen, Megaphone, Clock, Mail, ArrowRight, Quote, ChevronDown, ArrowRight, Quote } from 'lucide-react'
 
 type HomePageProps = {
   params: Promise<{
@@ -169,9 +169,24 @@ export default function HomePage({ params }: HomePageProps) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Events Card */}
             <Link
               href={`/${safeLocale}/public/events`}
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+            >
+              <div className="relative h-52 overflow-hidden">
+                <Image
+                  src="https://images.pexels.com/photos/29422232/pexels-photo-29422232.jpeg?auto=compress&cs=tinysrgb&w=800&h=520&fit=crop"
+                  alt="Events & Services"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 w-11 h-11 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                  <Calendar className="w-5 h-5 text-primary" />
+                </div>
               className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
@@ -197,11 +212,22 @@ export default function HomePage({ params }: HomePageProps) {
                   <ArrowRight className="w-4 h-4" />
                 </span>
               </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Events & Services</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  Join us for regular services and special community events throughout the year.
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
+                  View Events
+                  <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
             </Link>
 
             {/* Sermons Card */}
             <Link
               href={`/${safeLocale}/public/sermons`}
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
               className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
@@ -216,6 +242,28 @@ export default function HomePage({ params }: HomePageProps) {
                 <div className="absolute bottom-4 left-4 w-11 h-11 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
                   <BookOpen className="w-5 h-5 text-primary" />
                 </div>
+              <div className="relative h-52 overflow-hidden">
+                <Image
+                  src="https://images.pexels.com/photos/10438600/pexels-photo-10438600.jpeg?auto=compress&cs=tinysrgb&w=800&h=520&fit=crop"
+                  alt="Sermons & Teaching"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 w-11 h-11 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                  <BookOpen className="w-5 h-5 text-primary" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Sermons & Teaching</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  Listen to inspiring sermons and biblical teachings from our community leaders.
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
+                  Listen Now
+                  <ArrowRight className="w-4 h-4" />
+                </span>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Sermons & Teaching</h3>
@@ -246,6 +294,30 @@ export default function HomePage({ params }: HomePageProps) {
                 <div className="absolute bottom-4 left-4 w-11 h-11 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
                   <Megaphone className="w-5 h-5 text-primary" />
                 </div>
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+            >
+              <div className="relative h-52 overflow-hidden">
+                <Image
+                  src="https://images.pexels.com/photos/16102711/pexels-photo-16102711.jpeg?auto=compress&cs=tinysrgb&w=800&h=520&fit=crop"
+                  alt="News & Updates"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 w-11 h-11 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                  <Megaphone className="w-5 h-5 text-primary" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">News & Updates</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  Stay updated with the latest announcements and community news.
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
+                  Read News
+                  <ArrowRight className="w-4 h-4" />
+                </span>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">News & Updates</h3>
@@ -263,6 +335,7 @@ export default function HomePage({ params }: HomePageProps) {
             <Link
               href={`/${safeLocale}/schedule`}
               className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
@@ -276,6 +349,28 @@ export default function HomePage({ params }: HomePageProps) {
                 <div className="absolute bottom-4 left-4 w-11 h-11 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
                   <Clock className="w-5 h-5 text-primary" />
                 </div>
+              <div className="relative h-52 overflow-hidden">
+                <Image
+                  src="https://images.pexels.com/photos/7219090/pexels-photo-7219090.jpeg?auto=compress&cs=tinysrgb&w=800&h=520&fit=crop"
+                  alt="Service Schedule"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 w-11 h-11 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                  <Clock className="w-5 h-5 text-primary" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Service Schedule</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  Check our weekly service times and special program schedules.
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
+                  View Schedule
+                  <ArrowRight className="w-4 h-4" />
+                </span>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Service Schedule</h3>
@@ -306,6 +401,30 @@ export default function HomePage({ params }: HomePageProps) {
                 <div className="absolute bottom-4 left-4 w-11 h-11 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
                   <Heart className="w-5 h-5 text-primary" />
                 </div>
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+            >
+              <div className="relative h-52 overflow-hidden">
+                <Image
+                  src="https://images.pexels.com/photos/6860385/pexels-photo-6860385.jpeg?auto=compress&cs=tinysrgb&w=800&h=520&fit=crop"
+                  alt="Give & Support"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 w-11 h-11 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                  <Heart className="w-5 h-5 text-primary" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Give & Support</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  Support our mission through tithes, donations, and financial contributions.
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
+                  Donate Now
+                  <ArrowRight className="w-4 h-4" />
+                </span>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Give & Support</h3>
@@ -323,7 +442,20 @@ export default function HomePage({ params }: HomePageProps) {
             <Link
               href={`/${safeLocale}/contact`}
               className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
             >
+              <div className="relative h-52 overflow-hidden">
+                <Image
+                  src="https://images.pexels.com/photos/15021636/pexels-photo-15021636.jpeg?auto=compress&cs=tinysrgb&w=800&h=520&fit=crop"
+                  alt="Contact Us"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 w-11 h-11 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-lg">
+                  <Mail className="w-5 h-5 text-primary" />
+                </div>
               <div className="relative h-52 overflow-hidden">
                 <Image
                   src="https://images.pexels.com/photos/15021636/pexels-photo-15021636.jpeg?auto=compress&cs=tinysrgb&w=800&h=520&fit=crop"
@@ -347,11 +479,49 @@ export default function HomePage({ params }: HomePageProps) {
                   <ArrowRight className="w-4 h-4" />
                 </span>
               </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Contact Us</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  Have questions? Get in touch with our community leadership team.
+                </p>
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
+                  Contact
+                  <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
             </Link>
           </div>
         </div>
       </section>
 
+      {/* Call to Action */}
+      <section className="relative py-24 px-4 overflow-hidden">
+        <Image
+          src="https://images.pexels.com/photos/34328510/pexels-photo-34328510.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop"
+          alt="Join our community"
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/80 to-accent/70"></div>
+
+        <div className="relative z-10 container mx-auto text-center max-w-2xl">
+          <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-5 text-balance">
+            Ready to Join Our Community?
+          </h2>
+          <p className="text-lg text-primary-foreground/90 mb-9 max-w-xl mx-auto text-balance">
+            Whether you&apos;re new to our faith or looking to deepen your spiritual journey, we&apos;d love to welcome you.
+          </p>
+          <Link
+            href={`/${safeLocale}/contact`}
+            className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-background text-primary font-bold rounded-full hover:bg-muted transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
+          >
+            <Mail className="w-5 h-5" />
+            Get Started Today
+            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+        </div>
+      </section>
       {/* Call to Action */}
       <section className="relative py-24 px-4 overflow-hidden">
         <Image

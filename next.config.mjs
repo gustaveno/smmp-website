@@ -13,6 +13,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: '**.sanity.io',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
+      },
     ],
   },
   headers: async () => [

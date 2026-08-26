@@ -2,14 +2,21 @@
   "common": {
     "navigation": {
       "home": "Home",
+      "about": "About Us",
+      "charisma": "Charisma",
+      "history": "History",
+      "identity": "Vision & Mission",
+      "saints": "Three Saints",
+      "spirituality": "Spirituality",
+      "gallery": "Gallery",
+      "services": "Services",
+      "dewOfLove": "Dew of Love",
       "events": "Events",
-      "sermons": "Sermons",
-      "news": "News",
-      "schedule": "Schedule",
-      "donate": "Donate",
-      "contact": "Contact",
-      "admin": "Admin",
-      "dewOfLove": "Dew of Love"
+      "quotes": "Inspirational Quotes",
+      "devotional": "Devotional",
+      "prayers": "Prayers",
+      "contact": "Contact Us",
+      "admin": "Admin"
     },
     "language": "Language",
     "languages": {
@@ -40,30 +47,14 @@
       "location": "Location",
       "attendees": "Attendees"
     },
-    "sermons": {
-      "title": "Sermons",
-      "description": "Listen to this week's sermon",
-      "noSermons": "No sermons available",
-      "speaker": "Speaker",
-      "series": "Series",
-      "listen": "Listen",
-      "watch": "Watch",
-      "transcript": "Transcript"
+    "quotes": {
+      "title": "Inspirational Quotes"
     },
-    "news": {
-      "title": "News",
-      "description": "Latest updates from our community",
-      "noNews": "No news available",
-      "by": "By",
-      "on": "On"
+    "prayers": {
+      "title": "Prayers"
     },
-    "schedule": {
-      "title": "Service Schedule",
-      "description": "Our weekly service schedule",
-      "day": "Day",
-      "time": "Time",
-      "activity": "Activity",
-      "location": "Location"
+    "devotional": {
+      "title": "Devotional"
     },
     "donate": {
       "title": "Donate",
@@ -83,6 +74,33 @@
       "send": "Send",
       "success": "Thank you for contacting us",
       "error": "Failed to send message"
+    },
+    "charisma": {
+      "title": "Charisma",
+      "description": "The charisma of our community"
+    },
+    "history": {
+      "title": "History",
+      "description": "Our history"
+    },
+    "identity": {
+      "title": "Vision, Mission, and Motto",
+      "description": "Our identity"
+    },
+    "saints": {
+      "title": "Three Saints of Congregation",
+      "description": "Learn about our blessed saints"
+    },
+    "spirituality": {
+      "title": "Our Spirituality",
+      "description": "Learn about our spiritual practices"
+    },
+    "gallery": {
+      "title": "A collection of moments"
+    },
+    "services": {
+      "title": "Congressional Service Fields",
+      "description": "Our service activities"
     }
   },
   "footer": {

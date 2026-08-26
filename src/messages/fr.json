@@ -2,14 +2,21 @@
   "common": {
     "navigation": {
       "home": "Accueil",
+      "about": "À propos de nous",
+      "charisma": "Charisme",
+      "history": "Histoire",
+      "identity": "Vision et Mission",
+      "saints": "Les Trois Saints",
+      "spirituality": "Spiritualité",
+      "gallery": "Galerie",
+      "services": "Services",
+      "dewOfLove": "Rosée d'amour",
       "events": "Événements",
-      "sermons": "Sermons",
-      "news": "Actualités",
-      "schedule": "Horaires",
-      "donate": "Faire un don",
-      "contact": "Contact",
-      "admin": "Admin",
-      "dewOfLove": "Rosée d'amour"
+      "quotes": "Citations Inspirantes",
+      "devotional": "Méditation",
+      "prayers": "Prière",
+      "contact": "Nous contacter",
+      "admin": "Admin"
     },
     "language": "Langue",
     "languages": {
@@ -40,30 +47,14 @@
       "location": "Lieu",
       "attendees": "Participants"
     },
-    "sermons": {
-      "title": "Sermons",
-      "description": "Écoutez le sermon de cette semaine",
-      "noSermons": "Aucun sermon disponible",
-      "speaker": "Prédicateur",
-      "series": "Série",
-      "listen": "Écouter",
-      "watch": "Regarder",
-      "transcript": "Transcription"
+    "quotes": {
+      "title": "Citations Inspirantes"
     },
-    "news": {
-      "title": "Actualités",
-      "description": "Dernières actualités de notre communauté",
-      "noNews": "Aucune actualité disponible",
-      "by": "Par",
-      "on": "Le"
+    "prayers": {
+      "title": "Prière"
     },
-    "schedule": {
-      "title": "Horaires des services",
-      "description": "Notre horaire de services hebdomadaires",
-      "day": "Jour",
-      "time": "Heure",
-      "activity": "Activité",
-      "location": "Lieu"
+    "devotional": {
+      "title": "Méditation"
     },
     "donate": {
       "title": "Faire un don",
@@ -83,6 +74,33 @@
       "send": "Envoyer",
       "success": "Merci de nous avoir contactés",
       "error": "Échec de l&apos;envoi du message"
+    },
+    "charisma": {
+      "title": "Charisme",
+      "description": "Le charisme de notre communauté"
+    },
+    "history": {
+      "title": "Histoire",
+      "description": "Notre histoire"
+    },
+    "identity": {
+      "title": "Vision, Mission et Devise",
+      "description": "Notre identité"
+    },
+    "saints": {
+      "title": "Les Trois Saints de la Congrégation",
+      "description": "Découvrez nos saints bienheureux"
+    },
+    "spirituality": {
+      "title": "Notre Spiritualité",
+      "description": "Découvrez nos pratiques spirituelles"
+    },
+    "gallery": {
+      "title": "Une collection de moments"
+    },
+    "services": {
+      "title": "Champs de Service Congrès",
+      "description": "Nos activités de service"
     }
   },
   "footer": {

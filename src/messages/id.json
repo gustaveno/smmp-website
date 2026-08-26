@@ -2,14 +2,21 @@
   "common": {
     "navigation": {
       "home": "Beranda",
+      "about": "Tentang Kami",
+      "charisma": "Kharisma",
+      "history": "Sejarah",
+      "identity": "Visi & Misi",
+      "saints": "Tiga Orang Kudus",
+      "spirituality": "Spiritualitas",
+      "gallery": "Galeri",
+      "services": "Pelayanan",
+      "dewOfLove": "Embun Kasih",
       "events": "Acara",
-      "sermons": "Khotbah",
-      "news": "Berita",
-      "schedule": "Jadwal",
-      "donate": "Donasi",
-      "contact": "Kontak",
-      "admin": "Admin",
-      "dewOfLove": "Embun Kasih"
+      "quotes": "Kata-kata Mutiara",
+      "devotional": "Renungan",
+      "prayers": "Doa-doa",
+      "contact": "Hubungi Kami",
+      "admin": "Admin"
     },
     "language": "Bahasa",
     "languages": {
@@ -40,30 +47,14 @@
       "location": "Lokasi",
       "attendees": "Peserta"
     },
-    "sermons": {
-      "title": "Khotbah",
-      "description": "Dengarkan khotbah minggu ini",
-      "noSermons": "Tidak ada khotbah yang tersedia",
-      "speaker": "Pembicara",
-      "series": "Seri",
-      "listen": "Dengarkan",
-      "watch": "Tonton",
-      "transcript": "Transkrip"
+    "quotes": {
+      "title": "Kata-kata Mutiara"
     },
-    "news": {
-      "title": "Berita",
-      "description": "Update terbaru dari komunitas kami",
-      "noNews": "Tidak ada berita",
-      "by": "Oleh",
-      "on": "Pada"
+    "prayers": {
+      "title": "Doa-doa"
     },
-    "schedule": {
-      "title": "Jadwal Layanan",
-      "description": "Jadwal kegiatan mingguan kami",
-      "day": "Hari",
-      "time": "Waktu",
-      "activity": "Kegiatan",
-      "location": "Lokasi"
+    "devotional": {
+      "title": "Renungan"
     },
     "donate": {
       "title": "Donasi",
@@ -83,6 +74,33 @@
       "send": "Kirim",
       "success": "Terima kasih telah menghubungi kami",
       "error": "Gagal mengirim pesan"
+    },
+    "charisma": {
+      "title": "Karisma",
+      "description": "Karisma dari komunitas kami"
+    },
+    "history": {
+      "title": "Sejarah",
+      "description": "Sejarah kami"
+    },
+    "identity": {
+      "title": "Visi, Misi, dan Moto",
+      "description": "Identitas kami"
+    },
+    "saints": {
+      "title": "Tiga Orang Kuddus Kongregasi",
+      "description": "Pelajari tentang orang kudus kami yang diberkati"
+    },
+    "spirituality": {
+      "title": "Spiritualitas Kami",
+      "description": "Pelajari tentang praktik spiritual kami"
+    },
+    "gallery": {
+      "title": "Kumpulan Moment"
+    },
+    "services": {
+      "title": "Bidang Pelayanan Kongregasi",
+      "description": "Aktivitas pelayanan kami"
     }
   },
   "footer": {

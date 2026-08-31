@@ -12,7 +12,7 @@ const isStaticAsset = (pathname: string) => {
   )
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname
 
   if (isStaticAsset(pathname)) {

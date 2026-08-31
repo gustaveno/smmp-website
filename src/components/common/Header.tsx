@@ -4,6 +4,7 @@ import Link from 'next/link'
 import LanguageSwitcher from './LanguageSwitcher'
 import Navigation from './Navigation'
 import { type Locale } from '@/lib/i18n'
+import Image from 'next/image'
 
 type HeaderProps = {
   locale: Locale
@@ -27,10 +28,16 @@ export default function Header({ locale }: HeaderProps) {
             href={`/${locale}`}
             className="flex items-center space-x-2 font-bold text-lg transition-colors hover:text-primary"
           >
-            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-xs font-bold">
-              C
+            <div className="w-16 h-16 relative">
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                fill
+                sizes="32px"
+                className="object-contain"
+              />
             </div>
-            <span className="hidden sm:inline">Congregation</span>
+            <span className="hidden sm:inline">Kongregasi Suster Maria Magdalena Postel</span>
           </Link>
 
           <div className="ml-auto flex shrink-0 items-center gap-1 sm:gap-2">

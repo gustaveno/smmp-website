@@ -88,33 +88,6 @@ export default function Navigation({ locale }: NavigationProps) {
     <>
       <nav className="hidden items-center gap-1 md:flex" aria-label="Main navigation">
         <div
-          ref={dewOfLoveRef}
-          className="relative"
-          onMouseEnter={() => setIsDewOfLoveOpen(true)}
-          onMouseLeave={() => setIsDewOfLoveOpen(false)}
-        >
-          <button
-            type="button"
-            onClick={() => setIsDewOfLoveOpen((prev) => !prev)}
-            className={cn(linkClass('/public'), isDewOfLoveActive && 'bg-primary text-primary-foreground')}
-            aria-expanded={isDewOfLoveOpen}
-            aria-haspopup="true"
-          >
-            {intl.formatMessage({ id: 'common.navigation.dewOfLove', defaultMessage: 'Dew of Love' })}
-          </button>
-          {isDewOfLoveOpen && (
-            <ul className="absolute left-0 top-full z-50 min-w-40 rounded-md border bg-background py-1 shadow-md">
-              {dewOfLoveItems.map((item) => (
-                <li key={item.href}>
-                  <Link href={`/${currentLocale}${item.href}`} onClick={() => setIsDewOfLoveOpen(false)} className={cn('block', linkClass(item.href))}>
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-        <div
           ref={aboutRef}
           className="relative"
           onMouseEnter={() => setIsAboutOpen(true)}
@@ -141,6 +114,34 @@ export default function Navigation({ locale }: NavigationProps) {
             </ul>
           )}
         </div>
+        <div
+          ref={dewOfLoveRef}
+          className="relative"
+          onMouseEnter={() => setIsDewOfLoveOpen(true)}
+          onMouseLeave={() => setIsDewOfLoveOpen(false)}
+        >
+          <button
+            type="button"
+            onClick={() => setIsDewOfLoveOpen((prev) => !prev)}
+            className={cn(linkClass('/public'), isDewOfLoveActive && 'bg-primary text-primary-foreground')}
+            aria-expanded={isDewOfLoveOpen}
+            aria-haspopup="true"
+          >
+            {intl.formatMessage({ id: 'common.navigation.dewOfLove', defaultMessage: 'Dew of Love' })}
+          </button>
+          {isDewOfLoveOpen && (
+            <ul className="absolute left-0 top-full z-50 min-w-40 rounded-md border bg-background py-1 shadow-md">
+              {dewOfLoveItems.map((item) => (
+                <li key={item.href}>
+                  <Link href={`/${currentLocale}${item.href}`} onClick={() => setIsDewOfLoveOpen(false)} className={cn('block', linkClass(item.href))}>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+        
         {navItems.map((item) => <Link key={item.href} href={`/${currentLocale}${item.href}`} className={linkClass(item.href)}>{item.label}</Link>)}
       </nav>
 

@@ -15,9 +15,9 @@ export default function Footer({ locale }: FooterProps) {
   const currentYear = 2026
 
   return (
-    <footer className="border-t border-border bg-muted">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+    <footer className="border-t border-border/70 bg-muted">
+      <div className="container mx-auto px-4 py-16 md:py-20">
+        <div className="grid grid-cols-1 gap-10 mb-12 sm:grid-cols-2 md:grid-cols-4">
           {/* About */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Congregation</h3>
@@ -34,7 +34,7 @@ export default function Footer({ locale }: FooterProps) {
                 <li key={item}>
                   <Link
                     href={`/${locale}/${item}`}
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-muted-foreground transition-colors hover:text-foreground hover:underline hover:underline-offset-4"
                   >
                     {item.charAt(0).toUpperCase() + item.slice(1)}
                   </Link>

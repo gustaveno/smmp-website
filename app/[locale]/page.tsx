@@ -47,7 +47,7 @@ export default function HomePage({ params }: HomePageProps) {
   }, [nextSlide])
 
   return (
-    <div className="space-y-0">
+    <div className="overflow-hidden">
       {/* Hero Section */}
       <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden px-3 py-16 sm:px-4 sm:py-20">
         {/* 1. Background Carousel */}
@@ -125,9 +125,9 @@ export default function HomePage({ params }: HomePageProps) {
         <div className="relative z-10 container mx-auto text-center max-w-4xl flex flex-col items-center mt-10 md:mt-18">
 
           {/* Typography (Ukuran sedikit disesuaikan agar tidak menelan layar) */}
-          <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-10xl text-white -mb-2 text-balance leading-[1.1] tracking-tight drop-shadow-lg"
+          <h1 className="max-w-full text-[clamp(2.5rem,14vw,6rem)] text-white -mb-2 text-balance leading-[1.1] tracking-tight drop-shadow-lg"
             style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.8))' }}>
-            <span className="inline-block animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-150 fill-mode-both">
+            <span className="inline-block max-w-full animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-150 fill-mode-both">
               Misericordia
             </span>
           </h1>
@@ -156,7 +156,7 @@ export default function HomePage({ params }: HomePageProps) {
       </section>
 
       {/* Congregation Overview Section */}
-      <section className="py-20 px-4 bg-background">
+      <section className="bg-background px-4 py-24 md:py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-8 md:gap-12 items-center max-w-5xl mx-auto">
             {/* Saint Image */}
@@ -245,7 +245,7 @@ export default function HomePage({ params }: HomePageProps) {
             {/* Events Card */}
             <Link
               href={`/${safeLocale}/public/events`}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
@@ -272,7 +272,7 @@ export default function HomePage({ params }: HomePageProps) {
             {/* Sermons Card */}
             <Link
               href={`/${safeLocale}/public/sermons`}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
@@ -299,7 +299,7 @@ export default function HomePage({ params }: HomePageProps) {
             {/* News Card */}
             <Link
               href={`/${safeLocale}/public/news`}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
@@ -326,7 +326,7 @@ export default function HomePage({ params }: HomePageProps) {
             {/* Schedule Card */}
             <Link
               href={`/${safeLocale}/schedule`}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
@@ -353,7 +353,7 @@ export default function HomePage({ params }: HomePageProps) {
             {/* Donate Card */}
             <Link
               href={`/${safeLocale}/donate`}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
@@ -380,7 +380,7 @@ export default function HomePage({ params }: HomePageProps) {
             {/* Contact Card */}
             <Link
               href={`/${safeLocale}/contact`}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image

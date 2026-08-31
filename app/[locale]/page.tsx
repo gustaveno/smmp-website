@@ -203,7 +203,7 @@ export default function HomePage({ params }: HomePageProps) {
             alt="Background landscape"
             fill
             sizes="100vw"
-            className="object-cover object-[75%_25%] md:object-right"
+            className="object-cover object-[55%_25%] md:object-[75%_25%]"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />

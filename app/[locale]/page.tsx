@@ -65,7 +65,7 @@ export default function HomePage({ params }: HomePageProps) {
                 fill
                 priority={index === 0}
                 sizes="100vw"
-                className="object-cover sm:scale-105 sm:object-[70%_50%]"
+                className="object-cover sm:scale-105 object-[70%_50%]"
               />
             </div>
           ))}

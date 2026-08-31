@@ -2,7 +2,8 @@
 
 import Link from 'next/link'
 import { useIntl } from 'react-intl'
-import { Mail, Phone, MapPin, Camera, Video, MessageCircle, BriefcaseBusiness } from 'lucide-react'
+import { Mail, Phone, MapPin } from 'lucide-react'
+import { SiFacebook, SiInstagram, SiYoutube } from '@icons-pack/react-simple-icons';
 import { type Locale } from '@/lib/i18n'
 
 type FooterProps = {
@@ -66,9 +67,9 @@ export default function Footer({ locale }: FooterProps) {
             <h4 className="mb-4 text-base font-semibold">Follow Us</h4>
             <div className="flex flex-wrap gap-3">
               {[
-                { label: 'Instagram', href: 'https://instagram.com/instagram', Icon: Camera },
-                { label: 'YouTube', href: 'https://youtube.com/', Icon: Video },
-                { label: 'Facebook', href: 'https://facebook.com/facebook', Icon: MessageCircle },
+                { label: 'Instagram', href: 'https://instagram.com/instagram', Icon: SiInstagram },
+                { label: 'YouTube', href: 'https://youtube.com/', Icon: SiYoutube },
+                { label: 'Facebook', href: 'https://facebook.com/facebook', Icon: SiFacebook },
               ].map(({ label, href, Icon }) => (
                 <Link
                   key={label}

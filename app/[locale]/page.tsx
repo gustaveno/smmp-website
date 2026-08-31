@@ -65,7 +65,7 @@ export default function HomePage({ params }: HomePageProps) {
                 fill
                 priority={index === 0}
                 sizes="100vw"
-                className="object-cover object-center sm:scale-105"
+                className="object-cover object-center sm:scale-105 sm:object-[70%_50%]"
               />
             </div>
           ))}
@@ -213,7 +213,7 @@ export default function HomePage({ params }: HomePageProps) {
           <figure className="group relative w-full max-w-6xl flex flex-col items-end text-right translate-y-10 md:translate-y-16">
             <blockquote className="relative z-10 flex flex-col items-end">
               <p className="font-serif text-lg md:text-xl lg:text-[26px] text-white leading-relaxed md:leading-snug italic mb-8 md:mb-10 text-balance drop-shadow-xl text-right"
-              style={{ filter: 'drop-shadow(0 6px 8px rgb(7, 7, 7))' }}>
+                style={{ filter: 'drop-shadow(0 6px 8px rgb(7, 7, 7))' }}>
                 Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita
               </p>
               <figcaption className="flex flex-col items-center -mt-6">
@@ -423,7 +423,7 @@ export default function HomePage({ params }: HomePageProps) {
             Anda ingin bergabung dalam misi kami?
           </h2>
           <p className="text-lg text-primary-foreground/90 mb-9 max-w-xl mx-auto text-balance drop-shadow-lg"
-          style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,1))' }}>
+            style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,1))' }}>
             Saya akan pergi ke ujung bumi untuk mencari satu jiwa bagi Yesus Kristus, pun jika pada akhir perjalanan, saya menemukan kemartiran.
           </p>
           <Link

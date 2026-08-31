@@ -49,7 +49,7 @@ export default function Footer({ locale }: FooterProps) {
             <ul className="space-y-2 text-sm">
               <li className="flex items-center space-x-2 text-muted-foreground">
                 <Mail className="w-4 h-4" />
-                <span>contact@congregation.org</span>
+                <span className="break-all">contact@congregation.org</span>
               </li>
               <li className="flex items-center space-x-2 text-muted-foreground">
                 <Phone className="w-4 h-4" />

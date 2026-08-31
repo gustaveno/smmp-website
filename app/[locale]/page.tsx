@@ -49,7 +49,7 @@ export default function HomePage({ params }: HomePageProps) {
   return (
     <div className="space-y-0">
       {/* Hero Section */}
-      <section className="relative min-h-[92vh] flex items-center justify-center px-4 py-20 overflow-hidden">
+      <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden px-3 py-16 sm:px-4 sm:py-20">
         {/* 1. Background Carousel */}
         <div className="absolute inset-0 z-0">
           {HERO_IMAGES.map((image, index) => (
@@ -65,7 +65,7 @@ export default function HomePage({ params }: HomePageProps) {
                 fill
                 priority={index === 0}
                 sizes="100vw"
-                className="object-cover object-center scale-105"
+                className="object-cover object-center sm:scale-105"
               />
             </div>
           ))}
@@ -125,7 +125,7 @@ export default function HomePage({ params }: HomePageProps) {
         <div className="relative z-10 container mx-auto text-center max-w-4xl flex flex-col items-center mt-10 md:mt-18">
 
           {/* Typography (Ukuran sedikit disesuaikan agar tidak menelan layar) */}
-          <h1 className="text-6xl md:text-8xl lg:text-10xl text-white -mb-2 text-balance leading-[1.1] tracking-tight drop-shadow-lg"
+          <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-10xl text-white -mb-2 text-balance leading-[1.1] tracking-tight drop-shadow-lg"
             style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.8))' }}>
             <span className="inline-block animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-150 fill-mode-both">
               Misericordia

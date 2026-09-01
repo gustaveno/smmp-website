@@ -80,7 +80,7 @@ export default function Navigation({ locale }: NavigationProps) {
   }
 
   const linkClass = (href: string) => cn(
-    'rounded-md px-3 py-2 text-sm font-medium transition-colors',
+    'rounded-md px-3 py-2 text-sm font-medium tracking-wide transition-colors',
     isActive(href) ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-accent',
   )
 
@@ -103,7 +103,7 @@ export default function Navigation({ locale }: NavigationProps) {
             {intl.formatMessage({ id: 'common.navigation.about', defaultMessage: 'About' })}
           </button>
           {isAboutOpen && (
-            <ul className="absolute left-0 top-full z-50 min-w-40 rounded-md border bg-background py-1 shadow-md">
+            <ul className="absolute left-0 top-full z-50 min-w-40 rounded-lg border border-border/70 bg-background/95 py-2 shadow-lg backdrop-blur">
               {aboutItems.map((item) => (
                 <li key={item.href}>
                   <Link href={`/${currentLocale}${item.href}`} onClick={() => setIsAboutOpen(false)} className={cn('block', linkClass(item.href))}>
@@ -130,7 +130,7 @@ export default function Navigation({ locale }: NavigationProps) {
             {intl.formatMessage({ id: 'common.navigation.dewOfLove', defaultMessage: 'Dew of Love' })}
           </button>
           {isDewOfLoveOpen && (
-            <ul className="absolute left-0 top-full z-50 min-w-40 rounded-md border bg-background py-1 shadow-md">
+            <ul className="absolute left-0 top-full z-50 min-w-40 rounded-lg border border-border/70 bg-background/95 py-2 shadow-lg backdrop-blur">
               {dewOfLoveItems.map((item) => (
                 <li key={item.href}>
                   <Link href={`/${currentLocale}${item.href}`} onClick={() => setIsDewOfLoveOpen(false)} className={cn('block', linkClass(item.href))}>
@@ -157,7 +157,7 @@ export default function Navigation({ locale }: NavigationProps) {
       </button>
 
       {isMobileMenuOpen && (
-        <nav id="mobile-navigation" className="absolute inset-x-0 top-full border-b border-border bg-background px-4 py-3 shadow-md md:hidden" aria-label="Mobile navigation">
+        <nav id="mobile-navigation" className="absolute inset-x-0 top-full border-b border-border/70 bg-background/95 px-4 py-4 shadow-lg backdrop-blur md:hidden" aria-label="Mobile navigation">
           <div className="flex flex-col gap-1">
             <div className="flex flex-col gap-1">
               <button type="button" onClick={() => setIsDewOfLoveOpen((prev) => !prev)} className={cn('w-full text-left', linkClass('/public'), isDewOfLoveActive && 'bg-primary text-primary-foreground')} aria-expanded={isDewOfLoveOpen}>

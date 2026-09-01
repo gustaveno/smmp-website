@@ -47,9 +47,9 @@ export default function HomePage({ params }: HomePageProps) {
   }, [nextSlide])
 
   return (
-    <div className="space-y-0">
+    <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[92vh] flex items-center justify-center px-4 py-20 overflow-hidden">
+      <section className="relative flex min-h-[92vh] items-center justify-center overflow-hidden px-3 py-16 sm:px-4 sm:py-20">
         {/* 1. Background Carousel */}
         <div className="absolute inset-0 z-0">
           {HERO_IMAGES.map((image, index) => (
@@ -65,7 +65,7 @@ export default function HomePage({ params }: HomePageProps) {
                 fill
                 priority={index === 0}
                 sizes="100vw"
-                className="object-cover object-center scale-105"
+                className="object-cover sm:scale-105 object-[70%_50%]"
               />
             </div>
           ))}
@@ -125,9 +125,9 @@ export default function HomePage({ params }: HomePageProps) {
         <div className="relative z-10 container mx-auto text-center max-w-4xl flex flex-col items-center mt-10 md:mt-18">
 
           {/* Typography (Ukuran sedikit disesuaikan agar tidak menelan layar) */}
-          <h1 className="text-6xl md:text-8xl lg:text-10xl text-white -mb-2 text-balance leading-[1.1] tracking-tight drop-shadow-lg"
+          <h1 className="max-w-full text-[clamp(2.5rem,14vw,6rem)] text-white -mb-2 text-balance leading-[1.1] tracking-tight drop-shadow-lg"
             style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.8))' }}>
-            <span className="inline-block animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-150 fill-mode-both">
+            <span className="inline-block max-w-full animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-150 fill-mode-both">
               Misericordia
             </span>
           </h1>
@@ -156,7 +156,7 @@ export default function HomePage({ params }: HomePageProps) {
       </section>
 
       {/* Congregation Overview Section */}
-      <section className="py-20 px-4 bg-background">
+      <section className="bg-background px-4 py-24 md:py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-8 md:gap-12 items-center max-w-5xl mx-auto">
             {/* Saint Image */}
@@ -203,7 +203,7 @@ export default function HomePage({ params }: HomePageProps) {
             alt="Background landscape"
             fill
             sizes="100vw"
-            className="object-cover object-[75%_25%] md:object-right"
+            className="object-cover object-[55%_25%] md:object-[75%_25%]"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
@@ -213,7 +213,7 @@ export default function HomePage({ params }: HomePageProps) {
           <figure className="group relative w-full max-w-6xl flex flex-col items-end text-right translate-y-10 md:translate-y-16">
             <blockquote className="relative z-10 flex flex-col items-end">
               <p className="font-serif text-lg md:text-xl lg:text-[26px] text-white leading-relaxed md:leading-snug italic mb-8 md:mb-10 text-balance drop-shadow-xl text-right"
-              style={{ filter: 'drop-shadow(0 6px 8px rgb(7, 7, 7))' }}>
+                style={{ filter: 'drop-shadow(0 6px 8px rgb(7, 7, 7))' }}>
                 Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita
               </p>
               <figcaption className="flex flex-col items-center -mt-6">
@@ -245,7 +245,7 @@ export default function HomePage({ params }: HomePageProps) {
             {/* Events Card */}
             <Link
               href={`/${safeLocale}/public/events`}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
@@ -272,7 +272,7 @@ export default function HomePage({ params }: HomePageProps) {
             {/* Sermons Card */}
             <Link
               href={`/${safeLocale}/public/sermons`}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
@@ -299,7 +299,7 @@ export default function HomePage({ params }: HomePageProps) {
             {/* News Card */}
             <Link
               href={`/${safeLocale}/public/news`}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
@@ -326,7 +326,7 @@ export default function HomePage({ params }: HomePageProps) {
             {/* Schedule Card */}
             <Link
               href={`/${safeLocale}/schedule`}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
@@ -353,7 +353,7 @@ export default function HomePage({ params }: HomePageProps) {
             {/* Donate Card */}
             <Link
               href={`/${safeLocale}/donate`}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
@@ -380,7 +380,7 @@ export default function HomePage({ params }: HomePageProps) {
             {/* Contact Card */}
             <Link
               href={`/${safeLocale}/contact`}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:shadow-2xl hover:-translate-y-1.5 hover:border-primary/30"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
             >
               <div className="relative h-52 overflow-hidden">
                 <Image
@@ -423,7 +423,7 @@ export default function HomePage({ params }: HomePageProps) {
             Anda ingin bergabung dalam misi kami?
           </h2>
           <p className="text-lg text-primary-foreground/90 mb-9 max-w-xl mx-auto text-balance drop-shadow-lg"
-          style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,1))' }}>
+            style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,1))' }}>
             Saya akan pergi ke ujung bumi untuk mencari satu jiwa bagi Yesus Kristus, pun jika pada akhir perjalanan, saya menemukan kemartiran.
           </p>
           <Link

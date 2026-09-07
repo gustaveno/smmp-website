@@ -1,5 +1,5 @@
 export const EVENTS_QUERY = `
-  *[_type == "event"] | order(date desc) {
+  *[_type in ["event", "embunKasih"]] | order(date desc) {
     _id,
     title,
     slug,
@@ -13,7 +13,7 @@ export const EVENTS_QUERY = `
 `
 
 export const EVENTS_BY_SLUG_QUERY = `
-  *[_type == "event" && slug.current == $slug][0] {
+  *[_type in ["event", "embunKasih"] && slug.current == $slug][0] {
     _id,
     title,
     slug,

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { CalendarDays, Clock3, MapPin, Sparkles } from 'lucide-react'
 import { useIntl } from 'react-intl'
+import Link from 'next/link'
 
 type SanityEvent = {
   _id: string
@@ -16,6 +17,7 @@ type SanityEvent = {
 
 export default function EventsPage() {
   const intl = useIntl()
+  const localeSegment = intl.locale?.split('-')[0] || 'id'
   const [events, setEvents] = useState<SanityEvent[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -110,8 +112,10 @@ export default function EventsPage() {
               const title = getLocalizedText(event.title, 'Untitled event')
               const description = getLocalizedText(event.description)
               const location = getLocalizedText(event.location)
-              return (
-                <article key={event._id} className="group flex flex-col overflow-hidden rounded-2xl border border-border/70 bg-card shadow-sm transition duration-500 hover:-translate-y-1 hover:shadow-xl">
+              const slugPath = event.slug?.current ? `/${localeSegment}/dew-of-love/events/${event.slug.current}` : undefined
+
+              const card = (
+                <article className="group flex flex-col overflow-hidden rounded-2xl border border-border/70 bg-card shadow-sm transition duration-500 hover:-translate-y-1 hover:shadow-xl">
                   {event.image?.asset?.url ? (
                     <div className="relative aspect-[4/3] overflow-hidden bg-muted">
                       <img src={event.image.asset.url} alt={title} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
@@ -129,6 +133,14 @@ export default function EventsPage() {
                     {description && <p className="mt-4 line-clamp-4 text-sm leading-7 text-muted-foreground">{description}</p>}
                   </div>
                 </article>
+              )
+
+              return slugPath ? (
+                <Link key={event._id} href={slugPath} className="block">
+                  {card}
+                </Link>
+              ) : (
+                <div key={event._id}>{card}</div>
               )
             })}
           </div>

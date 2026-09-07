@@ -10,29 +10,22 @@ export default function IdentityPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       {/* Hero — kept compact */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src='https://images.pexels.com/photos/13755423/pexels-photo-13755423.jpeg?auto=compress&cs=tinysrgb&w=1600'
-            alt=""
-            aria-hidden="true"
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-[hsl(28_45%_18%/0.92)] via-[hsl(24_40%_22%/0.86)] to-[hsl(20_35%_30%/0.78)]" />
-        </div>
-
-        <div className="relative mx-auto max-w-6xl px-6 py-20 sm:py-24 lg:py-28">
-          <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-wider text-amber-200">
-              Spiritual Gifts
-            </p>
-            <h1 className="mt-3 font-serif text-4xl font-bold leading-[1.05] tracking-tight text-amber-50 sm:text-5xl lg:text-6xl">
-              Vission and Mission
-            </h1>
-            <p className="mt-4 text-base leading-relaxed text-amber-100/90 sm:text-lg">
-              Discover, nurture, and share the gifts the Spirit has placed within you.
-            </p>
-          </div>
+      <section className="relative h-[50vh] min-h-[360px] w-full overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('https://images.pexels.com/photos/33548412/pexels-photo-33548412.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
+        <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
+          <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
+            {intl.formatMessage({ id: 'pages.identity.title', defaultMessage: 'Vision, Mission, and Motto' })}
+          </h1>
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+            {intl.formatMessage({ id: 'pages.identity.description', defaultMessage: 'Our Identity' })}
+          </p>
         </div>
       </section>
 

@@ -16,7 +16,8 @@
       "devotional": "Devotional",
       "prayers": "Prayers",
       "contact": "Contact Us",
-      "admin": "Admin"
+      "admin": "Admin",
+      "formation": "Formation"
     },
     "language": "Language",
     "languages": {
@@ -101,6 +102,10 @@
     "services": {
       "title": "Congressional Service Fields",
       "description": "Our service activities"
+    },
+    "formation": {
+      "title": "Formation",
+      "description": "Formed in Faith, Rooted in Prayer, and Sent to Serve"
     }
   },
   "footer": {

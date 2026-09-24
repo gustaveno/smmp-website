@@ -21,80 +21,110 @@ export default function CharismaPage() {
             {intl.formatMessage({ id: 'pages.charisma.title', defaultMessage: 'Charisma' })}
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-            {intl.formatMessage({ id: 'pages.charisma.description', defaultMessage: 'The charisma of our community' })}
+            Panggilan untuk mencintai, memuliakan, dan menghidupi kasih Kristus.
           </p>
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-6 py-16 sm:px-8 sm:py-24">
-        <div>
-          <h2 className="font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
-            Karisma adalah rahmat penyelenggaraan Ilahi
+      <section className="mx-auto max-w-4xl px-6 py-16 sm:px-8 sm:py-24 text-center">
+        <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+          Kharisma adalah<br />
+          <span className="italic text-amber-700 bg-amber-100/70 box-decoration-clone px-1.5 py-0.5 rounded">
+            Hidup bagi Allah
+          </span>
+        </h2>
+        <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+          Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita. Itulah kharisma atau anugrah yang dimiliki Kongregasi. Panggilan untuk mencintai, memuliakan, dan menghidupi kasih Kristus.
+        </p>
+      </section>
+
+      <section className="border-y border-border/70 bg-muted/30 px-6 py-16 sm:px-8 sm:py-24 lg:px-10">
+        <div className="mx-auto max-w-5xl">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
+            Hidup bagi Allah?
           </h2>
-          <p className="mt-7 text-base leading-8 text-muted-foreground sm:text-lg">
-            Karisma Kongregasi Suster Santa Maria Magdalena Postel berakar pada teladan hidup pendirinya, Santa Maria Magdalena Postel, yang mendedikasikan seluruh hidupnya untuk melayani Kristus melalui kaum miskin, tertindas, dan terlantar di tengah masa sulit pasca-Revolusi Prancis.
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            Maksudnya, para suster mendapat panggilan untuk.
           </p>
-        </div>
-      </section>
-
-      <section className="border-y border-border/70 bg-muted/30">
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 sm:px-8 sm:py-24 md:grid-cols-2 md:items-center lg:gap-20 lg:px-10">
-          <div className="overflow-hidden rounded-xl shadow-xl">
-            <img
-              src="https://images.pexels.com/photos/954198/pexels-photo-954198.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="An open book in soft natural light"
-              className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
-            />
           </div>
-          <div className="max-w-xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">Discernment</p>
-            <h2 className="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-              Cinta Kasih Berbela Rasa kepada Kaum Miskin
-            </h2>
-            <p className="mt-6 text-base leading-8 text-muted-foreground sm:text-lg">
-              Karisma dasar kongregasi adalah menghadirkan kasih Allah yang berbelas kasih kepada mereka yang paling membutuhkan. Pelayanan ini ditujukan langsung kepada kelompok yang tersisih, baik secara ekonomi, sosial, maupun pendidikan, dengan melihat wajah Kristus pada diri orang-orang kecil.
-            </p>
+
+          <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">
+            {/* Kolom 1 */}
+            <div>
+              <h3 className="font-semibold tracking-tight">Mengasihi Allah</h3>
+              <div className="mt-4 flex items-start gap-4">
+                <img
+                  src="https://images.pexels.com/photos/6647015/pexels-photo-6647015.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Mengasihi Allah"
+                  className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
+                />
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Mencintai Allah tanpa batas dan berusaha sekuat tenaga agar Ia dicintai.
+                </p>
+              </div>
+            </div>
+
+            {/* Kolom 2 */}
+            <div>
+              <h3 className="font-semibold tracking-tight">Memuliakan Allah</h3>
+              <div className="mt-4 flex items-start gap-4">
+                <img
+                  src="https://images.pexels.com/photos/6647015/pexels-photo-6647015.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Memuliakan Allah"
+                  className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
+                />
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Hidup untuk lebih memuliakan Allah.
+                </p>
+              </div>
+            </div>
+
+            {/* Kolom 3 */}
+            <div>
+              <h3 className="font-semibold tracking-tight">Hidup dalam Kristus</h3>
+              <div className="mt-4 flex items-start gap-4">
+                <img
+                  src="https://images.pexels.com/photos/6647015/pexels-photo-6647015.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Hidup dalam Kristus"
+                  className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
+                />
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Usaha terus menerus membuat hidup kami dihidupi oleh Yesus.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-20 sm:px-8 sm:py-28 lg:px-10">
-        <div className="grid gap-10 md:grid-cols-2 md:items-center lg:gap-20">
-          <div className="order-2 max-w-xl md:order-1">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">Offering</p>
-            <h2 className="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-              Semangat Penyerahan Diri dan Ketaatan pada Kehendak Allah
+        <div className="grid gap-10 md:grid-cols-3 md:items-center lg:gap-12">
+          {/* Kolom 1: Judul */}
+          <div>
+            <h2 className="font-serif text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
+              Menjadi pelayan mereka yang menderita
             </h2>
-            <p className="mt-6 text-base leading-8 text-muted-foreground sm:text-lg">
-              Spiritualitas Santa Maria Magdalena Postel ditandai dengan kepasrahan total pada penyelenggaraan Ilahi. Para suster menghidupi semangat ketabahan, kesetiaan, dan ketekunan iman dalam menghadapi berbagai rintangan karya maupun keterbatasan sarana.
-            </p>
           </div>
-          <div className="order-1 overflow-hidden rounded-xl shadow-xl md:order-2">
-            <img
-              src="https://images.pexels.com/photos/6647015/pexels-photo-6647015.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Volunteers working together to support the community"
-              className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
-            />
-          </div>
-        </div>
-      </section>
 
-      <section className="border-y border-border/70 bg-muted/30">
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 sm:px-8 sm:py-24 md:grid-cols-2 md:items-center lg:gap-20 lg:px-10">
+          {/* Kolom 2: Gambar */}
           <div className="overflow-hidden rounded-xl shadow-xl">
             <img
-              src="https://images.pexels.com/photos/954198/pexels-photo-954198.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="An open book in soft natural light"
+              src="https://images.pexels.com/photos/6647015/pexels-photo-6647015.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Para suster melayani orang sakit dan menderita"
               className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
             />
           </div>
-          <div className="max-w-xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">Discernment</p>
-            <h2 className="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-              Kesederhanaan dan Kerendahan Hati
-            </h2>
-            <p className="mt-6 text-base leading-8 text-muted-foreground sm:text-lg">
-              Gaya hidup para suster mengedepankan kesederhanaan Injili, kebersahajaan dalam komunitas, serta semangat persaudaraan yang hangat tanpa mencari kehormatan duniawi.
+
+          {/* Kolom 3: Deskripsi + Link */}
+          <div>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Para suster Misericordia itu adalah sahabat-sahabat jiwa orang-orang yang sakit, 
+              miskin dan tak berdaya. Kehadiran mereka membawa penghiburan serta harapan nyata 
+              bagi mereka yang tersisih di tengah masyarakat. Melalui ketulusan hati dalam 
+              melayani, mereka membuktikan 
+              bahwa belas kasih dapat menjadi tumpuan bagi siapa saja yang sedang berjuang 
+              melawan kesulitan hidup.
             </p>
           </div>
         </div>

@@ -61,11 +61,11 @@ export default function Navigation({ locale }: NavigationProps) {
     { label: intl.formatMessage({ id: 'common.navigation.spirituality', defaultMessage: 'Spirituality' }), href: '/about/spirituality' },
     { label: intl.formatMessage({ id: 'common.navigation.history', defaultMessage: 'History' }), href: '/about/history' },
     { label: intl.formatMessage({ id: 'common.navigation.saints', defaultMessage: 'Three Saints' }), href: '/about/saints' },
-    { label: intl.formatMessage({ id: 'common.navigation.identity', defaultMessage: 'Vision & Mission' }), href: '/about/identity' },
   ]
 
   const navItems = [
     { label: intl.formatMessage({ id: 'common.navigation.services', defaultMessage: 'Services' }), href: '/services' },
+    { label: intl.formatMessage({ id: 'common.navigation.formation', defaultMessage: 'Formation ' }), href: '/formation' },
     { label: intl.formatMessage({ id: 'common.navigation.gallery', defaultMessage: 'Gallery' }), href: '/gallery' },
     { label: intl.formatMessage({ id: 'common.navigation.contact', defaultMessage: 'Contact Us' }), href: '/contact' },
   ]

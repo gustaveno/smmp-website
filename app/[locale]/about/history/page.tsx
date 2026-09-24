@@ -7,9 +7,9 @@ const milestones = [
     year: '1756',
     title: 'Kelahiran Julie Postel',
     description:
-      'Lahir pada 28 November di Barfleur, Perancis Utara, dengan nama Julie Fransisca Catharina Postel sebagai anak sulung dari keluarga Jean Postel le Vallois.',
+      'Lahir pada 28 November di Barfleur, Perancis Utara, dengan nama Julie Fransisca Catharina Postel sebagai anak sulung dari keluarga Jean Postel le Vallois. Cita-citanya sejak kecil adalah membaktikan diri kepada Tuhan untuk melayani orang miskin.',
     image:
-      'https://images.pexels.com/photos/33519084/pexels-photo-33519084.png?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/tempat/1756.jpg',
   },
   {
     year: '1765',
@@ -17,7 +17,7 @@ const milestones = [
     description:
       'Menerima komuni pada usia 9 tahun berkat teladan dan sifat-sifatnya yang menonjol saat bersekolah di asrama Suster Benediktin di Valognes.',
     image:
-      'https://images.pexels.com/photos/6070122/pexels-photo-6070122.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/tempat/1765.jpg',
   },
   {
     year: '1767',
@@ -25,55 +25,95 @@ const milestones = [
     description:
       'Diminta menjadi ibu baptis untuk pembaptisan beberapa bayi pada 11 Juli saat berusia 12 tahun.',
     image:
-      'https://images.pexels.com/photos/2031763/pexels-photo-2031763.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/tempat/1767.jpg',
   },
   {
-    year: '1774',
-    title: 'Menyelesaikan Pendidikan',
+    year: '1768–1774',
+    title: 'Pendidikan di Valognes',
     description:
-      'Menyelesaikan sekolah di asrama Suster Benediktin pada usia 18 tahun dengan hasil memuaskan, lalu kembali ke Barfleur.',
+      'Belajar sebagai guru selama 6 tahun di sekolah para suster Benedictines di Valognes, memperoleh pembentukan manusiawi dan religius yang sangat kuat.',
     image:
-      'https://images.pexels.com/photos/29082719/pexels-photo-29082719.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/tempat/1768.jpg',
   },
   {
-    year: '1774–1789',
+    year: '1774–1805',
     title: 'Pelayanan Pendidikan di Barfleur',
     description:
-      'Menekuni karya sebagai guru selama 15 tahun di sekolah dan asrama yang ia bangun, mengajar remaja putri tanpa membedakan status sosial.',
+      'Membuka sekolah dan asrama untuk anak-anak miskin. Pada zaman Revolusi Prancis, ia membantu imam pergi ke Inggris untuk menyelamatkan imamatnya serta menyimpan Sakramen Mahakudus di rumahnya di bawah sebuah tangga.',
     image:
-      'https://images.pexels.com/photos/8734709/pexels-photo-8734709.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  },
-  {
-    year: '1789',
-    title: 'Masa Revolusi Prancis',
-    description:
-      'Berperan aktif menyelamatkan para imam yang diburu, mengamankan aset gereja, mengantar komuni untuk orang sakit, dan mengatur misa secara rahasia.',
-    image:
-      'https://images.pexels.com/photos/37274789/pexels-photo-37274789.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/tempat/1774.jpg',
   },
   {
     year: '1805',
-    title: 'Gagasan Pendirian Kongregasi',
+    title: 'Pindah ke Cherbourg',
     description:
-      'Pindah ke Cherbourg dan mulai merancang pembentukan kongregasi suster untuk membaktikan hidup seutuhnya kepada Allah.',
+      'Pada 12 Mei 1805, ia meninggalkan Barfleur menuju Cherbourg. Di sana ia membuka sekolah dan dalam waktu tidak lama 3 pemudi menggabungkan diri.',
     image:
-      'https://images.pexels.com/photos/37274789/pexels-photo-37274789.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/tempat/1805.jpg',
   },
   {
     year: '1807',
     title: 'Pengikraran Kaul dan Pendirian Kongregasi',
     description:
-      'Mengikrarkan kaul bersama tiga rekannya pada 8 September, menandai berdirinya Kongregasi Suster Misericordia secara resmi dengan mengambil nama biara Maria Magdalena.',
+      'Berkat ketekunannya, Gereja akhirnya merestui cita-citanya. Pada 8 September 1807, ia mengikrarkan kaul bersama tiga rekannya, menandai berdirinya Kongregasi secara resmi.',
     image:
       'https://images.pexels.com/photos/37274789/pexels-photo-37274789.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    year: '1811',
+    title: 'Berpindah ke Octeville L’avenel',
+    description:
+      'Cherbourg ditinggalkan karena para suster Penyelenggaraan Ilahi kembali ke tempat itu. Ia lalu mencari tempat baru di Octeville L’avenel, tinggal di dalam sebuah kandang.',
+    image:
+      '/tempat/1811.jpg',
+  },
+  {
+    year: '1811–1813',
+    title: 'Periode Tamerville',
+    description:
+      'Karena Octeville L’avenel tak memadai lagi, rombongan pindah ke Tamerville. Di sini para suster menerima 12 anak yatim piatu, namun juga mulai dirasakan ada iri hati akan kehadiran mereka.',
+    image:
+      '/tempat/1811-2.jpg',
+  },
+  {
+    year: '1813–1814',
+    title: 'Periode Valognes ("Rumah Sakrat Maut")',
+    description:
+      'Menetap di Valognes yang dapat disamakan dengan rumah sakrat maut. Namun ia tetap gigih untuk meneruskan perjuangan, sekalipun didinasehati untuk membubarkan kongregasinya.',
+    image:
+      '/tempat/1767.jpg',
+  },
+  {
+    year: '1814–1816',
+    title: 'Pindah ke Hamel au Bon',
+    description:
+      'Dari Valognes ia pindah ke Hamel au Bon, sebuah pondok beratap jerami. Di sinilah ia menyusun Konstitusi yang pertama di tengah perjuangan yang tak kunjung padam.',
+    image:
+      '/tempat/1814.jpg',
+  },
+  {
+    year: '1816–1832',
+    title: 'Kembali ke Tamerville',
+    description:
+      'Para suster dipanggil kembali ke Tamerville. Agar dapat diakui oleh pemerintah Kerajaan, kongregasi harus mencari Induk, dan Rm. Lerenard mencarikan sebuah rumah.',
+    image:
+      'https://images.pexels.com/photos/37274789/pexels-photo-37274789.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    year: '1832–1846',
+    title: 'Menetap di Saint-Sauveur-le-Vicomte (L’Abbaye)',
+    description:
+      'Pada 7 Juni 1832 jual beli tanah selesai (L’Abbaye), menggenapi ramalan Marie Rose Dadure bahwa seorang imam akan mengantarnya ke L’Abbaye. Pada 15 Oktober, bersama 14 suster, ia pindah ke tempat ini hingga wafatnya.',
+    image:
+      '/tempat/1832.jpg',
   },
   {
     year: '1846',
     title: 'Wafatnya Pendiri Kongregasi',
     description:
-      'Meninggal dunia pada 16 Juli tepat pada Hari Raya Santa Maria dari Gunung Karmel, setelah berhasil mempertahankan kongregasi dan menetap di Saint-Sauveur-le-Vicomte.',
+      'Meninggal dunia pada 16 Juli pada usia 90 tahun, tepat pada Hari Raya Santa Maria dari Gunung Karmel, setelah berhasil mempertahankan kongregasi dan menetap di Saint-Sauveur-le-Vicomte.',
     image:
-      'https://images.pexels.com/photos/37274789/pexels-photo-37274789.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/tempat/1846.jpg',
   },
   {
     year: '1925',
@@ -95,7 +135,7 @@ const milestones = [
 
 export default function HistoryPage() {
   const intl = useIntl()
-  
+
   return (
     <main className="min-h-screen bg-background">
       {/* Hero */}
@@ -119,18 +159,16 @@ export default function HistoryPage() {
       </section>
 
       {/* Intro */}
-      <section className="mx-auto max-w-3xl px-6 py-20 text-center">
-        <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted-foreground">
-          Established 1912
-        </p>
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Roots That Run Deep
+      <section className="mx-auto max-w-4xl px-6 py-16 sm:px-8 sm:py-24 text-center">
+        <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+          Benih{' '}
+          <span className="italic text-amber-700 bg-amber-100/70 box-decoration-clone px-1.5 py-0.5 rounded">
+            Belas Kasih
+          </span>
+          {' '}yang Tumbuh
         </h2>
         <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-          Every community has a story. Ours began over a hundred years ago with
-          a simple act of gathering \u2014 and grew, through seasons of hardship
-          and hope, into the congregation we know today. Walk with us through the
-          moments that shaped who we are.
+          Perjalanan bermula dari semangat pengabdian Julie Postel dan berkembang, melalui berbagai musim penuh tantangan dan pengharapan, menjadi kongregasi yang kita kenal hari ini. Telusuri bersama kami momen-momen yang membentuk siapa diri kami.
         </p>
       </section>
 

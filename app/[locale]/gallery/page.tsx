@@ -140,7 +140,7 @@ export default function GalleryPage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero */}
-      <section className="relative h-[45vh] min-h-[340px] w-full overflow-hidden">
+      <section className="relative h-[50vh] min-h-[360px] w-full overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{

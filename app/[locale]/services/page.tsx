@@ -5,71 +5,52 @@ import {
   GraduationCap,
   Users,
   Church,
-  ArrowRight,
-  Check,
 } from 'lucide-react';
-import { Button } from '../../../components/ui/button';
 
 const services = [
   {
     icon: HeartPulse,
-    title: 'Health',
-    tagline: 'Healing body, mind, and spirit',
+    title: 'Kesehatan',
+    tagline: 'MEMULIHKAN RAGA, MERAWAT JIWA',
     description:
-      'We believe that wholeness encompasses physical, mental, and spiritual well-being. Our health initiatives bring medical care, wellness education, and compassionate support to those who need it most — because every person deserves to live with dignity and vitality.',
-    image:
-      'https://images.pexels.com/photos/3873168/pexels-photo-3873168.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    highlights: [
-      'Free medical outreach clinics',
-      'Mental health counseling',
-      'Wellness and nutrition workshops',
-      'Home visits for the elderly',
-    ],
+      'Merawat orang sakit bukan tugas yang ringan namun panggilan misi di ladang ini membuka jalan menuju rahasia Keagungan Tuhan. Belaskasihan bagi orang sakit adalah wujud nyata merawat Yesus dalam diri orang Samaria yang terluka.',
+    image: '/kesehatan.jpg',
+    caption: 'Penyembuhan Fisik dan Rohani',
+    secondaryImage: '/kesehatan-2.jpg',
+    secondaryCaption: 'Sebuah Warisan Kebaikan',
   },
   {
     icon: GraduationCap,
-    title: 'Education',
-    tagline: 'Empowering minds, shaping futures',
+    title: 'Pendidikan',
+    tagline: 'MENABUR ILMU, MEMBENTUK MASA DEPAN',
     description:
-      'Knowledge is the foundation of opportunity. Through scholarships, literacy programs, and mentorship, we open doors for learners of all ages — equipping them with the tools to grow, lead, and give back to their communities.',
-    image:
-      'https://images.pexels.com/photos/18506736/pexels-photo-18506736.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    highlights: [
-      'Scholarship and tuition aid',
-      'Adult literacy programs',
-      'After-school tutoring',
-      'Leadership mentorship',
-    ],
+      'Di tengah-tengah kemajuan pesat akal budi manusia jaman ini, penderitaan siswa yang putus sekolah menjadi kesedihan dunia. Menabur benih harapan demi masa depan generasi muda yang berakar pada kasih Allah.',
+    image: '/pendidikan-2.jpg',
+    caption: 'Menuntun Generasi Muda',
+    secondaryImage: '/pendidikan-1.jpg',
+    secondaryCaption: 'Jejak Para Pendidik',
   },
   {
     icon: Users,
-    title: 'Social',
-    tagline: 'Building stronger communities together',
+    title: 'Sosial',
+    tagline: 'MENGULUR KASIH, MERANGKUL SESAMA',
     description:
-      'No one should face hardship alone. Our social outreach addresses immediate needs — food, shelter, companionship — while fostering long-term community bonds that create lasting change and a culture of mutual care.',
-    image:
-      'https://images.pexels.com/photos/6646917/pexels-photo-6646917.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    highlights: [
-      'Community food drives',
-      'Clothing and supply distributions',
-      'Volunteer service corps',
-      'Family support programs',
-    ],
+      'Pancaran hati yang berbelaskasih mampu menembus setiap keterbatasan, kerapuhan dan kelemahan manusiawi kita. Mimpi para yatim piatu menuju kemandirian hidup adalah mimpi terdalam nurani kita.',
+    image: '/sosial.jpg',
+    caption: 'Merangkul yang Terpinggirkan',
+    secondaryImage: '/sosial-2.jpg',
+    secondaryCaption: 'Kasih yang Tak Bersyarat',
   },
   {
     icon: Church,
     title: 'Pastoral',
-    tagline: 'Nurturing faith and spiritual growth',
+    tagline: 'MEMBINA IMAN, MENUNTUN LANGKAH',
     description:
-      'At the heart of our mission is the care of souls. Through worship, prayer, and pastoral guidance, we walk alongside each person on their spiritual journey — offering comfort in sorrow, hope in struggle, and community in faith.',
-    image:
-      'https://images.pexels.com/photos/8718464/pexels-photo-8718464.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    highlights: [
-      'Weekly worship services',
-      'Prayer and intercessory ministry',
-      'One-on-one spiritual direction',
-      'Grief and crisis support',
-    ],
+      'Kerinduan jiwa setiap insan adalah menyejukkan setiap batin yang haus akan kasih Tuhan. Kekurangan dan kelebihan yang kita persembahkan selalu cukup untuk meringankan ketidakbahagiaan sesama.',
+    image: '/pastoral-1.jpg',
+    caption: 'Mendampingi Umat Beriman',
+    secondaryImage: '/pastoral-2.jpg',
+    secondaryCaption: 'Berakar dalam Doa',
   },
 ];
 
@@ -77,7 +58,7 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero */}
-      <section className="relative h-[55vh] min-h-[420px] w-full overflow-hidden">
+      <section className="relative h-[50vh] min-h-[360px] w-full overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -85,29 +66,30 @@ export default function ServicesPage() {
               "url('https://images.pexels.com/photos/29422232/pexels-photo-29422232.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
           <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
-            Bidang Pelayanan
+            Karya Pelayanan
           </h1>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-            “Pergi Ke ujung dunia untuk menyelamatkan satu jiwa bagi Kristus”
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+            “Pergi ke ujung dunia untuk menyelamatkan satu jiwa bagi Kristus”
           </p>
         </div>
       </section>
 
       {/* Intro */}
-      <section className="mx-auto max-w-3xl px-6 py-20 text-center">
-        <p className="text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
-          What We Do
-        </p>
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Serving with Purpose
+      <section className="mx-auto max-w-3xl px-6 py-16">
+        <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl text-center">
+          Melayani dengan Belas Kasih Nyata
         </h2>
-        <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-          Our congregation is organized around four essential areas of service.
-          Each field represents a commitment to meeting both the practical and
-          spiritual needs of our community, guided by faith and driven by love.
+        <p className="mt-6 text-lg leading-relaxed text-muted-foreground text-justify">
+          Dijiwai oleh semangat untuk mendidik dan meringankan setiap ketidakbahagiaan sesama, para suster St. Maria Magdalena Postel terpanggil untuk menyatakan kemurahan hati, belas kasihan dan kelembutan Allah di tengah-tengah dunia, dengan hadir secara aktif dalam kehidupan manusia dan melibatkan diri melalui aneka ragam tugas pelayanan, guna mewujudkan solidaritas pada sesama yang miskin dalam rupa apapun.
+        </p>
+        <p className="mt-6 text-lg leading-relaxed text-muted-foreground text-justify">
+          Sebagai bentuk nyata keterlibatan para suster meringankan ketidakbahagiaan sesama, mereka ikut aktif dalam kegiatan kerasulan di bidang pendidikan, kesehatan, sosial dan pastoral. Dalam perutusannya, para suster mengambil bagian dalam upaya merawat orang-orang sakit, mengajar siswa di sekolah-sekolah maupun mendukung pendidikan anak-anak yang kesulitan biaya untuk melanjutkan studi, membantu orang-orang miskin, melayani para lanjut usia, mendampingi anak-anak yatim piatu, terlibat aktif dalam berbagai kegiatan pastoral di paroki maupun membimbing sesama yang merindukan kesejukan rohani dan spiritualitas.
+        </p>
+        <p className="mt-6 text-lg leading-relaxed text-muted-foreground text-justify">
+          Melalui berbagai cara para suster memberikan suatu kesaksian hidup menghadirkan dan meluaskan Kerajaan Allah dalam karya-karya kerasulan.
         </p>
       </section>
 
@@ -122,61 +104,55 @@ export default function ServicesPage() {
               key={service.title}
               className="overflow-hidden bg-background"
             >
-              <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
-                <div
-                  className={`flex flex-col items-center gap-10 lg:flex-row lg:gap-16 ${
-                    reversed ? 'lg:flex-row-reverse' : ''
-                  }`}
-                >
-                  {/* Image */}
-                  <div className="relative w-full lg:w-1/2">
-                    <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-lg">
-                      <div
-                        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out hover:scale-105"
-                        style={{
-                          backgroundImage: `url('${service.image}')`,
-                        }}
+              <div className="mx-auto max-w-5xl px-6 py-10 sm:py-14">
+                <div className="grid items-stretch gap-10 lg:grid-cols-2 lg:gap-16">
+                  {/* Foto utama (tinggi) + badge ikon + keterangan */}
+                  <figure className={`flex flex-col ${reversed ? 'lg:order-2' : ''}`}>
+                    <div className="relative aspect-[4/5] lg:aspect-auto lg:flex-1">
+                      <img
+                        src={service.image}
+                        alt={service.caption}
+                        className="absolute inset-0 h-full w-full rounded-2xl object-cover shadow-lg"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                      <div
+                        className={`absolute -top-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-background shadow-lg ring-1 ring-border/60 ${reversed ? '-right-3' : '-left-3'
+                          }`}
+                      >
+                        <Icon className="h-6 w-6 text-foreground" />
+                      </div>
                     </div>
-                    {/* Floating icon badge */}
-                    <div
-                      className={`absolute top-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-background shadow-xl ring-1 ring-border/60 ${
-                        reversed ? 'right-6 lg:-right-4' : 'left-6 lg:-left-4'
-                      }`}
-                    >
-                      <Icon className="h-7 w-7 text-foreground" />
-                    </div>
-                  </div>
+                    <figcaption className="mt-3 text-center font-serif text-base text-foreground">
+                      {service.caption}
+                    </figcaption>
+                  </figure>
 
-                  {/* Content */}
-                  <div className="w-full lg:w-1/2">
-                    <span className="text-sm font-medium uppercase tracking-[0.18em] text-muted-foreground">
-                      {service.tagline}
-                    </span>
-                    <h3 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-                      {service.title}
-                    </h3>
-                    <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
-                      {service.description}
-                    </p>
-                    <ul className="mt-7 grid gap-3 sm:grid-cols-2">
-                      {service.highlights.map((item) => (
-                        <li
-                          key={item}
-                          className="flex items-center gap-3 text-sm text-foreground"
-                        >
-                          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary">
-                            <Check className="h-3.5 w-3.5 text-muted-foreground" />
-                          </span>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                    <Button variant="outline" className="mt-8 gap-2">
-                      Learn more about {service.title}
-                      <ArrowRight className="h-4 w-4" />
-                    </Button>
+                  {/* Teks + foto kedua */}
+                  <div className="flex flex-col">
+                    <div>
+                      <span className="font-serif text-xs uppercase tracking-[0.18em] text-muted-foreground sm:text-sm">
+                        {service.tagline}
+                      </span>
+                      <h3 className="mt-2 font-serif text-3xl font-bold tracking-tight sm:text-4xl">
+                        {service.title}
+                      </h3>
+                      <p
+                        lang="id"
+                        className="mt-5 font-serif text-[18px] leading-relaxed text-foreground/80 text-justify hyphens-auto"
+                      >
+                        {service.description}
+                      </p>
+                    </div>
+
+                    <figure className="mt-8 lg:mt-auto lg:pt-8">
+                      <img
+                        src={service.secondaryImage}
+                        alt={service.secondaryCaption}
+                        className="aspect-[8/5] w-full rounded-2xl object-cover shadow-md"
+                      />
+                      <figcaption className="mt-3 text-center font-serif text-base text-foreground">
+                        {service.secondaryCaption}
+                      </figcaption>
+                    </figure>
                   </div>
                 </div>
               </div>
@@ -184,28 +160,6 @@ export default function ServicesPage() {
           );
         })}
       </div>
-
-      {/* CTA */}
-      <section className="border-t border-border/60 bg-secondary/40">
-        <div className="mx-auto flex max-w-4xl flex-col items-center px-6 py-20 text-center">
-          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            Join Us in Service
-          </h2>
-          <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Whether you seek support or wish to lend a hand, there is a place
-            for you in our community. Reach out and become part of the mission.
-          </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button size="lg" className="gap-2">
-              Get Involved
-              <ArrowRight className="h-4 w-4" />
-            </Button>
-            <Button size="lg" variant="outline">
-              Contact Us
-            </Button>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

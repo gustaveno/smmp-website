@@ -179,15 +179,15 @@ export default function HomePage({ params }: HomePageProps) {
                 Kongregasi Kami
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed text-balance">
-                Kongregasi Suster Maria Magdalena Postel dikenal juga sebagai Suster Misericordia (Sisters of Mercy) adalah sebuah kongregasi religius wanita dalam Gereja Katolik Roma yang didirikan oleh Santa Maria Magdalena Postel.
+                Kongregasi Para Suster Santa Maria Magdalena Postel dikenal juga sebagai Suster Misericordia adalah sebuah kongregasi religius wanita dalam Gereja Katolik Roma yang didirikan oleh Santa Maria Magdalena Postel.
               </p>
               <br />
               <p className="text-muted-foreground text-lg leading-relaxed text-balance">
-                Maria Magdalena Postel (1756–1846) lahir di Barfleur, Normandia, Prancis. Pada masa Revolusi Prancis yang penuh pergolakan, ia diam-diam membantu para imam yang dikejar-kejar serta mendidik anak-anak miskin. Kongregasinya berdiri pada tahun 1807 di Cherbourg, ia bersama rekan-rekannya mengucapkan kaul religius dan mendirikan tarekat untuk mendidik kaum muda yang terlantar dan merawat orang sakit.
+                Julie Postel (1756–1846) lahir di Barfleur, Normandia, Prancis. Pada masa Revolusi Prancis yang penuh pergolakan, ia diam-diam membantu para imam yang dikejar-kejar serta mendidik anak-anak miskin. Kongregasinya berdiri pada tahun 1807 di Cherbourg, ia bersama Sr. Jeanne-Catherine Bellot, Sr. Louisa Viel, Sr. Angelique Ledanois mengucapkan kaul religius dan mendirikan kongregasi untuk mendidik kaum muda, menanamkan cinta kepada Tuhan dan cinta terhadap pekerjaan, serta mengorbankan diri guna membantu orang miskin dan meringankan penderitaan sebanyak mungkin orang.
               </p>
               <br />
               <p className="text-muted-foreground text-lg leading-relaxed text-balance">
-                Kongregasi ini menghayati semangat belas kasih Allah melalui berbagai karya kerasulan nyata di bidang pendidikan, kesehatan, dan sosial & pastoral.
+                Itulah cita-cita dan tujuan awal Julie Postel membangun sebuah kongregasi religius.
               </p>
             </div>
           </div>
@@ -199,14 +199,14 @@ export default function HomePage({ params }: HomePageProps) {
         {/* Background tetap sama */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/kata2.jpg"
+            src="/kata3.jpg"
             alt="Background landscape"
             fill
             sizes="100vw"
-            className="object-cover object-[55%_25%] md:object-[75%_25%]"
+            className="object-cover object-[25%_25%] md:object-[75%_25%]"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/40" />
         </div>
 
         <div className="relative z-10 w-full pr-6 md:pr-12 flex justify-end">
@@ -314,7 +314,7 @@ export default function HomePage({ params }: HomePageProps) {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Peristiwa & Berita</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  Saya ingin pergi ke ujung-ujung bumi untuk memenangkan satu jiwa bagi Yesus Kristus.
+                  Saya ingin pergi ke ujung bumi untuk memenangkan satu jiwa bagi Yesus Kristus.
                 </p>
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
                   Read News

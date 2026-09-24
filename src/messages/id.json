@@ -16,7 +16,8 @@
       "devotional": "Renungan",
       "prayers": "Doa-doa",
       "contact": "Hubungi Kami",
-      "admin": "Admin"
+      "admin": "Admin",
+      "formation": "Formasi"
     },
     "language": "Bahasa",
     "languages": {
@@ -76,8 +77,8 @@
       "error": "Gagal mengirim pesan"
     },
     "charisma": {
-      "title": "Karisma",
-      "description": "Karisma dari komunitas kami"
+      "title": "Kharisma",
+      "description": "Kharisma dari komunitas kami"
     },
     "history": {
       "title": "Sejarah",
@@ -101,6 +102,10 @@
     "services": {
       "title": "Bidang Pelayanan Kongregasi",
       "description": "Aktivitas pelayanan kami"
+    },
+    "formation": {
+      "title": "Formasi",
+      "description": "Dibentuk dalam iman, berakar dalam doa, dan diutus untuk melayani."
     }
   },
   "footer": {

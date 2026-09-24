@@ -28,7 +28,7 @@ const practices = [
 
 export default function SpiritualityPage() {
   const intl = useIntl()
-  
+
   return (
     <main className="min-h-screen bg-background">
       {/* Hero */}
@@ -57,16 +57,19 @@ export default function SpiritualityPage() {
           {/* Text column */}
           <div className="md:col-span-6 md:mt-4">
             <h2 className="font-serif text-xl font-semibold leading-tight tracking-tight sm:text-2xl">
-              Semangat rohani, Belas Kasih
+              Semangat rohani,{' '}
+              <span className="italic text-amber-700 bg-amber-100/70 box-decoration-clone px-1.5 py-0.5 rounded">
+                Belas Kasih
+              </span>
             </h2>
-            <p className="mt-4 max-w-[42ch] text-lg leading-relaxed text-foreground">
-              Untuk menghayati anugerah panggilan secara mendalam, 
-              para religius melandasi hidup mereka dengan spiritualitas belas kasih. 
-              Semangat ini diwujudkan dengan mengikuti sedekat mungkin pribadi Yesus Kristus 
-              yang miskin dan direndahkan, serta meneladan belas kasih-Nya kepada umat manusia. 
-              Wujud nyata dari penghayatan ini tercermin melalui kepedulian, solidaritas, 
-              kepekaan terhadap kesulitan sesama yang menderita, dan keramahan yang tulus. 
-              Melalui kerendahan hati, mereka terus terpanggil untuk menghidupi 
+            <p className="mt-4 max-w-[42ch] text-lg leading-relaxed text-muted-foreground">
+              Untuk menghayati anugerah panggilan secara mendalam,
+              para religius melandasi hidup mereka dengan spiritualitas belas kasih.
+              Semangat ini diwujudkan dengan mengikuti sedekat mungkin pribadi Yesus Kristus
+              yang miskin dan direndahkan, serta meneladan belas kasih-Nya kepada umat manusia.
+              Wujud nyata dari penghayatan ini tercermin melalui kepedulian, solidaritas,
+              kepekaan terhadap kesulitan sesama yang menderita, dan keramahan yang tulus.
+              Melalui kerendahan hati, mereka terus terpanggil untuk menghidupi
               keutamaan tersebut dalam pelayanan sehari-hari.
             </p>
           </div>

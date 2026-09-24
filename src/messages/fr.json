@@ -16,7 +16,8 @@
       "devotional": "Méditation",
       "prayers": "Prière",
       "contact": "Nous contacter",
-      "admin": "Admin"
+      "admin": "Admin",
+      "formation": "Formation"
     },
     "language": "Langue",
     "languages": {
@@ -101,6 +102,10 @@
     "services": {
       "title": "Champs de Service Congrès",
       "description": "Nos activités de service"
+    },
+    "formation": {
+      "title": "Formation",
+      "description": "Formé dans la foi, enraciné dans la prière et envoyé pour servir"
     }
   },
   "footer": {

@@ -6,19 +6,20 @@ export default {
     {
       name: 'title',
       title: 'SEO Title',
-      type: 'string',
+      type: 'localizedString',
       description: 'Title for search engines (60 chars)',
     },
     {
       name: 'description',
       title: 'SEO Description',
-      type: 'text',
+      type: 'localizedText',
       description: 'Meta description for search engines (160 chars)',
     },
     {
       name: 'keywords',
       title: 'Keywords',
       type: 'array',
+      description: 'Comma-separated keywords in English for search engines',
       of: [{ type: 'string' }],
     },
     {

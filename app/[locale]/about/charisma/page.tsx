@@ -1,5 +1,6 @@
 'use client'
 
+import { Quote } from 'lucide-react'
 import { useIntl } from 'react-intl'
 
 export default function CharismaPage() {
@@ -12,7 +13,7 @@ export default function CharismaPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.pexels.com/photos/33548412/pexels-photo-33548412.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
+              "url('/bg-kharisma.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
@@ -42,11 +43,11 @@ export default function CharismaPage() {
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-4xl">
             <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
-            Hidup bagi Allah?
-          </h2>
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Maksudnya, para suster mendapat panggilan untuk.
-          </p>
+              Hidup bagi Allah?
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              Maksudnya, para suster mendapat panggilan untuk.
+            </p>
           </div>
 
           <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">
@@ -55,7 +56,7 @@ export default function CharismaPage() {
               <h3 className="font-semibold tracking-tight">Mengasihi Allah</h3>
               <div className="mt-4 flex items-start gap-4">
                 <img
-                  src="https://images.pexels.com/photos/6647015/pexels-photo-6647015.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="/kharisma/1.jpg"
                   alt="Mengasihi Allah"
                   className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
                 />
@@ -70,7 +71,7 @@ export default function CharismaPage() {
               <h3 className="font-semibold tracking-tight">Memuliakan Allah</h3>
               <div className="mt-4 flex items-start gap-4">
                 <img
-                  src="https://images.pexels.com/photos/6647015/pexels-photo-6647015.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="/kharisma/2.jpg"
                   alt="Memuliakan Allah"
                   className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
                 />
@@ -85,7 +86,7 @@ export default function CharismaPage() {
               <h3 className="font-semibold tracking-tight">Hidup dalam Kristus</h3>
               <div className="mt-4 flex items-start gap-4">
                 <img
-                  src="https://images.pexels.com/photos/6647015/pexels-photo-6647015.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  src="/kharisma/3.jpg"
                   alt="Hidup dalam Kristus"
                   className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
                 />
@@ -98,7 +99,7 @@ export default function CharismaPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-20 sm:px-8 sm:py-28 lg:px-10">
+      <section className="mx-auto max-w-6xl px-6 py-16 sm:px-8 sm:py-24 lg:px-10">
         <div className="grid gap-10 md:grid-cols-3 md:items-center lg:gap-12">
           {/* Kolom 1: Judul */}
           <div>
@@ -110,7 +111,7 @@ export default function CharismaPage() {
           {/* Kolom 2: Gambar */}
           <div className="overflow-hidden rounded-xl shadow-xl">
             <img
-              src="https://images.pexels.com/photos/6647015/pexels-photo-6647015.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              src="/kharisma/4.jpg"
               alt="Para suster melayani orang sakit dan menderita"
               className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
             />
@@ -119,35 +120,27 @@ export default function CharismaPage() {
           {/* Kolom 3: Deskripsi + Link */}
           <div>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Para suster Misericordia itu adalah sahabat-sahabat jiwa orang-orang yang sakit, 
-              miskin dan tak berdaya. Kehadiran mereka membawa penghiburan serta harapan nyata 
-              bagi mereka yang tersisih di tengah masyarakat. Melalui ketulusan hati dalam 
-              melayani, mereka membuktikan 
-              bahwa belas kasih dapat menjadi tumpuan bagi siapa saja yang sedang berjuang 
+              Para suster Misericordia itu adalah sahabat-sahabat jiwa orang-orang yang sakit,
+              miskin dan tak berdaya. Kehadiran mereka membawa penghiburan serta harapan nyata
+              bagi mereka yang tersisih di tengah masyarakat. Melalui ketulusan hati dalam
+              melayani, mereka membuktikan
+              bahwa belas kasih dapat menjadi tumpuan bagi siapa saja yang sedang berjuang
               melawan kesulitan hidup.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="relative isolate overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/quote-charisma.jpg"
-            alt=""
-            aria-hidden="true"
-            className="h-full w-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-black/65" />
-        </div>
-        <div className="relative mx-auto flex min-h-[58vh] max-w-6xl items-center px-6 py-12 sm:min-h-[58vh] sm:px-8 sm:py-16 lg:px-10 lg:py-20">
-          <div className="mx-auto max-w-3xl text-center">
-            <span className="font-serif text-4xl text-background/60">“</span>
-            <p className="mt-2 font-serif text-background leading-relaxed text-2xl sm:text-3xl">
-              Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita.
-            </p>
-          </div>
-        </div>
+      <section className="mx-auto max-w-3xl border-y border-border/70 px-6 py-18 text-center">
+        <Quote className="mx-auto h-10 w-10 text-muted-foreground/60" />
+        <blockquote className="mt-8">
+          <p className="text-3xl font-medium leading-snug tracking-tight text-foreground sm:text-3xl">
+            Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita.
+          </p>
+        </blockquote>
+        <footer className="mt-8 text-sm uppercase tracking-[0.18em] text-muted-foreground">
+          Santa Maria Magdalena Postel
+        </footer>
       </section>
     </main>
   )

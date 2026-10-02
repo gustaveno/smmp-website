@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useIntl } from 'react-intl'
 
 import { ArrowRight } from 'lucide-react';
@@ -8,6 +9,7 @@ import { Button } from '@/components/ui/button';
 const stages = [
   {
     step: '01',
+    image: '/formatio/1.jpg',
     title: 'Aspirant',
     duration: 'Initial discernment',
     description:
@@ -15,6 +17,7 @@ const stages = [
   },
   {
     step: '02',
+    image: '/formatio/2.jpg',
     title: 'Postulant',
     duration: 'Several months',
     description:  
@@ -22,6 +25,7 @@ const stages = [
   },
   {
     step: '03',
+    image: '/images/formation/stage-03.jpg',
     title: 'Novitiate',
     duration: '1–2 years',
     description:
@@ -29,6 +33,7 @@ const stages = [
   },
   {
     step: '04',
+    image: '/images/formation/stage-04.jpg',
     title: 'Temporary Vows',
     duration: '3–6 years',
     description:
@@ -36,6 +41,7 @@ const stages = [
   },
   {
     step: '05',
+    image: '/formatio/3.jpg',
     title: 'Perpetual Vows',
     duration: 'Lifelong commitment',
     description:
@@ -43,6 +49,7 @@ const stages = [
   },
   {
     step: '06',
+    image: '/formatio/3.jpg',
     title: 'Ongoing Formation',
     duration: 'Always and everywhere',
     description:
@@ -61,7 +68,7 @@ export default function FormatioPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.pexels.com/photos/15875184/pexels-photo-15875184.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
+              "url('/bg-formatio.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
@@ -103,12 +110,12 @@ export default function FormatioPage() {
                 return (
                   <div
                     key={stage.step}
-                    className={`relative flex flex-col md:flex-row ${
+                    className={`relative flex flex-col md:items-center md:flex-row ${
                       isLeft ? '' : 'md:flex-row-reverse'
                     }`}
                   >
                     {/* Dot on the timeline */}
-                    <div className="absolute left-4 top-6 z-10 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full border-2 border-foreground bg-background text-xs font-bold text-foreground md:left-1/2">
+                    <div className="absolute left-4 top-6 z-10 flex h-10 w-10 -translate-x-1/2 md:top-1/2 md:-translate-y-1/2 items-center justify-center rounded-full border-2 border-foreground bg-background text-xs font-bold text-foreground md:left-1/2">
                       {stage.step}
                     </div>
 
@@ -130,8 +137,18 @@ export default function FormatioPage() {
                       </div>
                     </div>
 
-                    {/* Spacer for the other half on desktop */}
-                    <div className="hidden md:block md:w-1/2" />
+                    {/* Photo: opposite side of the card (right when card is left, left when card is right) */}
+                    <div className="ml-16 mt-4 md:ml-0 md:mt-0 md:w-1/2 md:px-12">
+                      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/60 shadow-sm">
+                        <Image
+                          src={stage.image}
+                          alt={stage.title}
+                          fill
+                          sizes="(min-width: 768px) 360px, 100vw"
+                          className="object-cover transition-transform duration-500 hover:scale-105"
+                        />
+                      </div>
+                    </div>
                   </div>
                 );
               })}

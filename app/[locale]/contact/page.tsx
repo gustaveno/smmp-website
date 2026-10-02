@@ -1,3 +1,7 @@
+'use client'
+
+import { useIntl } from 'react-intl'
+
 import {
   MapPin,
   Mail,
@@ -69,25 +73,26 @@ const monasteries = [
 ];
 
 export default function ContactPage() {
+  const intl = useIntl()
+  
   return (
     <main className="min-h-screen bg-background">
       {/* Hero */}
       <section className="relative h-[50vh] min-h-[360px] w-full overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-top"
           style={{
             backgroundImage:
-              "url('https://images.pexels.com/photos/29719577/pexels-photo-29719577.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
+              "url('/bg-kontak.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
           <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
-            Contact Us
+            {intl.formatMessage({ id: 'pages.contact.title', defaultMessage: 'Contact Us' })}
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-            Reach out, visit our headquarters, or learn about our monasteries
-            around the world.
+            {intl.formatMessage({ id: 'pages.contact.description', defaultMessage: 'Reach out, visit our headquarters, or learn about our monasteries around the world.' })}
           </p>
         </div>
       </section>

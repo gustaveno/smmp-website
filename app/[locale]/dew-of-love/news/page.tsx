@@ -1,21 +1,20 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { CalendarDays, Clock3, MapPin, Sparkles } from 'lucide-react'
 import { useIntl } from 'react-intl'
+import { Clock3, CalendarDays } from 'lucide-react'
 import Link from 'next/link'
 
 type SanityEvent = {
   _id: string
   title?: string | Record<string, unknown>
   slug?: { current?: string }
-  date?: string
-  description?: string | Record<string, unknown>
-  location?: string | Record<string, unknown>
-  image?: { asset?: { url?: string } }
+  publishedAt?: string
+  excerpt?: string | Record<string, unknown>
+  coverImage?: { asset?: { url?: string }; alt?: string }
 }
 
-export default function EventsPage() {
+export default function NewsPage() {
   const intl = useIntl()
   const localeSegment = intl.locale?.split('-')[0] || 'id'
   const [events, setEvents] = useState<SanityEvent[]>([])
@@ -34,16 +33,15 @@ export default function EventsPage() {
     }
 
     const query = encodeURIComponent(`
-      *[_type == "embunKasih"] | order(date desc) {
-        _id,
-        title,
-        slug,
-        date,
-        description,
-        location,
-        image { asset->{ url } }
-      }
-    `)
+        *[_type == "embunKasih" && contentType == "news"] | order(publishedAt desc) {
+          _id,
+          title,
+          slug,
+          publishedAt,
+          excerpt,
+          coverImage { asset->{ url }, alt }
+        }
+      `)
     const url = `https://${projectId}.api.sanity.io/v${apiVersion}/data/query/${dataset}?query=${query}`
 
     fetch(url)
@@ -77,20 +75,15 @@ export default function EventsPage() {
   }
 
   return (
-    <main className="min-h-screen overflow-hidden">
-      <section className="border-b border-border/60 bg-muted/30 px-4 py-20 md:py-28">
-        <div className="mx-auto max-w-5xl">
-          <div className="flex items-center gap-3 text-sm font-medium uppercase tracking-[0.24em] text-primary">
-            <span className="h-px w-10 bg-primary/60" />
-            <Sparkles aria-hidden="true" />
-            <span>Dew of Love</span>
+    <main className="min-h-screen bg-background">
+      <section className="border-b border-border/60 px-4 pb-20 pt-20 sm:pb-24 sm:pt-28">
+        <div className="container mx-auto max-w-5xl">
+          <div className="mt-8 max-w-3xl">
+            <h1 className="text-balance text-5xl font-semibold tracking-tight text-foreground sm:text-7xl">{intl.formatMessage({ id: 'pages.news.title', defaultMessage: 'News' })}</h1>
+            <p className="mt-7 max-w-2xl text-pretty text-lg leading-8 text-muted-foreground sm:text-xl">
+              {intl.formatMessage({ id: 'pages.news.description', defaultMessage: 'View the latest news' })}
+            </p>
           </div>
-          <h1 className="mt-7 max-w-3xl text-balance text-5xl font-semibold tracking-tight md:text-7xl">
-            {intl.formatMessage({ id: 'pages.events.title', defaultMessage: 'Events' })}
-          </h1>
-          <p className="mt-6 max-w-xl text-pretty text-lg leading-8 text-muted-foreground md:text-xl">
-            {intl.formatMessage({ id: 'pages.events.description', defaultMessage: 'View upcoming events' })}
-          </p>
         </div>
       </section>
 
@@ -102,7 +95,7 @@ export default function EventsPage() {
         {!loading && !error && events.length === 0 && (
           <div className="rounded-xl border border-dashed border-border bg-muted/20 p-14 text-center">
             <CalendarDays className="mx-auto mb-4 text-muted-foreground" aria-hidden="true" />
-            <p className="text-muted-foreground">{intl.formatMessage({ id: 'pages.events.noEvents', defaultMessage: 'No events scheduled' })}</p>
+            <p className="text-muted-foreground">{intl.formatMessage({ id: 'pages.news.noNews', defaultMessage: 'No news available' })}</p>
           </div>
         )}
 
@@ -110,27 +103,24 @@ export default function EventsPage() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {events.map((event, index) => {
               const title = getLocalizedText(event.title, 'Untitled event')
-              const description = getLocalizedText(event.description)
-              const location = getLocalizedText(event.location)
-              const slugPath = event.slug?.current ? `/${localeSegment}/dew-of-love/events/${event.slug.current}` : undefined
+              const excerpt = getLocalizedText(event.excerpt)
+              const slugPath = event.slug?.current ? `/${localeSegment}/dew-of-love/news/${event.slug.current}` : undefined
 
               const card = (
-                <article className="group flex flex-col overflow-hidden rounded-2xl border border-border/70 bg-card shadow-sm transition duration-500 hover:-translate-y-1 hover:shadow-xl">
-                  {event.image?.asset?.url ? (
+                <article className="group flex flex-col overflow-hidden rounded-sm border border-border/70 bg-card shadow-sm transition duration-500 hover:-translate-y-1 hover:shadow-xl">
+                  {event.coverImage?.asset?.url ? (
                     <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-                      <img src={event.image.asset.url} alt={title} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
-                      <span className="absolute left-4 top-4 rounded-full bg-background/90 px-3 py-1 text-xs font-medium uppercase tracking-wider text-foreground">{String(index + 1).padStart(2, '0')}</span>
+                      <img src={event.coverImage.asset.url} alt={event.coverImage.alt || title} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
                     </div>
                   ) : (
                     <div className="flex aspect-[4/3] items-center justify-center bg-muted/50 text-primary/60"><CalendarDays className="size-10" aria-hidden="true" /></div>
                   )}
                   <div className="flex flex-1 flex-col p-6 md:p-7">
                     <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-muted-foreground">
-                      {event.date && <span className="inline-flex items-center gap-2"><Clock3 className="size-4" aria-hidden="true" />{formatDate(event.date)}</span>}
-                      {location && <span className="inline-flex items-center gap-2"><MapPin className="size-4" aria-hidden="true" />{location}</span>}
+                      {event.publishedAt && <span className="inline-flex items-center gap-2"><Clock3 className="size-4" aria-hidden="true" />{formatDate(event.publishedAt)}</span>}
                     </div>
                     <h2 className="mt-5 text-2xl font-semibold leading-tight tracking-tight">{title}</h2>
-                    {description && <p className="mt-4 line-clamp-4 text-sm leading-7 text-muted-foreground">{description}</p>}
+                    {excerpt && <p className="mt-4 line-clamp-4 text-sm leading-7 text-muted-foreground">{excerpt}</p>}
                   </div>
                 </article>
               )

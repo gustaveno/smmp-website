@@ -11,6 +11,7 @@
   "dependencies": {
     "@base-ui/react": "^1.5.0",
     "@icons-pack/react-simple-icons": "^13.15.1",
+    "@portabletext/react": "^8.0.1",
     "@sanity/client": "^7.26.0",
     "@sanity/image-url": "^2.1.1",
     "@vercel/analytics": "1.6.1",

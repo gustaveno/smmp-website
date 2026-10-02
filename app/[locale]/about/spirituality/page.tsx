@@ -37,7 +37,7 @@ export default function SpiritualityPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.pexels.com/photos/33548412/pexels-photo-33548412.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
+              "url('/bg-spirtualitas.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
@@ -78,7 +78,7 @@ export default function SpiritualityPage() {
           <div className="md:col-span-6">
             <div className="relative mx-auto max-w-sm overflow-hidden rounded-2xl shadow-md ring-1 ring-black/5">
               <img
-                src="https://images.pexels.com/photos/28896465/pexels-photo-28896465.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                src="/spirit-1.jpg"
                 alt="Peaceful chapel interior with beautiful stained glass windows and religious sculpture."
                 className="aspect-[4/5] w-full object-cover"
               />
@@ -115,7 +115,7 @@ export default function SpiritualityPage() {
       </section>
 
       {/* Pull quote — centered reflection */}
-      <section className="mx-auto max-w-3xl px-6 py-24 text-center">
+      <section className="mx-auto max-w-3xl px-6 py-18 text-center">
         <Quote className="mx-auto h-10 w-10 text-muted-foreground/60" />
         <blockquote className="mt-8">
           <p className="text-3xl font-medium leading-snug tracking-tight text-foreground sm:text-3xl">

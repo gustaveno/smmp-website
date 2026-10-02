@@ -162,7 +162,7 @@ export default function HomePage({ params }: HomePageProps) {
             {/* Saint Image */}
             <div className="relative w-full max-w-[420px] mx-auto md:mx-0 md:translate-x-6 rounded-2xl overflow-hidden shadow-xl border border-border aspect-[4/5]">
               <Image
-                src="/smmp.jpg"
+                src="/santa/smmp.jpg"
                 alt="Patron Saint of the Congregation"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -409,31 +409,33 @@ export default function HomePage({ params }: HomePageProps) {
 
       {/* Call to Action */}
       <section className="relative py-24 px-4 overflow-hidden">
-        <Image
-          src="/bg.jpg"
-          alt="Join our community"
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-primary/30 to-accent/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-accent-foreground/90 via-accent-foreground/95 to-accent-foreground"></div>
+        <div className="relative z-10 container mx-auto max-w-6xl grid items-center gap-10 md:grid-cols-2 md:gap-14">
+          {/* Kiri: YouTube embed */}
+          <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-white/20 bg-black shadow-2xl">
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src="https://www.youtube.com/embed/0jcBr6_hnyc?si=kokGTeP3u1PjUH31"
+              title="Video misi kami"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
 
-        <div className="relative z-10 container mx-auto text-center max-w-2xl">
-          <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-5 text-balance">
-            Anda ingin bergabung dalam misi kami?
-          </h2>
-          <p className="text-lg text-primary-foreground/90 mb-9 max-w-xl mx-auto text-balance drop-shadow-lg"
-            style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,1))' }}>
-            Saya akan pergi ke ujung bumi untuk mencari satu jiwa bagi Yesus Kristus, pun jika pada akhir perjalanan, saya menemukan kemartiran.
-          </p>
-          <Link
-            href={`/${safeLocale}/contact`}
-            className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-background text-primary font-bold rounded-full hover:bg-muted transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
-          >
-            <Mail className="w-5 h-5" />
-            Get Started Today
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </Link>
+          {/* Kanan: teks */}
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-5 text-balance">
+              Anda ingin bergabung dalam misi kami?
+            </h2>
+            <p
+              className="text-lg text-primary-foreground/90 text-balance drop-shadow-lg"
+              style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,1))' }}
+            >
+              Saya akan pergi ke ujung bumi untuk mencari satu jiwa bagi Yesus Kristus, pun jika pada akhir perjalanan, saya menemukan kemartiran.
+            </p>
+          </div>
         </div>
       </section>
     </div>

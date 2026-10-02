@@ -11,10 +11,11 @@
       "gallery": "Galerie",
       "services": "Services",
       "dewOfLove": "Rosée d'amour",
-      "events": "Événements",
+      "news": "Actualités",
       "quotes": "Citations Inspirantes",
-      "devotional": "Méditation",
-      "prayers": "Prière",
+      "reflection": "Réflexions",
+      "prayer": "Prière",
+      "articles": "Articles",
       "contact": "Nous contacter",
       "admin": "Admin",
       "formation": "Formation"
@@ -38,24 +39,35 @@
       "title": "Notre Église",
       "description": "Bienvenue dans notre communauté"
     },
-    "events": {
-      "title": "Événements",
-      "description": "Voir les événements à venir",
-      "noEvents": "Aucun événement prévu",
-      "upcoming": "Événements à venir",
-      "date": "Date",
-      "time": "Heure",
-      "location": "Lieu",
-      "attendees": "Participants"
+    "news": {
+      "title": "Actualités",
+      "description": "Voir les dernières nouvelles",
+      "noNews": "Aucune actualité disponible",
+      "latest": "Dernières Actualités"
     },
     "quotes": {
-      "title": "Citations Inspirantes"
+      "title": "Citations Inspirantes",
+      "description": "Trouvez des citations inspirantes",
+      "noQuotes": "Aucune citation inspirante disponible",
+      "latest": "Dernières Citations Inspirantes"
     },
-    "prayers": {
-      "title": "Prière"
+    "prayer": {
+      "title": "Prière",
+      "description": "Trouvez des prières pour accompagner votre parcours de foi",
+      "noPrayers": "Aucune prière disponible",
+      "latest": "Dernière Prière"
     },
-    "devotional": {
-      "title": "Méditation"
+    "reflection": {
+      "title": "Réflexions",
+      "description": "Trouvez des réflexions pour approfondir votre foi",
+      "noReflections": "Aucune réflexion disponible",
+      "latest": "Dernières Réflexions"
+    },
+    "articles": {
+      "title": "Articles",
+      "description": "Lisez les articles sélectionnés",
+      "noArticles": "Aucun article disponible",
+      "latest": "Derniers Articles"
     },
     "donate": {
       "title": "Faire un don",
@@ -68,7 +80,7 @@
     },
     "contact": {
       "title": "Nous contacter",
-      "description": "Nous aimerions vous entendre",
+      "description": "Contactez-nous, visitez notre siège ou découvrez nos monastères",
       "name": "Nom",
       "email": "Email",
       "message": "Message",
@@ -97,7 +109,8 @@
       "description": "Découvrez nos pratiques spirituelles"
     },
     "gallery": {
-      "title": "Une collection de moments"
+      "title": "Galerie",
+      "description": "Une collection de moments"
     },
     "services": {
       "title": "Champs de Service Congrès",

@@ -14,7 +14,7 @@ type SanityEvent = {
   coverImage?: { asset?: { url?: string }; alt?: string }
 }
 
-export default function QuotesPage() {
+export default function ArticlesPage() {
   const intl = useIntl()
   const localeSegment = intl.locale?.split('-')[0] || 'id'
   const [events, setEvents] = useState<SanityEvent[]>([])
@@ -33,7 +33,7 @@ export default function QuotesPage() {
     }
 
     const query = encodeURIComponent(`
-        *[_type == "embunKasih" && contentType == "quotes"] | order(publishedAt desc) {
+        *[_type == "embunKasih" && contentType == "article"] | order(publishedAt desc) {
           _id,
           title,
           slug,
@@ -79,9 +79,9 @@ export default function QuotesPage() {
       <section className="border-b border-border/60 px-4 pb-20 pt-20 sm:pb-24 sm:pt-28">
         <div className="container mx-auto max-w-5xl">
           <div className="mt-8 max-w-3xl">
-            <h1 className="text-balance text-5xl font-semibold tracking-tight text-foreground sm:text-7xl">{intl.formatMessage({ id: 'pages.quotes.title', defaultMessage: 'Quotes' })}</h1>
+            <h1 className="text-balance text-5xl font-semibold tracking-tight text-foreground sm:text-7xl">{intl.formatMessage({ id: 'pages.articles.title', defaultMessage: 'Articles' })}</h1>
             <p className="mt-7 max-w-2xl text-pretty text-lg leading-8 text-muted-foreground sm:text-xl">
-              {intl.formatMessage({ id: 'pages.quotes.description', defaultMessage: 'View the latest quotes' })}
+              {intl.formatMessage({ id: 'pages.articles.description', defaultMessage: 'View the latest articles' })}
             </p>
           </div>
         </div>
@@ -95,7 +95,7 @@ export default function QuotesPage() {
         {!loading && !error && events.length === 0 && (
           <div className="rounded-xl border border-dashed border-border bg-muted/20 p-14 text-center">
             <CalendarDays className="mx-auto mb-4 text-muted-foreground" aria-hidden="true" />
-            <p className="text-muted-foreground">{intl.formatMessage({ id: 'pages.quotes.noQuotes', defaultMessage: 'No quotes available' })}</p>
+            <p className="text-muted-foreground">{intl.formatMessage({ id: 'pages.articles.noArticles', defaultMessage: 'No articles available' })}</p>
           </div>
         )}
 
@@ -104,7 +104,7 @@ export default function QuotesPage() {
             {events.map((event, index) => {
               const title = getLocalizedText(event.title, 'Untitled event')
               const excerpt = getLocalizedText(event.excerpt)
-              const slugPath = event.slug?.current ? `/${localeSegment}/dew-of-love/quotes/${event.slug.current}` : undefined
+              const slugPath = event.slug?.current ? `/${localeSegment}/dew-of-love/article/${event.slug.current}` : undefined
 
               const card = (
                 <article className="group flex flex-col overflow-hidden rounded-sm border border-border/70 bg-card shadow-sm transition duration-500 hover:-translate-y-1 hover:shadow-xl">

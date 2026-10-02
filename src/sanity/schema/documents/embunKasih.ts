@@ -113,4 +113,20 @@ export default {
       type: 'seoData',
     },
   ],
+  preview: {
+    select: {
+      title: 'title.en',
+      date: 'publishedAt',
+      category: 'contentType',
+    },
+    prepare({ title, date, category }: any) {
+      return {
+        title: title || 'Untitled',
+        subtitle: [
+          category,
+          date ? new Date(date).toLocaleDateString('en-EN', { year: 'numeric', month: 'short', day: 'numeric' }) : null,
+        ].filter(Boolean).join(' • '),
+      }
+    },
+  },
 }

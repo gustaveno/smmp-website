@@ -13,7 +13,7 @@ export default function SaintsPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.pexels.com/photos/33548412/pexels-photo-33548412.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
+              "url('/bg-orang-kudus.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
@@ -43,7 +43,7 @@ export default function SaintsPage() {
         <div className="mt-6 grid items-center gap-8 sm:mt-8 md:grid-cols-[170px_1fr_210px] md:gap-10">
           <div className="mx-auto w-40 overflow-hidden rounded-xl shadow-md md:mx-0 md:w-full">
             <img
-              src="/smmp.jpg"
+              src="/santa/smmp.jpg"
               alt="Potret Santa Maria Magdalena Postel"
               className="aspect-[5/7] w-full object-cover object-[50%_10%]"
             />
@@ -61,7 +61,7 @@ export default function SaintsPage() {
           <figure className="mx-auto w-full max-w-[260px] md:max-w-none">
             <div className="overflow-hidden rounded-sm">
               <img
-                src="/pohon-chene.jpg"
+                src="/santa/pohon-chene.jpg"
                 alt="Pohon Chêne"
                 className="aspect-[7/8] w-full object-cover"
               />
@@ -79,7 +79,7 @@ export default function SaintsPage() {
         <div className="mt-6 grid items-center gap-8 sm:mt-8 md:grid-cols-[170px_1fr_210px] md:gap-10">
           <div className="mx-auto w-40 overflow-hidden rounded-xl shadow-md md:mx-0 md:w-full">
             <img
-              src="/placide.jpg"
+              src="/santa/placide.jpg"
               alt="Potret Santa Maria Magdalena Postel"
               className="aspect-[5/7] w-full object-cover object-[50%_10%]"
             />
@@ -95,7 +95,7 @@ export default function SaintsPage() {
           <figure className="mx-auto w-full max-w-[260px] md:max-w-none">
             <div className="overflow-hidden rounded-sm">
               <img
-                src="/pohon-tilleul.jpg"
+                src="/santa/pohon-tilleul.jpg"
                 alt="Pohon Tilleul"
                 className="aspect-[7/8] w-full object-cover"
               />
@@ -113,7 +113,7 @@ export default function SaintsPage() {
         <div className="mt-6 grid items-center gap-8 sm:mt-8 md:grid-cols-[170px_1fr_210px] md:gap-10">
           <div className="mx-auto w-40 overflow-hidden rounded-xl shadow-md md:mx-0 md:w-full">
             <img
-              src="/marthe.jpg"
+              src="/santa/marthe.jpg"
               alt="Potret Santa Maria Magdalena Postel"
               className="aspect-[5/7] w-full object-cover object-[50%_10%]"
             />
@@ -131,7 +131,7 @@ export default function SaintsPage() {
           <figure className="mx-auto w-full max-w-[260px] md:max-w-none">
             <div className="overflow-hidden rounded-sm">
               <img
-                src="/pohon-apel.jpg"
+                src="/santa/pohon-apel.jpg"
                 alt="Pohon Apel"
                 className="aspect-[7/8] w-full object-cover"
               />

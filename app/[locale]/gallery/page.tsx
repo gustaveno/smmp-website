@@ -105,6 +105,8 @@ const photos: Photo[] = [
 ];
 
 export default function GalleryPage() {
+  const intl = useIntl()
+  
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const closeLightbox = useCallback(() => setLightboxIndex(null), []);
@@ -145,17 +147,16 @@ export default function GalleryPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://images.pexels.com/photos/34328505/pexels-photo-34328505.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
+              "url('/bg-galeri.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
           <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
-            Moments of Faith
+            {intl.formatMessage({ id: 'pages.gallery.title', defaultMessage: 'Gallery' })}
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-            A visual journey through our congregation&apos;s worship, service,
-            and community life.
+            {intl.formatMessage({ id: 'pages.gallery.description', defaultMessage: 'A collection of moments' })}
           </p>
         </div>
       </section>

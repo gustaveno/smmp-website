@@ -1,5 +1,6 @@
 'use client'
 
+import { Quote } from 'lucide-react'
 import { useIntl } from 'react-intl'
 
 export default function CharismaPage() {
@@ -7,96 +8,139 @@ export default function CharismaPage() {
 
   return (
     <main className="min-h-screen bg-background text-foreground">
-      <section className="relative isolate overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="https://images.pexels.com/photos/13755423/pexels-photo-13755423.jpeg?auto=compress&cs=tinysrgb&w=1600"
-            alt=""
-            aria-hidden="true"
-            className="h-full w-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-[hsl(28_45%_18%/0.94)] via-[hsl(24_40%_22%/0.88)] to-[hsl(20_35%_30%/0.78)]" />
-        </div>
-
-        <div className="relative mx-auto flex min-h-[58vh] max-w-6xl items-end px-6 py-16 sm:min-h-[64vh] sm:px-8 sm:py-24 lg:px-10 lg:py-28">
-          <div className="max-w-3xl">
-            <div className="mb-7 flex items-center gap-3 text-amber-200/80">
-              <span className="h-px w-12 bg-current" />
-              <p className="text-xs font-semibold uppercase tracking-[0.28em]">Spiritual Gift</p>
-            </div>
-            <h1 className="max-w-2xl font-serif text-5xl font-bold leading-[0.98] tracking-tight text-amber-50 sm:text-7xl lg:text-8xl">
-              Charisma
-            </h1>
-            <p className="mt-7 max-w-xl border-l border-amber-200/50 pl-5 text-base leading-relaxed text-amber-100/90 sm:text-lg">
-              Discover, nurture, and share the gifts the Spirit has placed within you.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-4xl px-6 py-20 sm:px-8 sm:py-28">
-        <div className="grid gap-8 md:grid-cols-[0.7fr_1.3fr] md:gap-16">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">The gift</p>
-          <div>
-            <h2 className="max-w-2xl font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
-              A charism is a gift given for the good of all
-            </h2>
-            <p className="mt-7 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
-              Every baptized person receives spiritual gifts — charisms — not for private benefit, but to build up the community and serve the world. When each member discerns and exercises their gifts, the whole body grows in love and mission.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-border/70 bg-muted/30">
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 sm:px-8 sm:py-24 md:grid-cols-2 md:items-center lg:gap-20 lg:px-10">
-          <div className="overflow-hidden rounded-xl shadow-xl">
-            <img
-              src="https://images.pexels.com/photos/954198/pexels-photo-954198.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="An open book in soft natural light"
-              className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
-            />
-          </div>
-          <div className="max-w-xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">Discernment</p>
-            <h2 className="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-              Gifts meant to be discerned, not chosen
-            </h2>
-            <p className="mt-6 text-base leading-8 text-muted-foreground sm:text-lg">
-              A charism is recognized through prayer, reflection, and the confirmation of others. It is not a talent we pick up at will, but a grace that surfaces as we serve — often surprising us with where God has already been at work through our hands.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 py-20 sm:px-8 sm:py-28 lg:px-10">
-        <div className="grid gap-10 md:grid-cols-2 md:items-center lg:gap-20">
-          <div className="order-2 max-w-xl md:order-1">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted-foreground">Offering</p>
-            <h2 className="mt-4 font-serif text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-              From gift to mission
-            </h2>
-            <p className="mt-6 text-base leading-8 text-muted-foreground sm:text-lg">
-              When charisms are named and offered, they become mission. The one who encourages founds a welcoming circle; the one who prays anchors the community; the one who serves becomes the hands of compassion. No gift is too small to matter.
-            </p>
-          </div>
-          <div className="order-1 overflow-hidden rounded-xl shadow-xl md:order-2">
-            <img
-              src="https://images.pexels.com/photos/6647015/pexels-photo-6647015.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Volunteers working together to support the community"
-              className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 pb-20 sm:px-8 sm:pb-28">
-        <div className="mx-auto max-w-3xl border-y border-border/70 py-12 text-center sm:py-16">
-          <span className="font-serif text-4xl text-muted-foreground/60">“</span>
-          <p className="mt-2 font-serif text-2xl leading-relaxed sm:text-3xl">
-            No gift is too small to matter when it is offered in love.
+      <section className="relative h-[50vh] min-h-[360px] w-full overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('/bg-kharisma.jpg')",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
+        <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
+          <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
+            {intl.formatMessage({ id: 'pages.charisma.title', defaultMessage: 'Charisma' })}
+          </h1>
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+            Panggilan untuk mencintai, memuliakan, dan menghidupi kasih Kristus.
           </p>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 py-16 sm:px-8 sm:py-24 text-center">
+        <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+          Kharisma adalah<br />
+          <span className="italic text-amber-700 bg-amber-100/70 box-decoration-clone px-1.5 py-0.5 rounded">
+            Hidup bagi Allah
+          </span>
+        </h2>
+        <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+          Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita. Itulah kharisma atau anugrah yang dimiliki Kongregasi. Panggilan untuk mencintai, memuliakan, dan menghidupi kasih Kristus.
+        </p>
+      </section>
+
+      <section className="border-y border-border/70 bg-muted/30 px-6 py-16 sm:px-8 sm:py-24 lg:px-10">
+        <div className="mx-auto max-w-5xl">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
+              Hidup bagi Allah?
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              Maksudnya, para suster mendapat panggilan untuk.
+            </p>
+          </div>
+
+          <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">
+            {/* Kolom 1 */}
+            <div>
+              <h3 className="font-semibold tracking-tight">Mengasihi Allah</h3>
+              <div className="mt-4 flex items-start gap-4">
+                <img
+                  src="/kharisma/1.jpg"
+                  alt="Mengasihi Allah"
+                  className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
+                />
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Mencintai Allah tanpa batas dan berusaha sekuat tenaga agar Ia dicintai.
+                </p>
+              </div>
+            </div>
+
+            {/* Kolom 2 */}
+            <div>
+              <h3 className="font-semibold tracking-tight">Memuliakan Allah</h3>
+              <div className="mt-4 flex items-start gap-4">
+                <img
+                  src="/kharisma/2.jpg"
+                  alt="Memuliakan Allah"
+                  className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
+                />
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Hidup untuk lebih memuliakan Allah.
+                </p>
+              </div>
+            </div>
+
+            {/* Kolom 3 */}
+            <div>
+              <h3 className="font-semibold tracking-tight">Hidup dalam Kristus</h3>
+              <div className="mt-4 flex items-start gap-4">
+                <img
+                  src="/kharisma/3.jpg"
+                  alt="Hidup dalam Kristus"
+                  className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
+                />
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  Usaha terus menerus membuat hidup kami dihidupi oleh Yesus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-16 sm:px-8 sm:py-24 lg:px-10">
+        <div className="grid gap-10 md:grid-cols-3 md:items-center lg:gap-12">
+          {/* Kolom 1: Judul */}
+          <div>
+            <h2 className="font-serif text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
+              Menjadi pelayan mereka yang menderita
+            </h2>
+          </div>
+
+          {/* Kolom 2: Gambar */}
+          <div className="overflow-hidden rounded-xl shadow-xl">
+            <img
+              src="/kharisma/4.jpg"
+              alt="Para suster melayani orang sakit dan menderita"
+              className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
+            />
+          </div>
+
+          {/* Kolom 3: Deskripsi + Link */}
+          <div>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Para suster Misericordia itu adalah sahabat-sahabat jiwa orang-orang yang sakit,
+              miskin dan tak berdaya. Kehadiran mereka membawa penghiburan serta harapan nyata
+              bagi mereka yang tersisih di tengah masyarakat. Melalui ketulusan hati dalam
+              melayani, mereka membuktikan
+              bahwa belas kasih dapat menjadi tumpuan bagi siapa saja yang sedang berjuang
+              melawan kesulitan hidup.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-3xl border-y border-border/70 px-6 py-18 text-center">
+        <Quote className="mx-auto h-10 w-10 text-muted-foreground/60" />
+        <blockquote className="mt-8">
+          <p className="text-3xl font-medium leading-snug tracking-tight text-foreground sm:text-3xl">
+            Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita.
+          </p>
+        </blockquote>
+        <footer className="mt-8 text-sm uppercase tracking-[0.18em] text-muted-foreground">
+          Santa Maria Magdalena Postel
+        </footer>
       </section>
     </main>
   )

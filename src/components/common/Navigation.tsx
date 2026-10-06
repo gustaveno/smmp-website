@@ -50,10 +50,11 @@ export default function Navigation({ locale }: NavigationProps) {
   }, [isDewOfLoveOpen, isAboutOpen])
 
   const dewOfLoveItems = [
-    { label: intl.formatMessage({ id: 'common.navigation.events', defaultMessage: 'Events' }), href: '/dew-of-love/events' },
+    { label: intl.formatMessage({ id: 'common.navigation.news', defaultMessage: 'News' }), href: '/dew-of-love/news' },
+    { label: intl.formatMessage({ id: 'common.navigation.articles', defaultMessage: 'Articles' }), href: '/dew-of-love/articles' },
     { label: intl.formatMessage({ id: 'common.navigation.quotes', defaultMessage: 'Inspirational Quotes' }), href: '/dew-of-love/quotes' },
-    { label: intl.formatMessage({ id: 'common.navigation.devotional', defaultMessage: 'Devotional' }), href: '/dew-of-love/devotional' },
-    { label: intl.formatMessage({ id: 'common.navigation.prayers', defaultMessage: 'Prayers' }), href: '/dew-of-love/prayers' },
+    { label: intl.formatMessage({ id: 'common.navigation.reflection', defaultMessage: 'Reflection' }), href: '/dew-of-love/reflection' },
+    { label: intl.formatMessage({ id: 'common.navigation.prayer', defaultMessage: 'Prayer' }), href: '/dew-of-love/prayer' },
   ]
 
   const aboutItems = [
@@ -61,11 +62,11 @@ export default function Navigation({ locale }: NavigationProps) {
     { label: intl.formatMessage({ id: 'common.navigation.spirituality', defaultMessage: 'Spirituality' }), href: '/about/spirituality' },
     { label: intl.formatMessage({ id: 'common.navigation.history', defaultMessage: 'History' }), href: '/about/history' },
     { label: intl.formatMessage({ id: 'common.navigation.saints', defaultMessage: 'Three Saints' }), href: '/about/saints' },
-    { label: intl.formatMessage({ id: 'common.navigation.identity', defaultMessage: 'Vision & Mission' }), href: '/about/identity' },
   ]
 
   const navItems = [
     { label: intl.formatMessage({ id: 'common.navigation.services', defaultMessage: 'Services' }), href: '/services' },
+    { label: intl.formatMessage({ id: 'common.navigation.formation', defaultMessage: 'Formation ' }), href: '/formation' },
     { label: intl.formatMessage({ id: 'common.navigation.gallery', defaultMessage: 'Gallery' }), href: '/gallery' },
     { label: intl.formatMessage({ id: 'common.navigation.contact', defaultMessage: 'Contact Us' }), href: '/contact' },
   ]

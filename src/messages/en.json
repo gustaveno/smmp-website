@@ -11,12 +11,14 @@
       "gallery": "Gallery",
       "services": "Services",
       "dewOfLove": "Dew of Love",
-      "events": "Events",
+      "news": "News",
       "quotes": "Inspirational Quotes",
-      "devotional": "Devotional",
-      "prayers": "Prayers",
+      "reflection": "Reflection",
+      "prayer": "Prayer",
+      "articles": "Articles",
       "contact": "Contact Us",
-      "admin": "Admin"
+      "admin": "Admin",
+      "formation": "Formation"
     },
     "language": "Language",
     "languages": {
@@ -37,24 +39,35 @@
       "title": "Our Church",
       "description": "Welcome to our community"
     },
-    "events": {
-      "title": "Events",
-      "description": "View upcoming events",
-      "noEvents": "No events scheduled",
-      "upcoming": "Upcoming Events",
-      "date": "Date",
-      "time": "Time",
-      "location": "Location",
-      "attendees": "Attendees"
+    "news": {
+      "title": "News",
+      "description": "View the latest news",
+      "noNews": "No news available",
+      "latest": "Latest News"
     },
     "quotes": {
-      "title": "Inspirational Quotes"
+      "title": "Inspirational Quotes",
+      "description": "Find inspirational quotes",
+      "noQuotes": "No inspirational quotes available",
+      "latest": "Latest Inspirational Quotes"
     },
-    "prayers": {
-      "title": "Prayers"
+    "prayer": {
+      "title": "Prayer",
+      "description": "Find prayers to accompany your faith journey",
+      "noPrayers": "No prayers available",
+      "latest": "Latest Prayers"
     },
-    "devotional": {
-      "title": "Devotional"
+    "reflection": {
+      "title": "Reflection",
+      "description": "Find reflections to deepen your faith",
+      "noReflections": "No reflections available",
+      "latest": "Latest Reflections"
+    },
+    "articles": {
+      "title": "Articles",
+      "description": "Read selected articles",
+      "noArticles": "No articles available",
+      "latest": "Latest Articles"
     },
     "donate": {
       "title": "Donate",
@@ -67,7 +80,7 @@
     },
     "contact": {
       "title": "Contact Us",
-      "description": "We&apos;d love to hear from you",
+      "description": "Reach out, visit our headquarters, or learn about our monasteries",
       "name": "Name",
       "email": "Email",
       "message": "Message",
@@ -96,11 +109,16 @@
       "description": "Learn about our spiritual practices"
     },
     "gallery": {
-      "title": "A collection of moments"
+      "title": "Gallery",
+      "description": "A collection of moments"
     },
     "services": {
       "title": "Congressional Service Fields",
       "description": "Our service activities"
+    },
+    "formation": {
+      "title": "Formation",
+      "description": "Formed in Faith, Rooted in Prayer, and Sent to Serve"
     }
   },
   "footer": {

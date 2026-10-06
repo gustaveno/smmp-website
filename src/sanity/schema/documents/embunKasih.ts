@@ -1,3 +1,20 @@
+// Reads the English value from a localizedString (title.en)
+export const getEnglishTitle = (title: any): string =>
+  typeof title?.en === 'string' ? title.en : ''
+
+// Custom slugify: turns the English title into a URL-friendly slug
+export const slugify = (input: string): string =>
+  (input || '')
+    .toLowerCase()
+    .normalize('NFD') // split accents from letters
+    .replace(/[\u0300-\u036f]/g, '') // remove accents
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9\s-]/g, '') // drop special characters
+    .trim()
+    .replace(/[\s_-]+/g, '-') // spaces/underscores -> single hyphen
+    .replace(/^-+|-+$/g, '') // trim leading/trailing hyphens
+    .slice(0, 96)
+
 export default {
   name: 'embunKasih',
   title: 'Embun Kasih',
@@ -14,7 +31,9 @@ export default {
       title: 'Slug',
       type: 'slug',
       options: {
-        source: 'title',
+        source: (doc: any) => getEnglishTitle(doc?.title),
+        slugify,
+        maxLength: 96,
       },
       validation: (Rule: any) => Rule.required(),
     },
@@ -25,17 +44,41 @@ export default {
       description: 'Brief summary for listing pages',
     },
     {
+      name: 'contentType',
+      title: 'Content Type',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'News', value: 'news' },
+          { title: 'Article', value: 'article' },
+          { title: 'Reflection', value: 'reflection' },
+          { title: 'Prayer', value: 'prayer' },
+          { title: 'Quotes', value: 'quotes' }
+        ],
+      },
+      validation: (Rule: any) => Rule.required(),
+    },
+    {
       name: 'coverImage',
       title: 'Cover Image',
       type: 'image',
       options: {
         hotspot: true,
       },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alternative Text',
+          type: 'string',
+          description: 'Describe the image for screen readers and SEO',
+        },
+      ],
     },
     {
       name: 'gallery',
       title: 'Gallery',
       type: 'array',
+      hidden: ({ document }: any) => document?.contentType !== 'news',
       of: [
         {
           type: 'image',
@@ -44,41 +87,18 @@ export default {
           },
         },
       ],
-    },
-    {
-      name: 'category',
-      title: 'Category',
-      type: 'string',
-      options: {
-        list: [
-          { title: 'Renungan', value: 'renungan' },
-          { title: 'Doa', value: 'doa' },
-          { title: 'Kata Mutiara', value: 'kata-mutiara' },
-          { title: 'Berita', value: 'berita' },
-          { title: 'Refleksi', value: 'refleksi' },
-        ],
-      },
-    },
-    {
-      name: 'publishedAt',
-      title: 'Published At',
-      type: 'datetime',
-      validation: (Rule: any) => Rule.required(),
     },
     {
       name: 'content',
       title: 'Content',
-      type: 'array',
+      type: 'localizedBlockContent',
       description: 'Main article content',
-      of: [
-        { type: 'block' },
-        {
-          type: 'image',
-          options: {
-            hotspot: true,
-          },
-        },
-      ],
+    },
+    {
+      name: 'publishedAt',
+      title: 'Published At',
+      type: 'date',
+      validation: (Rule: any) => Rule.required(),
     },
     {
       name: 'featured',
@@ -93,4 +113,20 @@ export default {
       type: 'seoData',
     },
   ],
+  preview: {
+    select: {
+      title: 'title.en',
+      date: 'publishedAt',
+      category: 'contentType',
+    },
+    prepare({ title, date, category }: any) {
+      return {
+        title: title || 'Untitled',
+        subtitle: [
+          category,
+          date ? new Date(date).toLocaleDateString('en-EN', { year: 'numeric', month: 'short', day: 'numeric' }) : null,
+        ].filter(Boolean).join(' • '),
+      }
+    },
+  },
 }

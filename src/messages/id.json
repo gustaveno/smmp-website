@@ -11,12 +11,14 @@
       "gallery": "Galeri",
       "services": "Pelayanan",
       "dewOfLove": "Embun Kasih",
-      "events": "Acara",
+      "news": "Berita",
       "quotes": "Kata-kata Mutiara",
-      "devotional": "Renungan",
-      "prayers": "Doa-doa",
+      "reflection": "Renungan",
+      "prayer": "Doa",
+      "articles": "Artikel",
       "contact": "Hubungi Kami",
-      "admin": "Admin"
+      "admin": "Admin",
+      "formation": "Formasi"
     },
     "language": "Bahasa",
     "languages": {
@@ -37,24 +39,35 @@
       "title": "Gereja Kami",
       "description": "Selamat datang di komunitas kami"
     },
-    "events": {
-      "title": "Acara",
-      "description": "Lihat acara mendatang",
-      "noEvents": "Tidak ada acara yang dijadwalkan",
-      "upcoming": "Acara Mendatang",
-      "date": "Tanggal",
-      "time": "Waktu",
-      "location": "Lokasi",
-      "attendees": "Peserta"
+    "news": {
+      "title": "Berita",
+      "description": "Lihat berita terkini",
+      "noNews": "Tidak ada berita tersedia",
+      "latest": "Berita Terbaru"
     },
     "quotes": {
-      "title": "Kata-kata Mutiara"
+      "title": "Kata-Kata Mutiara",
+      "description": "Temukan kata-kata inspiratif",
+      "noQuotes": "Tidak ada kata-kata mutiara tersedia",
+      "latest": "Kata-Kata Mutiara Terbaru"
     },
-    "prayers": {
-      "title": "Doa-doa"
+    "prayer": {
+      "title": "Doa-doa",
+      "description": "Temukan doa untuk menemani perjalanan iman",
+      "noPrayers": "Tidak ada doa tersedia",
+      "latest": "Doa Terbaru"
     },
-    "devotional": {
-      "title": "Renungan"
+    "reflection": {
+      "title": "Renungan",
+      "description": "Temukan renungan untuk memperdalam iman",
+      "noReflections": "Tidak ada renungan tersedia",
+      "latest": "Renungan Terbaru"
+    },
+    "articles": {
+      "title": "Artikel",
+      "description": "Baca artikel pilihan",
+      "noArticles": "Tidak ada artikel tersedia",
+      "latest": "Artikel Terbaru"
     },
     "donate": {
       "title": "Donasi",
@@ -67,7 +80,7 @@
     },
     "contact": {
       "title": "Hubungi Kami",
-      "description": "Kami ingin mendengar dari Anda",
+      "description": "Hubungi kami, kunjungi kantor pusat, atau cari tahu biara kami",
       "name": "Nama",
       "email": "Email",
       "message": "Pesan",
@@ -76,8 +89,8 @@
       "error": "Gagal mengirim pesan"
     },
     "charisma": {
-      "title": "Karisma",
-      "description": "Karisma dari komunitas kami"
+      "title": "Kharisma",
+      "description": "Kharisma dari komunitas kami"
     },
     "history": {
       "title": "Sejarah",
@@ -88,7 +101,7 @@
       "description": "Identitas kami"
     },
     "saints": {
-      "title": "Tiga Orang Kuddus Kongregasi",
+      "title": "Tiga Orang Kudus Kongregasi",
       "description": "Pelajari tentang orang kudus kami yang diberkati"
     },
     "spirituality": {
@@ -96,11 +109,16 @@
       "description": "Pelajari tentang praktik spiritual kami"
     },
     "gallery": {
-      "title": "Kumpulan Moment"
+      "title": "Galeri",
+      "description": "Sebuah kumpulan momen"
     },
     "services": {
       "title": "Bidang Pelayanan Kongregasi",
       "description": "Aktivitas pelayanan kami"
+    },
+    "formation": {
+      "title": "Formasi",
+      "description": "Dibentuk dalam iman, berakar dalam doa, dan diutus untuk melayani."
     }
   },
   "footer": {

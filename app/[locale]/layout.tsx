@@ -19,20 +19,21 @@ export default async function LocaleLayout({
   params,
 }: LayoutProps) {
   const { locale } = await params
-  
-  if (!locales.includes(locale as any)) {
+  const resolvedLocale = locale as Locale
+
+  if (!locales.includes(resolvedLocale)) {
     notFound()
   }
 
-  const messages = await getMessages(locale)
+  const messages = await getMessages(resolvedLocale)
 
   return (
-    <IntlProvider locale={localeCodeMap[locale as any]} messages={messages}>
-      <Header locale={locale as Locale} />
+    <IntlProvider locale={localeCodeMap[resolvedLocale]} messages={messages}>
+      <Header locale={resolvedLocale} />
       <main className="min-h-screen">
         {children}
       </main>
-      <Footer locale={locale as Locale} />
+      <Footer locale={resolvedLocale} />
     </IntlProvider>
   )
 }

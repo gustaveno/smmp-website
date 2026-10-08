@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useIntl } from 'react-intl'
-import { Clock3, CalendarDays } from 'lucide-react'
+import { ArrowUpRight, CalendarDays } from 'lucide-react'
 import Link from 'next/link'
 
 type SanityEvent = {
@@ -87,7 +87,7 @@ export default function ReflectionPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 md:py-24">
+      <section className="mx-auto max-w-6xl px-4 py-8 md:py-12">
         {loading && <div className="rounded-xl border border-border/70 bg-muted/30 p-12 text-center text-muted-foreground">Loading events...</div>}
 
         {!loading && error && <div className="rounded-xl border border-destructive/30 bg-destructive/5 p-8 text-center text-destructive">{error}</div>}
@@ -100,40 +100,65 @@ export default function ReflectionPage() {
         )}
 
         {!loading && !error && events.length > 0 && (
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <ol className="border-t-2 border-foreground">
             {events.map((event, index) => {
               const title = getLocalizedText(event.title, 'Untitled event')
               const excerpt = getLocalizedText(event.excerpt)
-              const slugPath = event.slug?.current ? `/${localeSegment}/dew-of-love/reflection/${event.slug.current}` : undefined
+              const slugPath = event.slug?.current
+                ? `/${localeSegment}/dew-of-love/reflection/${event.slug.current}`
+                : undefined
 
-              const card = (
-                <article className="group flex flex-col overflow-hidden rounded-sm border border-border/70 bg-card shadow-sm transition duration-500 hover:-translate-y-1 hover:shadow-xl">
-                  {event.coverImage?.asset?.url ? (
-                    <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-                      <img src={event.coverImage.asset.url} alt={event.coverImage.alt || title} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
-                    </div>
+              const row = (
+                <article className="group grid gap-x-8 gap-y-2 py-6 transition-colors duration-300 hover:bg-muted/40 md:grid-cols-[9rem_1fr_1.5rem] md:items-baseline md:px-3">
+                  {/* Tanggal */}
+                  {event.publishedAt ? (
+                    <time
+                      dateTime={event.publishedAt}
+                      className="text-[11px] font-medium uppercase tracking-[0.22em] text-muted-foreground"
+                    >
+                      {formatDate(event.publishedAt)}
+                    </time>
                   ) : (
-                    <div className="flex aspect-[4/3] items-center justify-center bg-muted/50 text-primary/60"><CalendarDays className="size-10" aria-hidden="true" /></div>
+                    <span aria-hidden="true" />
                   )}
-                  <div className="flex flex-1 flex-col p-6 md:p-7">
-                    <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-muted-foreground">
-                      {event.publishedAt && <span className="inline-flex items-center gap-2"><Clock3 className="size-4" aria-hidden="true" />{formatDate(event.publishedAt)}</span>}
-                    </div>
-                    <h2 className="mt-5 text-2xl font-semibold leading-tight tracking-tight">{title}</h2>
-                    {excerpt && <p className="mt-4 line-clamp-4 text-sm leading-7 text-muted-foreground">{excerpt}</p>}
+
+                  {/* Judul & kutipan singkat */}
+                  <div>
+                    <h2 className="font-serif text-xl font-semibold leading-snug tracking-tight text-foreground transition-colors duration-300 group-hover:text-primary md:text-2xl">
+                      {title}
+                    </h2>
+                    {excerpt && (
+                      <p className="mt-2 line-clamp-2 font-serif text-[0.95rem] leading-7 text-muted-foreground">
+                        {excerpt}
+                      </p>
+                    )}
                   </div>
+
+                  {/* Penanda panah: hanya muncul jika item bisa diklik */}
+                  {slugPath ? (
+                    <ArrowUpRight
+                      className="hidden size-5 self-center text-muted-foreground transition duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-primary md:block"
+                      aria-hidden="true"
+                    />
+                  ) : (
+                    <span aria-hidden="true" className="hidden md:block" />
+                  )}
                 </article>
               )
 
-              return slugPath ? (
-                <Link key={event._id} href={slugPath} className="block">
-                  {card}
-                </Link>
-              ) : (
-                <div key={event._id}>{card}</div>
+              return (
+                <li key={event._id} className="border-b border-border/70">
+                  {slugPath ? (
+                    <Link href={slugPath} className="block">
+                      {row}
+                    </Link>
+                  ) : (
+                    row
+                  )}
+                </li>
               )
             })}
-          </div>
+          </ol>
         )}
       </section>
     </main>

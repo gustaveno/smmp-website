@@ -49,7 +49,10 @@
       "title": "Citations Inspirantes",
       "description": "Trouvez des citations inspirantes",
       "noQuotes": "Aucune citation inspirante disponible",
-      "latest": "Dernières Citations Inspirantes"
+      "viewAll": "Voir Tout",
+      "collection": "La Collection",
+      "selectToExplore": "Sélectionnez pour explorer",
+      "index": "Index"
     },
     "prayer": {
       "title": "Prière",

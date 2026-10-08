@@ -1,10 +1,9 @@
 'use client'
 
-import { useIntl } from 'react-intl'
 import { Studio } from 'sanity'
-import config from '../../../../sanity.config'
+import config from '../../../sanity.config'
 
-export default function AdminPage() {
+export default function StudioPage() {
   return (
     <div className="h-screen">
       <Studio config={config} />

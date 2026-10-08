@@ -3,7 +3,7 @@
 import { use, useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Mail, ArrowRight, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Mail, ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Clock3, CalendarDays } from 'lucide-react'
 
 type HomePageProps = {
   params: Promise<{
@@ -20,6 +20,18 @@ const HERO_IMAGES = [
 ]
 
 const HERO_AUTOPLAY_INTERVAL = 6000 // ms
+
+// Jumlah berita terbaru yang ditampilkan di beranda
+const LATEST_NEWS_LIMIT = 3
+
+type SanityNews = {
+  _id: string
+  title?: string | Record<string, unknown>
+  slug?: { current?: string }
+  publishedAt?: string
+  excerpt?: string | Record<string, unknown>
+  coverImage?: { asset?: { url?: string }; alt?: string }
+}
 
 export default function HomePage({ params }: HomePageProps) {
   const { locale } = use(params)
@@ -45,6 +57,68 @@ export default function HomePage({ params }: HomePageProps) {
     const timer = setInterval(nextSlide, HERO_AUTOPLAY_INTERVAL)
     return () => clearInterval(timer)
   }, [nextSlide])
+
+  // Latest news (Sanity)
+  const [newsItems, setNewsItems] = useState<SanityNews[]>([])
+  const [newsLoading, setNewsLoading] = useState(true)
+  const [newsError, setNewsError] = useState<string | null>(null)
+
+  useEffect(() => {
+    const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
+    const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production'
+    const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION || '2023-05-03'
+
+    if (!projectId) {
+      setNewsError('Please set NEXT_PUBLIC_SANITY_PROJECT_ID in your environment variables.')
+      setNewsLoading(false)
+      return
+    }
+
+    const query = encodeURIComponent(`
+        *[_type == "embunKasih" && contentType == "news"] | order(publishedAt desc) [0...${LATEST_NEWS_LIMIT}] {
+          _id,
+          title,
+          slug,
+          publishedAt,
+          excerpt,
+          coverImage { asset->{ url }, alt }
+        }
+      `)
+    const url = `https://${projectId}.api.sanity.io/v${apiVersion}/data/query/${dataset}?query=${query}`
+
+    fetch(url)
+      .then(async (response) => {
+        if (!response.ok) throw new Error(`Sanity request failed with status ${response.status}`)
+        const data = await response.json()
+        setNewsItems(data.result || [])
+      })
+      .catch((err) => setNewsError(err instanceof Error ? err.message : 'Failed to load news'))
+      .finally(() => setNewsLoading(false))
+  }, [])
+
+  const formatNewsDate = (value?: string) => {
+    if (!value) return null
+    const parsedDate = new Date(value)
+    if (Number.isNaN(parsedDate.getTime())) return value
+    try {
+      return new Intl.DateTimeFormat(safeLocale, { dateStyle: 'long' }).format(parsedDate)
+    } catch {
+      return parsedDate.toLocaleDateString()
+    }
+  }
+
+  const getLocalizedText = (value: unknown, fallback = ''): string => {
+    if (typeof value === 'string') return value
+    if (value && typeof value === 'object' && !Array.isArray(value)) {
+      const localizedValue = value as Record<string, unknown>
+      const lang = safeLocale.split('-')[0] || 'id'
+      for (const candidate of [lang, safeLocale, 'id', 'en', 'fr']) {
+        const text = localizedValue[candidate]
+        if (typeof text === 'string' && text.trim()) return text
+      }
+    }
+    return fallback
+  }
 
   return (
     <div className="overflow-hidden">
@@ -227,7 +301,7 @@ export default function HomePage({ params }: HomePageProps) {
       </section>
 
       {/* Article / Featured Services Section */}
-      <section className="py-4 px-4 bg-background">
+      <section className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-3">
@@ -241,169 +315,84 @@ export default function HomePage({ params }: HomePageProps) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Events Card */}
-            <Link
-              href={`/${safeLocale}/public/events`}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
-            >
-              <div className="relative h-52 overflow-hidden">
-                <Image
-                  src="/kartu1.jpg"
-                  alt="Events & Services"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Kegiatan & Pelayanan</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  Pekerjaan apapun yang Anda terima, bersikaplah bagaikan tanah liat dalam tangan pembuat perisik...
-                </p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
-                  View Events
+          {/* Latest News (from Sanity) */}
+          {!newsError && (newsLoading || newsItems.length > 0) && (
+            <div className="mt-20">
+              <div className="mb-10 flex items-end justify-between gap-4">
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground text-balance">
+                  Berita Terbaru
+                </h3>
+                <Link
+                  href={`/${safeLocale}/public/news`}
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"
+                >
+                  Lihat Semua
                   <ArrowRight className="w-4 h-4" />
-                </span>
+                </Link>
               </div>
-            </Link>
 
-            {/* Sermons Card */}
-            <Link
-              href={`/${safeLocale}/public/sermons`}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
-            >
-              <div className="relative h-52 overflow-hidden">
-                <Image
-                  src="/kartu2.jpg"
-                  alt="Sermons & Teaching"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Pendidikan & Pendampingan</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  Jangan hanya ikut-ikutan. Lakukanlah semua itu dengan kesadaran dan persiapan.
-                </p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
-                  Listen Now
-                  <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </Link>
+              {newsLoading ? (
+                <div className="rounded-xl border border-border/70 bg-muted/30 p-12 text-center text-muted-foreground">
+                  Loading news...
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {newsItems.map((item) => {
+                    const title = getLocalizedText(item.title, 'Untitled news')
+                    const excerpt = getLocalizedText(item.excerpt)
+                    const slugPath = item.slug?.current
+                      ? `/${safeLocale}/dew-of-love/news/${item.slug.current}`
+                      : undefined
 
-            {/* News Card */}
-            <Link
-              href={`/${safeLocale}/public/news`}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
-            >
-              <div className="relative h-52 overflow-hidden">
-                <Image
-                  src="/kartu3.jpg"
-                  alt="News & Updates"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Peristiwa & Berita</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  Saya ingin pergi ke ujung bumi untuk memenangkan satu jiwa bagi Yesus Kristus.
-                </p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
-                  Read News
-                  <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </Link>
+                    const card = (
+                      <article className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30">
+                        {item.coverImage?.asset?.url ? (
+                          <div className="relative h-52 overflow-hidden">
+                            <Image
+                              src={item.coverImage.asset.url}
+                              alt={item.coverImage.alt || title}
+                              fill
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                              className="object-cover transition-transform duration-700 group-hover:scale-110"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                          </div>
+                        ) : (
+                          <div className="flex aspect-[4/3] items-center justify-center bg-muted/50 text-primary/60">
+                            <CalendarDays className="size-10" aria-hidden="true" />
+                          </div>
+                        )}
+                        <div className="p-6">
+                          <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{title}</h3>
+                          {item.publishedAt && (
+                            <span className="inline-flex items-center gap-2 text-[0.775rem] text-muted-foreground">
+                              <Clock3 className="size-4" aria-hidden="true" />
+                              {formatNewsDate(item.publishedAt)}
+                            </span>
+                          )}
+                          <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                            {excerpt}
+                          </p>
+                          <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
+                            View more
+                            <ArrowRight className="w-4 h-4" />
+                          </span>
+                        </div>
+                      </article>
+                    )
 
-            {/* Schedule Card */}
-            <Link
-              href={`/${safeLocale}/schedule`}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
-            >
-              <div className="relative h-52 overflow-hidden">
-                <Image
-                  src="/kartu4.jpg"
-                  alt="Service Schedule"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Refleksi & Doa</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  Silahkan Tuhan, silahkan. Biarlah salib datang akan kami peluk.
-                </p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
-                  View Schedule
-                  <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </Link>
-
-            {/* Donate Card */}
-            <Link
-              href={`/${safeLocale}/donate`}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
-            >
-              <div className="relative h-52 overflow-hidden">
-                <Image
-                  src="/kartu5.jpg"
-                  alt="Give & Support"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Karya Belas Kasih</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  Para orang miskin dan sakit adalah sahabat saya, sebab mereka menyertai Penyelamat kita dalam perjalananNya di bumi ini.
-                </p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
-                  Donate Now
-                  <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </Link>
-
-            {/* Contact Card */}
-            <Link
-              href={`/${safeLocale}/contact`}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
-            >
-              <div className="relative h-52 overflow-hidden">
-                <Image
-                  src="/kartu6.jpg"
-                  alt="Contact Us"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">Hidup Bersama</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  Putri-putriku yang terkasih, marilah kita saling mengasihi di dalam Allah dan bagi Allah.
-                </p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
-                  Contact
-                  <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </Link>
-          </div>
+                    return slugPath ? (
+                      <Link key={item._id} href={slugPath} className="block">
+                        {card}
+                      </Link>
+                    ) : (
+                      <div key={item._id}>{card}</div>
+                    )
+                  })}
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </section>
 

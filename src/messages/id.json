@@ -49,7 +49,10 @@
       "title": "Kata-Kata Mutiara",
       "description": "Temukan kata-kata inspiratif",
       "noQuotes": "Tidak ada kata-kata mutiara tersedia",
-      "latest": "Kata-Kata Mutiara Terbaru"
+      "viewAll": "Lihat Semua",
+      "collection": "Koleksi",
+      "selectToExplore": "Pilih untuk menjelajahi",
+      "index": "Indeks"
     },
     "prayer": {
       "title": "Doa-doa",

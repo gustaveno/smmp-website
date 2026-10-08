@@ -49,7 +49,10 @@
       "title": "Inspirational Quotes",
       "description": "Find inspirational quotes",
       "noQuotes": "No inspirational quotes available",
-      "latest": "Latest Inspirational Quotes"
+      "viewAll": "View All",
+      "collection": "The Collection",
+      "selectToExplore": "Select to explore",
+      "index": "Index"
     },
     "prayer": {
       "title": "Prayer",

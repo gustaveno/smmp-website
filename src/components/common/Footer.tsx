@@ -20,23 +20,27 @@ export default function Footer({ locale }: FooterProps) {
         <div className="grid grid-cols-1 gap-10 mb-12 sm:grid-cols-2 md:grid-cols-4">
           {/* About */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Congregation</h3>
-            <p className="text-sm text-muted-foreground">
+            <h3 className="font-semibold text-lg mb-4">Kongregasi Suster Maria<br />Magdalena Postel</h3>
+            {/* <p className="text-sm text-muted-foreground">
               A faith community dedicated to spiritual growth and service.
-            </p>
+            </p> */}
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="font-semibold text-base mb-4">{intl.formatMessage({ id: 'footer.quickLinks', defaultMessage: 'Quick Links' })}</h4>
             <ul className="space-y-2 text-sm">
-              {['events', 'sermons', 'news', 'schedule'].map((item) => (
-                <li key={item}>
+              {[
+                { label: intl.formatMessage({ id: 'common.navigation.news', defaultMessage: 'News' }), href: '/dew-of-love/news' },
+                { label: intl.formatMessage({ id: 'common.navigation.contact', defaultMessage: 'Contact Us' }), href: '/contact' },
+                { label: intl.formatMessage({ id: 'common.navigation.gallery', defaultMessage: 'Gallery' }), href: '/gallery' },
+              ].map((item) => (
+                <li key={item.href}>
                   <Link
-                    href={`/${locale}/${item}`}
+                    href={`/${locale}${item.href}`}
                     className="text-muted-foreground transition-colors hover:text-foreground hover:underline hover:underline-offset-4"
                   >
-                    {item.charAt(0).toUpperCase() + item.slice(1)}
+                    {item.label}
                   </Link>
                 </li>
               ))}
@@ -49,15 +53,19 @@ export default function Footer({ locale }: FooterProps) {
             <ul className="space-y-2 text-sm">
               <li className="flex items-center space-x-2 text-muted-foreground">
                 <Mail className="w-4 h-4" />
-                <span className="break-all">contact@congregation.org</span>
+                <span className="break-all">congregation.mmpostel@wanadoo.fr</span>
               </li>
               <li className="flex items-center space-x-2 text-muted-foreground">
                 <Phone className="w-4 h-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+33 233216320</span>
               </li>
               <li className="flex items-start space-x-2 text-muted-foreground">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>123 Church Street<br />City, State 12345</span>
+                11 route de l'Abbaye, BP 300
+                <br />
+                50390 St Sauveur le Vicomte
+                <br />
+                France
               </li>
             </ul>
           </div>
@@ -67,8 +75,8 @@ export default function Footer({ locale }: FooterProps) {
             <h4 className="mb-4 text-base font-semibold">Follow Us</h4>
             <div className="flex flex-wrap gap-3">
               {[
-                { label: 'Instagram', href: 'https://instagram.com/instagram', Icon: SiInstagram },
-                { label: 'YouTube', href: 'https://youtube.com/', Icon: SiYoutube },
+                { label: 'Instagram', href: 'https://www.instagram.com/kongregasisustermisericordia/', Icon: SiInstagram },
+                { label: 'YouTube', href: 'https://www.youtube.com/@suster-susterst.mmp1807', Icon: SiYoutube },
                 { label: 'Facebook', href: 'https://facebook.com/facebook', Icon: SiFacebook },
               ].map(({ label, href, Icon }) => (
                 <Link

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import { useIntl } from 'react-intl'
 import { getLocaleFromPathname, type Locale } from '@/lib/i18n'
 import { cn } from '@/lib/cn'
@@ -52,9 +52,9 @@ export default function Navigation({ locale }: NavigationProps) {
   const dewOfLoveItems = [
     { label: intl.formatMessage({ id: 'common.navigation.news', defaultMessage: 'News' }), href: '/dew-of-love/news' },
     { label: intl.formatMessage({ id: 'common.navigation.articles', defaultMessage: 'Articles' }), href: '/dew-of-love/articles' },
-    { label: intl.formatMessage({ id: 'common.navigation.quotes', defaultMessage: 'Inspirational Quotes' }), href: '/dew-of-love/quotes' },
-    { label: intl.formatMessage({ id: 'common.navigation.reflection', defaultMessage: 'Reflection' }), href: '/dew-of-love/reflection' },
     { label: intl.formatMessage({ id: 'common.navigation.prayer', defaultMessage: 'Prayer' }), href: '/dew-of-love/prayer' },
+    { label: intl.formatMessage({ id: 'common.navigation.reflection', defaultMessage: 'Reflection' }), href: '/dew-of-love/reflection' },
+    { label: intl.formatMessage({ id: 'common.navigation.quotes', defaultMessage: 'Inspirational Quotes' }), href: '/dew-of-love/quotes' },
   ]
 
   const aboutItems = [
@@ -66,7 +66,7 @@ export default function Navigation({ locale }: NavigationProps) {
 
   const navItems = [
     { label: intl.formatMessage({ id: 'common.navigation.services', defaultMessage: 'Services' }), href: '/services' },
-    { label: intl.formatMessage({ id: 'common.navigation.formation', defaultMessage: 'Formation ' }), href: '/formation' },
+    { label: intl.formatMessage({ id: 'common.navigation.formation', defaultMessage: 'Formation' }), href: '/formation' },
     { label: intl.formatMessage({ id: 'common.navigation.gallery', defaultMessage: 'Gallery' }), href: '/gallery' },
     { label: intl.formatMessage({ id: 'common.navigation.contact', defaultMessage: 'Contact Us' }), href: '/contact' },
   ]
@@ -97,11 +97,12 @@ export default function Navigation({ locale }: NavigationProps) {
           <button
             type="button"
             onClick={() => setIsAboutOpen((prev) => !prev)}
-            className={cn(linkClass('/about-menu'), isAboutActive && 'bg-primary text-primary-foreground')}
+            className={cn(linkClass('/about-menu'), 'inline-flex items-center gap-1', isAboutActive && 'bg-primary text-primary-foreground')}
             aria-expanded={isAboutOpen}
             aria-haspopup="true"
           >
             {intl.formatMessage({ id: 'common.navigation.about', defaultMessage: 'About' })}
+            <ChevronDown aria-hidden="true" className={cn('size-4 transition-transform', isAboutOpen && 'rotate-180')} />
           </button>
           {isAboutOpen && (
             <ul className="absolute left-0 top-full z-50 min-w-40 rounded-lg border border-border/70 bg-background/95 py-2 shadow-lg backdrop-blur">
@@ -124,11 +125,12 @@ export default function Navigation({ locale }: NavigationProps) {
           <button
             type="button"
             onClick={() => setIsDewOfLoveOpen((prev) => !prev)}
-            className={cn(linkClass('/public'), isDewOfLoveActive && 'bg-primary text-primary-foreground')}
+            className={cn(linkClass('/public'), 'inline-flex items-center gap-1', isDewOfLoveActive && 'bg-primary text-primary-foreground')}
             aria-expanded={isDewOfLoveOpen}
             aria-haspopup="true"
           >
             {intl.formatMessage({ id: 'common.navigation.dewOfLove', defaultMessage: 'Dew of Love' })}
+            <ChevronDown aria-hidden="true" className={cn('size-4 transition-transform', isDewOfLoveOpen && 'rotate-180')} />
           </button>
           {isDewOfLoveOpen && (
             <ul className="absolute left-0 top-full z-50 min-w-40 rounded-lg border border-border/70 bg-background/95 py-2 shadow-lg backdrop-blur">
@@ -142,7 +144,7 @@ export default function Navigation({ locale }: NavigationProps) {
             </ul>
           )}
         </div>
-        
+
         {navItems.map((item) => <Link key={item.href} href={`/${currentLocale}${item.href}`} className={linkClass(item.href)}>{item.label}</Link>)}
       </nav>
 
@@ -161,14 +163,26 @@ export default function Navigation({ locale }: NavigationProps) {
         <nav id="mobile-navigation" className="absolute inset-x-0 top-full border-b border-border/70 bg-background/95 px-4 py-4 shadow-lg backdrop-blur md:hidden" aria-label="Mobile navigation">
           <div className="flex flex-col gap-1">
             <div className="flex flex-col gap-1">
-              <button type="button" onClick={() => setIsDewOfLoveOpen((prev) => !prev)} className={cn('w-full text-left', linkClass('/public'), isDewOfLoveActive && 'bg-primary text-primary-foreground')} aria-expanded={isDewOfLoveOpen}>
+              <button
+                type="button"
+                onClick={() => setIsDewOfLoveOpen((prev) => !prev)}
+                className={cn('flex w-full items-center justify-between text-left', linkClass('/public'), isDewOfLoveActive && 'bg-primary text-primary-foreground')}
+                aria-expanded={isDewOfLoveOpen}
+              >
                 {intl.formatMessage({ id: 'common.navigation.dewOfLove', defaultMessage: 'Dew of Love' })}
+                <ChevronDown aria-hidden="true" className={cn('size-4 transition-transform', isDewOfLoveOpen && 'rotate-180')} />
               </button>
               {isDewOfLoveOpen && <div className="flex flex-col gap-1 border-l border-border pl-3">{dewOfLoveItems.map((item) => <Link key={item.href} href={`/${currentLocale}${item.href}`} onClick={closeMobileMenu} className={linkClass(item.href)}>{item.label}</Link>)}</div>}
             </div>
             <div className="flex flex-col gap-1">
-              <button type="button" onClick={() => setIsAboutOpen((prev) => !prev)} className={cn('w-full text-left', linkClass('/about-menu'), isAboutActive && 'bg-primary text-primary-foreground')} aria-expanded={isAboutOpen}>
+              <button
+                type="button"
+                onClick={() => setIsAboutOpen((prev) => !prev)}
+                className={cn('flex w-full items-center justify-between text-left', linkClass('/about-menu'), isAboutActive && 'bg-primary text-primary-foreground')}
+                aria-expanded={isAboutOpen}
+              >
                 {intl.formatMessage({ id: 'common.navigation.about', defaultMessage: 'About' })}
+                <ChevronDown aria-hidden="true" className={cn('size-4 transition-transform', isAboutOpen && 'rotate-180')} />
               </button>
               {isAboutOpen && <div className="flex flex-col gap-1 border-l border-border pl-3">{aboutItems.map((item) => <Link key={item.href} href={`/${currentLocale}${item.href}`} onClick={closeMobileMenu} className={linkClass(item.href)}>{item.label}</Link>)}</div>}
             </div>

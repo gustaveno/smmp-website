@@ -18,6 +18,11 @@ export function proxy(request: NextRequest) {
     return NextResponse.next()
   }
 
+  // Keep Sanity Studio at its own route instead of redirecting it into the localized site.
+  if (pathname === '/studio' || pathname.startsWith('/studio/')) {
+    return NextResponse.next()
+  }
+
   // Check if pathname starts with a locale
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`

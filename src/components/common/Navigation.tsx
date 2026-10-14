@@ -22,15 +22,21 @@ export default function Navigation({ locale }: NavigationProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const dewOfLoveRef = useRef<HTMLDivElement>(null)
   const aboutRef = useRef<HTMLDivElement>(null)
+  const dewOfLoveMobileRef = useRef<HTMLDivElement>(null)
+  const aboutMobileRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (!isDewOfLoveOpen && !isAboutOpen) return
 
-    const handleClickOutside = (event: MouseEvent) => {
-      if (isDewOfLoveOpen && dewOfLoveRef.current && !dewOfLoveRef.current.contains(event.target as Node)) {
+    const handleClickOutside = (event: Event) => {
+      const target = event.target as Node
+      const dewIsInside = dewOfLoveRef.current?.contains(target) || dewOfLoveMobileRef.current?.contains(target)
+      const aboutIsInside = aboutRef.current?.contains(target) || aboutMobileRef.current?.contains(target)
+
+      if (isDewOfLoveOpen && !dewIsInside) {
         setIsDewOfLoveOpen(false)
       }
-      if (isAboutOpen && aboutRef.current && !aboutRef.current.contains(event.target as Node)) {
+      if (isAboutOpen && !aboutIsInside) {
         setIsAboutOpen(false)
       }
     }
@@ -41,10 +47,10 @@ export default function Navigation({ locale }: NavigationProps) {
       }
     }
 
-    document.addEventListener('mousedown', handleClickOutside)
+    document.addEventListener('pointerdown', handleClickOutside)
     document.addEventListener('keydown', handleEscape)
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('pointerdown', handleClickOutside)
       document.removeEventListener('keydown', handleEscape)
     }
   }, [isDewOfLoveOpen, isAboutOpen])
@@ -92,7 +98,12 @@ export default function Navigation({ locale }: NavigationProps) {
           ref={aboutRef}
           className="relative"
           onMouseEnter={() => setIsAboutOpen(true)}
-          onMouseLeave={() => setIsAboutOpen(false)}
+          onMouseLeave={(event) => {
+            const nextTarget = event.relatedTarget as Node | null
+            if (!nextTarget || !event.currentTarget.contains(nextTarget)) {
+              setIsAboutOpen(false)
+            }
+          }}
         >
           <button
             type="button"
@@ -105,7 +116,10 @@ export default function Navigation({ locale }: NavigationProps) {
             <ChevronDown aria-hidden="true" className={cn('size-4 transition-transform', isAboutOpen && 'rotate-180')} />
           </button>
           {isAboutOpen && (
-            <ul className="absolute left-0 top-full z-50 min-w-40 rounded-lg border border-border/70 bg-background/95 py-2 shadow-lg backdrop-blur">
+            <ul
+              className="absolute left-0 top-full z-50 min-w-40 rounded-lg border border-border/70 bg-background/95 py-2 shadow-lg backdrop-blur"
+              onPointerDown={(event) => event.stopPropagation()}
+            >
               {aboutItems.map((item) => (
                 <li key={item.href}>
                   <Link href={`/${currentLocale}${item.href}`} onClick={() => setIsAboutOpen(false)} className={cn('block', linkClass(item.href))}>
@@ -120,7 +134,12 @@ export default function Navigation({ locale }: NavigationProps) {
           ref={dewOfLoveRef}
           className="relative"
           onMouseEnter={() => setIsDewOfLoveOpen(true)}
-          onMouseLeave={() => setIsDewOfLoveOpen(false)}
+          onMouseLeave={(event) => {
+            const nextTarget = event.relatedTarget as Node | null
+            if (!nextTarget || !event.currentTarget.contains(nextTarget)) {
+              setIsDewOfLoveOpen(false)
+            }
+          }}
         >
           <button
             type="button"
@@ -133,7 +152,10 @@ export default function Navigation({ locale }: NavigationProps) {
             <ChevronDown aria-hidden="true" className={cn('size-4 transition-transform', isDewOfLoveOpen && 'rotate-180')} />
           </button>
           {isDewOfLoveOpen && (
-            <ul className="absolute left-0 top-full z-50 min-w-40 rounded-lg border border-border/70 bg-background/95 py-2 shadow-lg backdrop-blur">
+            <ul
+              className="absolute left-0 top-full z-50 min-w-40 rounded-lg border border-border/70 bg-background/95 py-2 shadow-lg backdrop-blur"
+              onPointerDown={(event) => event.stopPropagation()}
+            >
               {dewOfLoveItems.map((item) => (
                 <li key={item.href}>
                   <Link href={`/${currentLocale}${item.href}`} onClick={() => setIsDewOfLoveOpen(false)} className={cn('block', linkClass(item.href))}>
@@ -172,7 +194,15 @@ export default function Navigation({ locale }: NavigationProps) {
                 {intl.formatMessage({ id: 'common.navigation.dewOfLove', defaultMessage: 'Dew of Love' })}
                 <ChevronDown aria-hidden="true" className={cn('size-4 transition-transform', isDewOfLoveOpen && 'rotate-180')} />
               </button>
-              {isDewOfLoveOpen && <div className="flex flex-col gap-1 border-l border-border pl-3">{dewOfLoveItems.map((item) => <Link key={item.href} href={`/${currentLocale}${item.href}`} onClick={closeMobileMenu} className={linkClass(item.href)}>{item.label}</Link>)}</div>}
+              {isDewOfLoveOpen && (
+                <div ref={dewOfLoveMobileRef} className="flex flex-col gap-1 border-l border-border pl-3" onPointerDown={(event) => event.stopPropagation()}>
+                  {dewOfLoveItems.map((item) => (
+                    <Link key={item.href} href={`/${currentLocale}${item.href}`} onClick={closeMobileMenu} className={linkClass(item.href)}>
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
             <div className="flex flex-col gap-1">
               <button
@@ -184,7 +214,15 @@ export default function Navigation({ locale }: NavigationProps) {
                 {intl.formatMessage({ id: 'common.navigation.about', defaultMessage: 'About' })}
                 <ChevronDown aria-hidden="true" className={cn('size-4 transition-transform', isAboutOpen && 'rotate-180')} />
               </button>
-              {isAboutOpen && <div className="flex flex-col gap-1 border-l border-border pl-3">{aboutItems.map((item) => <Link key={item.href} href={`/${currentLocale}${item.href}`} onClick={closeMobileMenu} className={linkClass(item.href)}>{item.label}</Link>)}</div>}
+              {isAboutOpen && (
+                <div ref={aboutMobileRef} className="flex flex-col gap-1 border-l border-border pl-3" onPointerDown={(event) => event.stopPropagation()}>
+                  {aboutItems.map((item) => (
+                    <Link key={item.href} href={`/${currentLocale}${item.href}`} onClick={closeMobileMenu} className={linkClass(item.href)}>
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
             {navItems.map((item) => <Link key={item.href} href={`/${currentLocale}${item.href}`} onClick={closeMobileMenu} className={linkClass(item.href)}>{item.label}</Link>)}
           </div>

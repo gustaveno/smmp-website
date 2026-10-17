@@ -33,7 +33,7 @@ const milestones = [
     description:
       'Belajar sebagai guru selama 6 tahun di sekolah para suster Benedictines di Valognes, memperoleh pembentukan manusiawi dan religius yang sangat kuat.',
     image:
-      '/tempat/1768.jpg',
+      '/tempat/1773.jpg',
   },
   {
     year: '1774–1805',
@@ -57,7 +57,7 @@ const milestones = [
     description:
       'Berkat ketekunannya, Gereja akhirnya merestui cita-citanya. Pada 8 September 1807, ia mengikrarkan kaul bersama tiga rekannya, menandai berdirinya Kongregasi secara resmi.',
     image:
-      'https://images.pexels.com/photos/37274789/pexels-photo-37274789.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/tempat/1807.jpg',
   },
   {
     year: '1811',
@@ -81,7 +81,7 @@ const milestones = [
     description:
       'Menetap di Valognes yang dapat disamakan dengan rumah sakrat maut. Namun ia tetap gigih untuk meneruskan perjuangan, sekalipun didinasehati untuk membubarkan kongregasinya.',
     image:
-      '/tempat/1767.jpg',
+      '/tempat/1768.jpg',
   },
   {
     year: '1814–1816',
@@ -97,10 +97,10 @@ const milestones = [
     description:
       'Para suster dipanggil kembali ke Tamerville. Agar dapat diakui oleh pemerintah Kerajaan, kongregasi harus mencari Induk, dan Rm. Lerenard mencarikan sebuah rumah.',
     image:
-      'https://images.pexels.com/photos/37274789/pexels-photo-37274789.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/tempat/1816.jpg',
   },
   {
-    year: '1832–1846',
+    year: '1832',
     title: 'Menetap di Saint-Sauveur-le-Vicomte (L’Abbaye)',
     description:
       'Pada 7 Juni 1832 jual beli tanah selesai (L’Abbaye), menggenapi ramalan Marie Rose Dadure bahwa seorang imam akan mengantarnya ke L’Abbaye. Pada 15 Oktober, bersama 14 suster, ia pindah ke tempat ini hingga wafatnya.',
@@ -121,7 +121,7 @@ const milestones = [
     description:
       'Dinyatakan kudus secara resmi oleh Paus Pius XI pada 24 Mei.',
     image:
-      'https://images.pexels.com/photos/37274789/pexels-photo-37274789.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/tempat/kanon.jpg',
   },
   {
     year: 'Sekarang',
@@ -129,7 +129,7 @@ const milestones = [
     description:
       'Semangat belas kasih kongregasi meluas ke berbagai belahan dunia, melayani dan berkarya di Italia, Belanda, Inggris, Irlandia, Kongo, India, serta Indonesia.',
     image:
-      'https://images.pexels.com/photos/37274789/pexels-photo-37274789.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      '/tempat/now.jpg',
   },
 ];
 

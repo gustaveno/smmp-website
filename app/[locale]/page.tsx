@@ -13,7 +13,6 @@ type HomePageProps = {
 
 // Daftar gambar hero carousel — silakan ganti/tambah path sesuai file lokal Anda di folder /public
 const HERO_IMAGES = [
-  { src: '/hero1.jpg', alt: 'Congregation worshipping' },
   { src: '/hero2.jpg', alt: 'Community gathering' },
   { src: '/hero3.jpg', alt: 'Sisters in prayer' },
   { src: '/hero4.jpg', alt: 'Sisters international' },

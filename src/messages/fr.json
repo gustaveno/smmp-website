@@ -1,5 +1,9 @@
 {
   "common": {
+    "title": {
+      "upper": "La Congrégation des Sœurs",
+      "lower": "de Marie-Madeleine Postel"
+    },
     "navigation": {
       "home": "Accueil",
       "about": "À propos de nous",
@@ -36,8 +40,22 @@
   },
   "pages": {
     "home": {
-      "title": "Notre Église",
-      "description": "Bienvenue dans notre communauté"
+      "hero1": "Misericordia",
+      "hero2": "L'amour, l'amour sans limites",
+      "overviewquote": "Enfants, aimez Dieu de tout votre cœur et montrez cet amour par le sacrifice.",
+      "overview": "Notre Congrégation",
+      "overviewdesc1": "La Congrégation des Sœurs de Sainte Marie-Madeleine Postel, également connue sous le nom de Sœurs de la Miséricorde, est une congrégation religieuse féminine au sein de l'Église catholique romaine fondée par Sainte Marie-Madeleine Postel.",
+      "overviewdesc2": "Julie Postel (1756–1846) est née à Barfleur, en Normandie, en France. Pendant la révolution française tumultueuse, elle a secrètement aidé les prêtres persécutés et éduqué les enfants pauvres. Sa congrégation a été fondée en 1807 à Cherbourg ; avec les sœurs Jeanne-Catherine Bellot, Louisa Viel et Angelique Ledanois, elle a pris ses vœux religieux et a établi une congrégation dédiée à l'éducation des jeunes, à l'instillation d'un amour pour Dieu et d'un amour pour le travail, et au sacrifice pour aider les pauvres et soulager la souffrance de autant de personnes que possible.",
+      "overviewdesc3": "C'était la vision et l'objectif original de Julie Postel dans la fondation d'une congrégation religieuse.",
+      "quote": "Vivre pour Dieu et servir les autres, surtout ceux qui souffrent",
+      "cite": "St. Marie-Madeleine Postel",
+      "articlesub": "Explorez notre communauté",
+      "articletitle": "Ce que nous offrons",
+      "articledesc": "Découvrez les programmes et activités spirituels de notre communauté, conçus pour nourrir la foi et favoriser les liens entre les personnes.",
+      "news": "Dernières Nouvelles",
+      "newsviewall": "Voir Tout",
+      "ctatitle": "Souhaitez-vous rejoindre notre mission ?",
+      "ctadesc": "Je vais aller jusqu'aux extrémités de la terre pour chercher une seule âme pour Jésus-Christ, même si, à la fin de mon voyage, je dois faire face à un martyre."
     },
     "news": {
       "title": "Actualités",
@@ -84,20 +102,114 @@
     "contact": {
       "title": "Nous contacter",
       "description": "Contactez-nous, visitez notre siège ou découvrez nos monastères",
-      "name": "Nom",
+      "address": "Adresse",
+      "phone": "Téléphone",
       "email": "Email",
-      "message": "Message",
-      "send": "Envoyer",
-      "success": "Merci de nous avoir contactés",
-      "error": "Échec de l&apos;envoi du message"
+      "subtitle1": "Nous serions ravis d'avoir de vos nouvelles",
+      "subsubtitle1": "Venez nous rendre visite à notre maison mère",
+      "subtitle2": "Soutenez notre mission",
+      "paragraph2": "Votre générosité soutient notre communauté, préserve notre sanctuaire historique et nous permet d'étendre notre action auprès des personnes dans le besoin. Chaque don, qu'il soit modeste ou important, fait une réelle différence.",
+      "donateNow": "Faites un don dès maintenant",
+      "onlineDonation": "Faire un don en ligne",
+      "onlineDonationDesc": "Effectuez un don sécurisé, ponctuel ou récurrent, via notre portail en ligne.",
+      "mailDonation": "Faire un don par courrier",
+      "mailDonationDesc": "Veuillez envoyer votre don à notre siège social à l'adresse indiquée.",
+      "plannedDonation": "Dons planifiés",
+      "plannedDonationDesc": "Intégrez notre paroisse dans votre planification successorale et laissez un héritage durable.",
+      "subtitle3": "Là où notre mission prend vie",
+      "subsubtitle3": "Découvrez nos communautés à travers le monde",
+      "paragraph3": "Passez la souris sur un repère pour découvrir l'emplacement de chaque monastère. Sur mobile, appuyez sur un repère pour afficher les détails."
     },
     "charisma": {
       "title": "Charisme",
-      "description": "Le charisme de notre communauté"
+      "description": "Une vocation à aimer, à glorifier et à incarner l'amour du Christ",
+      "subtitle1": "Le charisme est de<br></br><highlight>Vivre pour Dieu</highlight>",
+      "paragraph1": "Vivre pour Dieu et servir les autres, en particulier ceux qui souffrent. Tel est le charisme, ou don, de la Congrégation : un appel à aimer, à glorifier et à vivre l’amour du Christ.",
+      "subtitle2": "Vivre pour Dieu?",
+      "paragraph2": "Ce que je veux dire, c'est que les sœurs ont été appelées à…",
+      "point1Title": "Aimer Dieu",
+      "point1Desc": "Aimer Dieu sans limite et faire de son mieux pour que Lui soit aimé.",
+      "point2Title": "Pour Glorifier Dieu",
+      "point2Desc": "Vivre pour glorifier Dieu encore plus.",
+      "point3Title": "Vivre en Christ",
+      "point3Desc": "Notre effort continu rend nos vies véritablement vécues par Jésus.",
+      "subtitle3": "Être un serviteur de ceux qui souffrent",
+      "paragraph3": "Les Sœurs de la Miséricorde sont des âmes jumelles des malades, des pauvres et des vulnérables. Leur présence apporte du réconfort et un espoir réel à ceux qui sont marginalisés dans la société. Grâce à leur dévouement sincère au service, elles démontrent que la compassion peut être une source de force pour quiconque lutte contre les difficultés de la vie.",
+      "quote": "Vivre pour Dieu et servir nos proches, surtout ceux qui souffrent.",
+      "cite": "St. Marie-Madeleine Postel"
     },
     "history": {
       "title": "Histoire",
-      "description": "Notre histoire"
+      "description": "Notre histoire",
+      "subtitle": "Des graines d'un <highlight>Cœur de miséricorde</highlight> qui grandissent",
+      "paragraph": "Ce parcours a pris naissance dans l'esprit de dévouement de Julie Postel et s'est développé, au fil de nombreuses saisons marquées par des défis et des espoirs, pour devenir la congrégation que nous connaissons aujourd'hui. Retracez avec nous les moments qui ont façonné notre identité.",
+      "milestones": {
+        "birth": {
+          "title": "Naissance de Julie Postel",
+          "description": "Née le 28 novembre à Barfleur, en Normandie, sous le nom de Julie Françoise Catherine Postel, elle est la plus âgée de la famille Jean Postel le Vallois. Depuis son enfance, elle aspire à se consacrer à Dieu en servant les pauvres."
+        },
+        "firstCommunion": {
+          "title": "Première communion",
+          "description": "Reçoit sa première communion à l'âge de 9 ans, grâce à son comportement exemplaire et à ses qualités exceptionnelles lorsqu'elle fréquente l'école des sœurs bénédictines de Valognes."
+        },
+        "godmother": {
+          "title": "Devenant Mère Baptismale",
+          "description": "Demandée à devenir mère baptismale pour le baptême de plusieurs bébés le 11 juillet à l'âge de 12 ans."
+        },
+        "valognesStudy": {
+          "title": "Études à Valognes",
+          "description": "Étudie comme enseignante pendant 6 ans à l'école des sœurs bénédictines de Valognes, recevant une formation humaine et religieuse très solide."
+        },
+        "barfleur": {
+          "title": "Ministère éducatif à Barfleur",
+          "description": "Ouverture d'une école et d'un internat pour les enfants pauvres. Pendant la Révolution française, elle a aidé un prêtre à fuir en Angleterre pour sauver son sacerdoce et a gardé le Saint-Sacrement dans sa maison sous un escalier."
+        },
+        "cherbourg": {
+          "title": "Déménagement à Cherbourg",
+          "description": "Le 12 mai 1805, elle quitte Barfleur pour Cherbourg. Là-bas, elle ouvre une école et, peu de temps après, 3 jeunes femmes se joignent à elle."
+        },
+        "foundation": {
+          "title": "Profession des vœux et fondation de la Congrégation",
+          "description": "Grâce à sa persévérance, l'Église a fini par approuver sa vision. Le 8 septembre 1807, elle prononce ses vœux avec trois compagnes, marquant la fondation officielle de la Congrégation."
+        },
+        "octeville": {
+          "title": "Installation à Octeville L’avenel",
+          "description": "Cherbourg est délaissé lorsque les Sœurs de la Providence y retournent. Elle cherche alors un nouvel endroit à Octeville L’avenel, vivant à l'intérieur d'une écurie."
+        },
+        "tamerville1": {
+          "title": "La période de Tamerville",
+          "description": "Comme Octeville L’avenel devient insuffisant, le groupe déménage à Tamerville. Ici, les sœurs accueillent 12 orphelins, mais la jalousie commence également à se faire sentir face à leur présence."
+        },
+        "valognes": {
+          "title": "La période de Valognes (Maison des mourants)",
+          "description": "Elle s'installe à Valognes, que l'on peut comparer à une maison de mourants. Cependant, elle reste déterminée à poursuivre la lutte, même lorsqu'on lui conseille de dissoudre sa congrégation."
+        },
+        "hamel": {
+          "title": "Déménagement à Hamel au Bon",
+          "description": "De Valognes, elle déménage à Hamel au Bon, un cottage au toit de chaume. C'est ici qu'elle rédige la première Constitution au milieu de luttes incessantes."
+        },
+        "tamerville2": {
+          "title": "Retour à Tamerville",
+          "description": "Les sœurs sont rappelées à Tamerville. Pour être reconnue par le gouvernement royal, la congrégation doit trouver une maison mère, et le P. Lerenard leur trouve une maison."
+        },
+        "abbaye": {
+          "title": "Installation à Saint-Sauveur-le-Vicomte (L’Abbaye)",
+          "description": "Le 7 juin 1832, l'achat du terrain (L’Abbaye) est finalisé, accomplissant la prophétie de Marie Rose Dadure selon laquelle un prêtre la conduirait à L’Abbaye. Le 15 octobre, avec 14 sœurs, elle s'installe en ce lieu jusqu'à sa mort."
+        },
+        "death": {
+          "title": "Décès de la fondatrice de la Congrégation",
+          "description": "Elle décède le 16 juillet à l'âge de 90 ans, précisément le jour de la fête de Notre-Dame du Mont-Carmel, après avoir réussi à préserver la congrégation et à s'installer à Saint-Sauveur-le-Vicomte."
+        },
+        "canonization": {
+          "title": "Canonisation en tant que Sainte",
+          "description": "Officiellement déclarée sainte par le pape Pie XI le 24 mai 1925."
+        },
+        "present": {
+          "year": "Présent",
+          "title": "Expansion de la mission internationale",
+          "description": "L'esprit de compassion de la congrégation s'est étendu à diverses parts du monde, servant et œuvrant en Italie, aux Pays-Bas, en Angleterre, en Irlande, au Congo, en Inde et en Indonésie."
+        }
+      }
     },
     "identity": {
       "title": "Vision, Mission et Devise",
@@ -105,19 +217,93 @@
     },
     "saints": {
       "title": "Les Trois Saints de la Congrégation",
-      "description": "Découvrez nos saints bienheureux"
+      "description": "Découvrez nos saints bienheureux",
+      "subtitle": "Modèle de sainteté et de dévouement",
+      "paragraph": "La congrégation a été construite sur une fondation d'amour solide et d'engagement illimité. En suivant les traces et en incarnant le mode de vie de nos fondateurs et figures clés—Sainte Marie-Madeleine Postel, Beata Martha, et Beata Placida—ces saints ont consacré toute leur vie à servir les autres et à glorifier Dieu.",
+      "saint1": {
+        "name": "Sainte Marie-Madeleine Postel",
+        "description": "La fondatrice de la congrégation s'appelait Julie Postel. Au cœur des troubles de la Révolution française, elle aidait en secret les prêtres persécutés par le régime et enseignait aux enfants pauvres. En 1807, elle fonda cette congrégation dont les principales missions étaient l’éducation des jeunes filles et les soins aux malades. Elle dirigea la communauté pendant des périodes difficiles marquées par une extrême pauvreté et réussit à restaurer l’ancien monastère de Saint-Sauveur-le-Vicomte pour en faire le siège de la congrégation, avant de s’éteindre à l’âge de 89 ans.",
+        "caption": "Le chêne robuste"
+      },
+      "saint2": {
+        "name": "Beata Placida Viel",
+        "description": "Elle succéda à Sainte Marie-Madeleine Postel en tant que deuxième supérieure générale de la congrégation après le décès de celle-ci. Née Eulalie Viel, elle était la nièce et la disciple la plus proche de la fondatrice. Sous sa direction sereine et avisée, la congrégation connut une croissance rapide, obtint la reconnaissance officielle du Saint-Siège et étendit son action au-delà de la France, notamment en Allemagne.",
+        "caption": "Le tilleul tout doux"
+      },
+      "saint3": {
+        "name": "Beata Martha Le Bouteiller",
+        "description": "Une religieuse qui a incarné la sainteté à travers la simplicité de ses tâches quotidiennes au couvent de Saint-Sauveur-le-Vicomte. Née Aimée Le Bouteiller, elle a passé la quasi-totalité de sa vie religieuse à travailler d’arrache-pied en cuisine, à s’occuper du jardin et à gérer la blanchisserie du couvent. Elle était réputée pour son obéissance, son humilité et sa persévérance dans la prière, malgré un quotidien éprouvant fait de labeur physique, sans jamais se plaindre.",
+        "caption": "Le pommier qui porte un fruit délicieux"
+      }
     },
     "spirituality": {
       "title": "Notre Spiritualité",
-      "description": "Découvrez nos pratiques spirituelles"
+      "description": "Découvrez nos pratiques spirituelles",
+      "subtitle": "Vie spirituelle, <highlight>Cœur de miséricorde</highlight>",
+      "paragraph": "Pour apprécier pleinement le don de leur vocation, les religieux ancrent leur vie dans une spiritualité de compassion. Cet esprit se concrétise en suivant autant que possible l’exemple de Jésus-Christ — qui était pauvre et humble — et en imitant sa compassion envers l’humanité. L’expression concrète de cet engagement se traduit par la bienveillance, la solidarité, la sensibilité à la souffrance d’autrui et une gentillesse sincère. Dans l’humilité, ils sont sans cesse appelés à mettre en pratique ces vertus dans leur ministère quotidien.",
+      "practices": {
+        "title": "La véritable personnalité de sœur Misericordia",
+        "openness": {
+          "title": "l'ouverture",
+          "description": "Ouvert aux temps qui changent, adaptable, et réceptif aux commentaires, idées et critiques constructives."
+        },
+        "simplicity": {
+          "title": "la simplicité",
+          "description": "Authentique, libre de grands ambitions, embrassant un mode de vie humble."
+        },
+        "poverty": {
+          "title": "la pauvreté",
+          "description": "Se sentant satisfait, sans être envieux, et sans désirer excessivement les biens matériels."
+        },
+        "humility": {
+          "title": "l'humilité",
+          "description": "Désireux de continuer à apprendre, conscient et acceptant ses propres limites humaines et fragilités, reconnaissant les dons des autres, et riche dans l'esprit de pardon."
+        }
+      },
+      "quote": "Vous vous êtes donné à Dieu; sacrifiez tout. Il ne désire pas une partie, mais la totalité de vous-même.",
+      "cite": "St. Marie-Madeleine Postel"
     },
     "gallery": {
       "title": "Galerie",
       "description": "Une collection de moments"
     },
     "services": {
-      "title": "Champs de Service Congrès",
-      "description": "Nos activités de service"
+      "title": "Œuvre de Service",
+      "description": "Jusqu’aux confins de la terre pour sauver une seule âme pour le Christ",
+      "subtitle": "Servir avec un <highlight>Cœur de Miséricorde</highlight> Tangible",
+      "paragraph1": "Animées par le désir d’éduquer et d’alléger toutes les souffrances de leurs semblables, les sœurs de Sainte Marie-Madeleine Postel sont appelées à manifester la générosité, la miséricorde et la tendresse de Dieu au cœur du monde, en s’impliquant activement dans la vie des hommes et en s’engageant à travers diverses missions de service, afin de faire preuve de solidarité envers les plus démunis, quelles que soient leurs situations.",
+      "paragraph2": "Pour concrétiser leur engagement à soulager la souffrance de leurs prochains, les sœurs participent activement à des activités apostoliques dans les domaines de l'éducation, de la santé, du social et de la pastorale. Dans le cadre de leur mission, les sœurs participent aux soins prodigués aux malades, enseignent aux élèves dans les écoles et soutiennent l’éducation des enfants qui ont des difficultés financières pour poursuivre leurs études, viennent en aide aux plus démunis, s’occupent des personnes âgées, accompagnent les orphelins, s’impliquent activement dans diverses activités pastorales au sein des paroisses et guident ceux qui aspirent à la paix intérieure et à la spiritualité.",
+      "paragraph3": "Par divers moyens, les sœurs rendent un témoignage de vie en incarnant et en répandant le Royaume de Dieu à travers leurs œuvres apostoliques.",
+      "services": {
+        "healthcare": {
+          "title": "Santé",
+          "tagline": "SOIGNER LE CORPS, SOIGNER L'ÂME",
+          "description": "Soigner les malades n'est pas une tâche facile, mais l'appel à la mission dans ce domaine ouvre la voie vers le mystère de la gloire de Dieu. La compassion envers les malades est une expression tangible de soigner Jésus dans le Samaritain blessé.",
+          "caption": "Guérison Physique et Spirituelle",
+          "secondaryCaption": "Un Héritage de Bonté"
+        },
+        "educational": {
+          "title": "Éducation",
+          "tagline": "NOURRIR LE SAVOIR, FORGER L'AVENIR",
+          "description": "À une époque marquée par des progrès intellectuels fulgurants, la souffrance des élèves qui abandonnent l'école est une source de tristesse pour le monde entier. Semer les graines de l'espoir pour l'avenir des jeunes, en s'enracinant dans l'amour de Dieu.",
+          "caption": "Nourrir le Savoir",
+          "secondaryCaption": "Héritages des Éducateurs"
+        },
+        "social": {
+          "title": "Social",
+          "tagline": "TENDRE LA MAIN, ACCUEILLIR SON PROCHAIN",
+          "description": "La radiance d'un cœur compatissant peut transcender toutes nos limitations humaines, notre fragilité et nos faiblesses. Le rêve des orphelins d'atteindre l'indépendance est le rêve le plus profond de notre conscience.",
+          "caption": "Embrasser les Marginalisés",
+          "secondaryCaption": "Amour Inconditionnel"
+        },
+        "pastoral": {
+          "title": "Pastoral",
+          "tagline": "RENFORCER LA FOI, GUIDER NOS PAS",
+          "description": "La soif de chaque âme est de rafraîchir le cœur de quiconque a soif de l'amour de Dieu. Ce que nous offrons, que ce soit dans le manque ou l'abondance, est toujours suffisant pour alléger l'infortune de nos semblables.",
+          "caption": "Accompagner les Fidèles",
+          "secondaryCaption": "Enraciné dans la Prière"
+        }
+      }
     },
     "formation": {
       "title": "Formation",

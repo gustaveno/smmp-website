@@ -29,7 +29,9 @@ export default function Navigation({ locale }: NavigationProps) {
     if (!isDewOfLoveOpen && !isAboutOpen) return
 
     const handleClickOutside = (event: Event) => {
-      const target = event.target as Node
+      const target = event.target
+      if (!(target instanceof Node)) return
+
       const dewIsInside = dewOfLoveRef.current?.contains(target) || dewOfLoveMobileRef.current?.contains(target)
       const aboutIsInside = aboutRef.current?.contains(target) || aboutMobileRef.current?.contains(target)
 
@@ -99,8 +101,8 @@ export default function Navigation({ locale }: NavigationProps) {
           className="relative"
           onMouseEnter={() => setIsAboutOpen(true)}
           onMouseLeave={(event) => {
-            const nextTarget = event.relatedTarget as Node | null
-            if (!nextTarget || !event.currentTarget.contains(nextTarget)) {
+            const nextTarget = event.relatedTarget
+            if (!nextTarget || !(nextTarget instanceof Node) || !event.currentTarget.contains(nextTarget)) {
               setIsAboutOpen(false)
             }
           }}
@@ -135,8 +137,8 @@ export default function Navigation({ locale }: NavigationProps) {
           className="relative"
           onMouseEnter={() => setIsDewOfLoveOpen(true)}
           onMouseLeave={(event) => {
-            const nextTarget = event.relatedTarget as Node | null
-            if (!nextTarget || !event.currentTarget.contains(nextTarget)) {
+            const nextTarget = event.relatedTarget
+            if (!nextTarget || !(nextTarget instanceof Node) || !event.currentTarget.contains(nextTarget)) {
               setIsDewOfLoveOpen(false)
             }
           }}
@@ -187,26 +189,6 @@ export default function Navigation({ locale }: NavigationProps) {
             <div className="flex flex-col gap-1">
               <button
                 type="button"
-                onClick={() => setIsDewOfLoveOpen((prev) => !prev)}
-                className={cn('flex w-full items-center justify-between text-left', linkClass('/public'), isDewOfLoveActive && 'bg-primary text-primary-foreground')}
-                aria-expanded={isDewOfLoveOpen}
-              >
-                {intl.formatMessage({ id: 'common.navigation.dewOfLove', defaultMessage: 'Dew of Love' })}
-                <ChevronDown aria-hidden="true" className={cn('size-4 transition-transform', isDewOfLoveOpen && 'rotate-180')} />
-              </button>
-              {isDewOfLoveOpen && (
-                <div ref={dewOfLoveMobileRef} className="flex flex-col gap-1 border-l border-border pl-3" onPointerDown={(event) => event.stopPropagation()}>
-                  {dewOfLoveItems.map((item) => (
-                    <Link key={item.href} href={`/${currentLocale}${item.href}`} onClick={closeMobileMenu} className={linkClass(item.href)}>
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-            <div className="flex flex-col gap-1">
-              <button
-                type="button"
                 onClick={() => setIsAboutOpen((prev) => !prev)}
                 className={cn('flex w-full items-center justify-between text-left', linkClass('/about-menu'), isAboutActive && 'bg-primary text-primary-foreground')}
                 aria-expanded={isAboutOpen}
@@ -217,6 +199,26 @@ export default function Navigation({ locale }: NavigationProps) {
               {isAboutOpen && (
                 <div ref={aboutMobileRef} className="flex flex-col gap-1 border-l border-border pl-3" onPointerDown={(event) => event.stopPropagation()}>
                   {aboutItems.map((item) => (
+                    <Link key={item.href} href={`/${currentLocale}${item.href}`} onClick={closeMobileMenu} className={linkClass(item.href)}>
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+            <div className="flex flex-col gap-1">
+              <button
+                type="button"
+                onClick={() => setIsDewOfLoveOpen((prev) => !prev)}
+                className={cn('flex w-full items-center justify-between text-left', linkClass('/public'), isDewOfLoveActive && 'bg-primary text-primary-foreground')}
+                aria-expanded={isDewOfLoveOpen}
+              >
+                {intl.formatMessage({ id: 'common.navigation.dewOfLove', defaultMessage: 'Dew of Love' })}
+                <ChevronDown aria-hidden="true" className={cn('size-4 transition-transform', isDewOfLoveOpen && 'rotate-180')} />
+              </button>
+              {isDewOfLoveOpen && (
+                <div ref={dewOfLoveMobileRef} className="flex flex-col gap-1 border-l border-border pl-3" onPointerDown={(event) => event.stopPropagation()}>
+                  {dewOfLoveItems.map((item) => (
                     <Link key={item.href} href={`/${currentLocale}${item.href}`} onClick={closeMobileMenu} className={linkClass(item.href)}>
                       {item.label}
                     </Link>

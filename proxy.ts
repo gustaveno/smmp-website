@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 const locales = ['id', 'en', 'fr']
-const defaultLocale = 'id'
+const defaultLocale = 'en'
 
 const isStaticAsset = (pathname: string) => {
   return (

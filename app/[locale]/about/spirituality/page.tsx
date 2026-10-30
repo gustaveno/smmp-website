@@ -3,28 +3,7 @@
 import { useIntl } from 'react-intl'
 import { Quote } from 'lucide-react';
 
-const practices = [
-  {
-    title: 'Keterbukaannya',
-    description:
-      'Terbuka terhadap perubahan jaman, mudah menyesuaikan diri, terbuka terhadap masukan, ide-ide juga kritik yang membangun.',
-  },
-  {
-    title: 'Kesederhanaan',
-    description:
-      'Apa adanya, tidak menuntut hal-hal yang muluk-muluk, gaya hidup yang sederhana.',
-  },
-  {
-    title: 'Kemiskinannya',
-    description:
-      'Merasa cukup, tidak serakah, tidak menginginkan barang-barang secara berlebihan.',
-  },
-  {
-    title: 'Kerendahan hatinya ',
-    description:
-      'Mau terus belajar, menyadari dan menerima keterbatasan dan kelemahan diri sendiri, dapat menghargai kelebihan orang lain dan punya semangat pengampunan.',
-  },
-];
+const PRACTICE_KEYS = ['openness', 'simplicity', 'poverty', 'humility'] as const
 
 export default function SpiritualityPage() {
   const intl = useIntl()
@@ -57,20 +36,17 @@ export default function SpiritualityPage() {
           {/* Text column */}
           <div className="md:col-span-6 md:mt-4">
             <h2 className="font-serif text-xl font-semibold leading-tight tracking-tight sm:text-2xl">
-              Semangat rohani,{' '}
-              <span className="italic text-amber-700 bg-amber-100/70 box-decoration-clone px-1.5 py-0.5 rounded">
-                Belas Kasih
-              </span>
+              {intl.formatMessage({ id: 'pages.spirituality.subtitle' },
+                {
+                  highlight: (chunks) => (
+                    <span className="italic text-amber-700 px-1.5 py-0.5 rounded">
+                      {chunks}
+                    </span>
+                  ),
+                })}
             </h2>
-            <p className="mt-4 max-w-[42ch] text-lg leading-relaxed text-muted-foreground">
-              Untuk menghayati anugerah panggilan secara mendalam,
-              para religius melandasi hidup mereka dengan spiritualitas belas kasih.
-              Semangat ini diwujudkan dengan mengikuti sedekat mungkin pribadi Yesus Kristus
-              yang miskin dan direndahkan, serta meneladan belas kasih-Nya kepada umat manusia.
-              Wujud nyata dari penghayatan ini tercermin melalui kepedulian, solidaritas,
-              kepekaan terhadap kesulitan sesama yang menderita, dan keramahan yang tulus.
-              Melalui kerendahan hati, mereka terus terpanggil untuk menghidupi
-              keutamaan tersebut dalam pelayanan sehari-hari.
+            <p className="mt-4 max-w-[38ch] text-lg text-justify leading-relaxed text-muted-foreground">
+              {intl.formatMessage({ id: 'pages.spirituality.paragraph' })}
             </p>
           </div>
 
@@ -92,20 +68,20 @@ export default function SpiritualityPage() {
       <section className="border-y border-border/50 bg-secondary/30">
         <div className="mx-auto max-w-5xl px-6 py-20">
           <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Karakter suster Misericordia sejati
+            {intl.formatMessage({ id: 'pages.spirituality.practices.title' })}
           </h2>
           <ul className="mt-10 space-y-8">
-            {practices.map((practice) => (
-              <li key={practice.title} className="flex items-start gap-5">
+            {PRACTICE_KEYS.map((key) => (
+              <li key={key} className="flex items-start gap-5">
                 <span className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-foreground text-background">
                   <span className="h-2 w-2 rounded-full bg-background" />
                 </span>
                 <div>
                   <h3 className="text-xl font-medium tracking-tight">
-                    {practice.title}
+                    {intl.formatMessage({ id: `pages.spirituality.practices.${key}.title` })}
                   </h3>
                   <p className="mt-2 text-base leading-relaxed text-muted-foreground">
-                    {practice.description}
+                    {intl.formatMessage({ id: `pages.spirituality.practices.${key}.description` })}
                   </p>
                 </div>
               </li>
@@ -119,11 +95,11 @@ export default function SpiritualityPage() {
         <Quote className="mx-auto h-10 w-10 text-muted-foreground/60" />
         <blockquote className="mt-8">
           <p className="text-3xl font-medium leading-snug tracking-tight text-foreground sm:text-3xl">
-            Anda telah menyerahkan diri kepada Allah, korbankanlah seluruhnya. Ia tidak menghendaki sebagian, melainkan seluruh dirimu.
+            {intl.formatMessage({ id: 'pages.spirituality.quote' })}
           </p>
         </blockquote>
         <footer className="mt-8 text-sm uppercase tracking-[0.18em] text-muted-foreground">
-          Santa Maria Magdalena Postel
+          {intl.formatMessage({ id: 'pages.spirituality.cite' })}
         </footer>
       </section>
     </main>

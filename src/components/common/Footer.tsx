@@ -16,11 +16,14 @@ export default function Footer({ locale }: FooterProps) {
 
   return (
     <footer className="border-t border-border/70 bg-muted">
-      <div className="container mx-auto px-4 py-16 md:py-20">
+      <div className="container mx-auto px-4 py-16 md:py-20 items-center justify-between">
         <div className="grid grid-cols-1 gap-10 mb-12 sm:grid-cols-2 md:grid-cols-4">
           {/* About */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Kongregasi Suster Maria<br />Magdalena Postel</h3>
+            <h3 className="font-semibold text-lg mb-4">
+              {intl.formatMessage({ id: 'common.title.upper', defaultMessage: 'La Congrégation des Sœurs' })}
+              <br />
+              {intl.formatMessage({ id: 'common.title.lower', defaultMessage: 'de Marie-Madeleine Postel' })}</h3>
             {/* <p className="text-sm text-muted-foreground">
               A faith community dedicated to spiritual growth and service.
             </p> */}

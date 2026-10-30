@@ -4,6 +4,7 @@ import Link from 'next/link'
 import LanguageSwitcher from './LanguageSwitcher'
 import Navigation from './Navigation'
 import { type Locale } from '@/lib/i18n'
+import { useIntl } from 'react-intl'
 import Image from 'next/image'
 
 type HeaderProps = {
@@ -11,6 +12,7 @@ type HeaderProps = {
 }
 
 export default function Header({ locale }: HeaderProps) {
+  const intl = useIntl()
 
   return (
     <header className="relative sticky top-0 z-50 w-full border-b border-border/70 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -21,7 +23,7 @@ export default function Header({ locale }: HeaderProps) {
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-4 py-2 sm:py-1">
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-2 sm:py-1">
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
           <Link
@@ -37,7 +39,11 @@ export default function Header({ locale }: HeaderProps) {
                 className="object-contain"
               />
             </div>
-            <span className="hidden sm:inline">Kongregasi Suster Maria Magdalena Postel</span>
+            <span className="hidden sm:inline">
+              {intl.formatMessage({ id: 'common.title.upper', defaultMessage: 'La Congrégation des Sœurs' })}
+              <br />
+              {intl.formatMessage({ id: 'common.title.lower', defaultMessage: 'de Marie-Madeleine Postel' })}
+            </span>
           </Link>
 
           <div className="ml-auto flex shrink-0 items-center gap-1 sm:gap-2">

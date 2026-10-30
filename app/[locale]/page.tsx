@@ -1,6 +1,7 @@
 'use client'
 
 import { use, useState, useEffect, useCallback } from 'react'
+import { useIntl } from 'react-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Mail, ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Clock3, CalendarDays } from 'lucide-react'
@@ -35,6 +36,7 @@ type SanityNews = {
 export default function HomePage({ params }: HomePageProps) {
   const { locale } = use(params)
   const safeLocale = typeof locale === 'string' ? locale : 'id'
+  const intl = useIntl()
 
   const [heroIndex, setHeroIndex] = useState(0)
 
@@ -205,7 +207,7 @@ export default function HomePage({ params }: HomePageProps) {
             </span>
           </h1>
           <p className="text-base italic md:text-2xl lg:text-3xl text-white/90 mb-12 text-balance max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-500 fill-mode-both leading-relaxed drop-shadow-md">
-            "Cintailah, cintailah tanpa batas"
+            "{intl.formatMessage({ id: 'pages.home.hero2', defaultMessage: 'Love, love without limits' })}"
           </p>
         </div>
 
@@ -246,21 +248,30 @@ export default function HomePage({ params }: HomePageProps) {
             {/* Overview Text */}
             <div className="md:translate-x-[-6px]">
               <span className="inline-flex items-center gap-2 text-sm font-semibold tracking-[0.2em] text-accent mb-3">
-                "Anak-anak cintailah Allah dengan sepenuh hatimu dan tunjukkanlah cintamu itu dalam korban."
+                "{intl.formatMessage({ id: 'pages.home.overviewquote', defaultMessage: 'Children, love God with all your heart and show that love through sacrifice.' })}"
               </span>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">
-                Kongregasi Kami
+                {intl.formatMessage({ id: 'pages.home.overview', defaultMessage: 'Our Congregation' })}
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed text-balance">
-                Kongregasi Para Suster Santa Maria Magdalena Postel dikenal juga sebagai Suster Misericordia adalah sebuah kongregasi religius wanita dalam Gereja Katolik Roma yang didirikan oleh Santa Maria Magdalena Postel.
+                {intl.formatMessage({
+                  id: 'pages.home.overviewdesc1',
+                  defaultMessage: 'The Congregation of the Sisters of Saint Mary Magdalene Postel, also known as the Sisters of Mercy, is a women’s religious congregation within the Roman Catholic Church founded by Saint Mary Magdalene Postel.'
+                })}
               </p>
               <br />
               <p className="text-muted-foreground text-lg leading-relaxed text-balance">
-                Julie Postel (1756–1846) lahir di Barfleur, Normandia, Prancis. Pada masa Revolusi Prancis yang penuh pergolakan, ia diam-diam membantu para imam yang dikejar-kejar serta mendidik anak-anak miskin. Kongregasinya berdiri pada tahun 1807 di Cherbourg, ia bersama Sr. Jeanne-Catherine Bellot, Sr. Louisa Viel, Sr. Angelique Ledanois mengucapkan kaul religius dan mendirikan kongregasi untuk mendidik kaum muda, menanamkan cinta kepada Tuhan dan cinta terhadap pekerjaan, serta mengorbankan diri guna membantu orang miskin dan meringankan penderitaan sebanyak mungkin orang.
+                {intl.formatMessage({
+                  id: 'pages.home.overviewdesc2',
+                  defaultMessage: 'Julie Postel (1756–1846) was born in Barfleur, Normandy, France. During the turbulent French Revolution, she secretly helped persecuted priests and educated poor children. Her congregation was founded in 1807 in Cherbourg; together with Sr. Jeanne-Catherine Bellot, Sr. Louisa Viel, and Sr. Angelique Ledanois, she took her religious vows and established a congregation dedicated to educating young people, instilling a love for God and a love for work, and sacrificing herself to help the poor and alleviate the suffering of as many people as possible.'
+                })}
               </p>
               <br />
               <p className="text-muted-foreground text-lg leading-relaxed text-balance">
-                Itulah cita-cita dan tujuan awal Julie Postel membangun sebuah kongregasi religius.
+                {intl.formatMessage({
+                  id: 'pages.home.overviewdesc3',
+                  defaultMessage: 'That was Julie Postel’s original vision and goal in founding a religious congregation.'
+                })}
               </p>
             </div>
           </div>
@@ -287,11 +298,11 @@ export default function HomePage({ params }: HomePageProps) {
             <blockquote className="relative z-10 flex flex-col items-end">
               <p className="font-serif text-lg md:text-xl lg:text-[26px] text-white leading-relaxed md:leading-snug italic mb-8 md:mb-10 text-balance drop-shadow-xl text-right"
                 style={{ filter: 'drop-shadow(0 6px 8px rgb(7, 7, 7))' }}>
-                Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita
+                {intl.formatMessage({ id: 'pages.home.quote', defaultMessage: 'Living for God and serving others, especially those who are suffering' })}
               </p>
               <figcaption className="flex flex-col items-center -mt-6">
                 <cite className="not-italic text-sm md:text-sm font-medium tracking-[0.3em] text-gray-300 uppercase drop-shadow-md">
-                  - St. Maria Magdalena Postel
+                  - {intl.formatMessage({ id: 'pages.home.cite', defaultMessage: 'St. Mary Magdalene Postel' })}
                 </cite>
               </figcaption>
             </blockquote>
@@ -304,13 +315,13 @@ export default function HomePage({ params }: HomePageProps) {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-3">
-              Explore Our Community
+              {intl.formatMessage({ id: 'pages.home.articlesub', defaultMessage: 'Explore Our Community' })}
             </span>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 text-balance">
-              What We Offer
+              {intl.formatMessage({ id: 'pages.home.articletitle', defaultMessage: 'What We Offer' })}
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-balance">
-              Discover our community&apos;s spiritual programs and activities, designed to nourish faith and foster connection.
+              {intl.formatMessage({ id: 'pages.home.articledesc', defaultMessage: 'Discover our community&apos;s spiritual programs and activities, designed to nourish faith and foster connection.' })}
             </p>
           </div>
 
@@ -319,13 +330,13 @@ export default function HomePage({ params }: HomePageProps) {
             <div className="mt-20">
               <div className="mb-10 flex items-end justify-between gap-4">
                 <h3 className="text-2xl md:text-3xl font-bold text-foreground text-balance">
-                  Berita Terbaru
+                  {intl.formatMessage({ id: 'pages.home.news', defaultMessage: 'Latest News' })}
                 </h3>
                 <Link
                   href={`/${safeLocale}/public/news`}
                   className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"
                 >
-                  Lihat Semua
+                  {intl.formatMessage({ id: 'pages.home.newsviewall', defaultMessage: 'View All' })}
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -415,13 +426,17 @@ export default function HomePage({ params }: HomePageProps) {
           {/* Kanan: teks */}
           <div className="text-center md:text-left">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-5 text-balance">
-              Anda ingin bergabung dalam misi kami?
+              {intl.formatMessage({ id: 'pages.home.ctatitle', defaultMessage: 'Would you like to join our mission?' })}
             </h2>
             <p
               className="text-lg text-primary-foreground/90 text-balance drop-shadow-lg"
               style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,1))' }}
             >
-              Saya akan pergi ke ujung bumi untuk mencari satu jiwa bagi Yesus Kristus, pun jika pada akhir perjalanan, saya menemukan kemartiran.
+              {intl.formatMessage({
+                id: 'pages.home.ctadesc',
+                defaultMessage:
+                  'I will go to the ends of the earth to seek out a single soul for Jesus Christ, even if, at the end of my journey, I face martyrdom.'
+              })}
             </p>
           </div>
         </div>

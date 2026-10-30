@@ -1,5 +1,9 @@
 {
   "common": {
+    "title": {
+      "upper": "Kongregasi Suster",
+      "lower": "Maria Magdalena Postel"
+    },
     "navigation": {
       "home": "Beranda",
       "about": "Tentang Kami",
@@ -36,8 +40,22 @@
   },
   "pages": {
     "home": {
-      "title": "Gereja Kami",
-      "description": "Selamat datang di komunitas kami"
+      "hero1": "Misericordia",
+      "hero2": "Cintailah, cintailah tanpa batas",
+      "overviewquote": "Anak-anak cintailah Allah dengan sepenuh hatimu dan tunjukkanlah cintamu itu dalam korban.",
+      "overview": "Kongregasi Kami",
+      "overviewdesc1": "Kongregasi Para Suster Santa Maria Magdalena Postel dikenal juga sebagai Suster Misericordia adalah sebuah kongregasi religius wanita dalam Gereja Katolik Roma yang didirikan oleh Santa Maria Magdalena Postel.",
+      "overviewdesc2": "Julie Postel (1756–1846) lahir di Barfleur, Normandia, Prancis. Pada masa Revolusi Prancis yang penuh pergolakan, ia diam-diam membantu para imam yang dikejar-kejar serta mendidik anak-anak miskin. Kongregasinya berdiri pada tahun 1807 di Cherbourg, ia bersama Sr. Jeanne-Catherine Bellot, Sr. Louisa Viel, Sr. Angelique Ledanois mengucapkan kaul religius dan mendirikan kongregasi untuk mendidik kaum muda, menanamkan cinta kepada Tuhan dan cinta terhadap pekerjaan, serta mengorbankan diri guna membantu orang miskin dan meringankan penderitaan sebanyak mungkin orang.",
+      "overviewdesc3": "Itulah cita-cita dan tujuan awal Julie Postel membangun sebuah kongregasi religius.",
+      "quote": "Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita",
+      "cite": "St. Maria Magdalena Postel",
+      "articlesub": "Jelajahi Komunitas Kami",
+      "articletitle": "Apa yang Kami Tawarkan",
+      "articledesc": "Temukan program dan aktivitas spiritual kami, dirancang untuk memperkuat iman dan mendorong koneksi.",
+      "news": "Berita Terbaru",
+      "newsviewall": "Lihat Semua",
+      "ctatitle": "Anda ingin bergabung dalam misi kami?",
+      "ctadesc": "Saya akan pergi ke ujung bumi untuk mencari satu jiwa bagi Yesus Kristus, pun jika pada akhir perjalanan, saya menemukan kemartiran."
     },
     "news": {
       "title": "Berita",
@@ -84,20 +102,114 @@
     "contact": {
       "title": "Hubungi Kami",
       "description": "Hubungi kami, kunjungi kantor pusat, atau cari tahu biara kami",
-      "name": "Nama",
+      "address": "Alamat",
+      "phone": "Telepon",
       "email": "Email",
-      "message": "Pesan",
-      "send": "Kirim",
-      "success": "Terima kasih telah menghubungi kami",
-      "error": "Gagal mengirim pesan"
+      "subtitle1": "Kami Ingin Mendengar Dari Anda",
+      "subsubtitle1": "Temukan Kami di Rumah Induk Kita",
+      "subtitle2": "Dukung Misi Kami",
+      "paragraph2": "Kemurahan hati Anda menopang komunitas kami, melestarikan tempat suci bersejarah kami, dan memperluas jangkauan bantuan kami kepada mereka yang membutuhkan. Setiap sumbangan, baik besar maupun kecil, memberikan dampak yang berarti.",
+      "donateNow": "Donasi Sekarang",
+      "onlineDonation": "Donasi Online",
+      "onlineDonationDesc": "Lakukan donasi satu kali atau berulang secara aman melalui portal online kami.",
+      "mailDonation": "Donasi melalui Mail",
+      "mailDonationDesc": "Kirim donasi Anda ke kantor pusat kami di alamat yang tersedia.",
+      "plannedDonation": "Donasi Terencana",
+      "plannedDonationDesc": "Sertakan kongregasi kami dalam rencana warisan Anda dan ciptakan warisan yang abadi.",
+      "subtitle3": "Di Mana Misi Kami Berada",
+      "subsubtitle3": "Jelajahi Komunitas Global Kami",
+      "paragraph3": "Arahkan kursor ke penanda untuk mengetahui lokasi masing-masing biara. Di perangkat seluler, ketuk penanda untuk melihat detailnya."
     },
     "charisma": {
       "title": "Kharisma",
-      "description": "Kharisma dari komunitas kami"
+      "description": "Panggilan untuk mencintai, memuliakan, dan menghidupi kasih Kristus",
+      "subtitle1": "Kharisma adalah<br></br><highlight>Hidup bagi Allah</highlight>",
+      "paragraph1": "Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita. Itulah kharisma atau anugrah yang dimiliki Kongregasi. Panggilan untuk mencintai, memuliakan, dan menghidupi kasih Kristus.",
+      "subtitle2": "Hidup bagi Allah?",
+      "paragraph2": "Maksudnya, para suster mendapat panggilan untuk…",
+      "point1Title": "Mengasihi Allah",
+      "point1Desc": "Mencintai Allah tanpa batas dan berusaha sekuat tenaga agar Ia dicintai.",
+      "point2Title": "Memuliakan Allah",
+      "point2Desc": "Hidup untuk lebih memuliakan Allah.",
+      "point3Title": "Hidup dalam Kristus",
+      "point3Desc": "Usaha terus menerus membuat hidup kami dihidupi oleh Yesus.",
+      "subtitle3": "Menjadi pelayan mereka yang menderita",
+      "paragraph3": "Para suster Misericordia itu adalah sahabat-sahabat jiwa orang-orang yang sakit, miskin dan tak berdaya. Kehadiran mereka membawa penghiburan serta harapan nyata bagi mereka yang tersisih di tengah masyarakat. Melalui ketulusan hati dalam melayani, mereka membuktikan bahwa belas kasih dapat menjadi tumpuan bagi siapa saja yang sedang berjuang melawan kesulitan hidup.",
+      "quote": "Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita.",
+      "cite": "St. Maria Magdalena Postel"
     },
     "history": {
       "title": "Sejarah",
-      "description": "Sejarah kami"
+      "description": "Sejarah kami",
+      "subtitle": "Benih <highlight>Belas Kasih</highlight> yang Tumbuh",
+      "paragraph": "Perjalanan bermula dari semangat pengabdian Julie Postel dan berkembang, melalui berbagai musim penuh tantangan dan pengharapan, menjadi kongregasi yang kita kenal hari ini. Telusuri bersama kami momen-momen yang membentuk siapa diri kami.",
+      "milestones": {
+        "birth": {
+          "title": "Kelahiran Julie Postel",
+          "description": "Lahir pada 28 November di Barfleur, Perancis Utara, dengan nama Julie Fransisca Catharina Postel sebagai anak sulung dari keluarga Jean Postel le Vallois. Cita-citanya sejak kecil adalah membaktikan diri kepada Tuhan untuk melayani orang miskin."
+        },
+        "firstCommunion": {
+          "title": "Penerimaan Komuni Pertama",
+          "description": "Menerima komuni pada usia 9 tahun berkat teladan dan sifat-sifatnya yang menonjol saat bersekolah di asrama Suster Benediktin di Valognes."
+        },
+        "godmother": {
+          "title": "Menjadi Ibu Baptis",
+          "description": "Diminta menjadi ibu baptis untuk pembaptisan beberapa bayi pada 11 Juli saat berusia 12 tahun."
+        },
+        "valognesStudy": {
+          "title": "Pendidikan di Valognes",
+          "description": "Belajar sebagai guru selama 6 tahun di sekolah para suster Benedictines di Valognes, memperoleh pembentukan manusiawi dan religius yang sangat kuat."
+        },
+        "barfleur": {
+          "title": "Pelayanan Pendidikan di Barfleur",
+          "description": "Membuka sekolah dan asrama untuk anak-anak miskin. Pada zaman Revolusi Prancis, ia membantu imam pergi ke Inggris untuk menyelamatkan imamatnya serta menyimpan Sakramen Mahakudus di rumahnya di bawah sebuah tangga."
+        },
+        "cherbourg": {
+          "title": "Pindah ke Cherbourg",
+          "description": "Pada 12 Mei 1805, ia meninggalkan Barfleur menuju Cherbourg. Di sana ia membuka sekolah dan dalam waktu tidak lama 3 pemudi menggabungkan diri."
+        },
+        "foundation": {
+          "title": "Pengikraran Kaul dan Pendirian Kongregasi",
+          "description": "Berkat ketekunannya, Gereja akhirnya merestui cita-citanya. Pada 8 September 1807, ia mengikrarkan kaul bersama tiga rekannya, menandai berdirinya Kongregasi secara resmi."
+        },
+        "octeville": {
+          "title": "Berpindah ke Octeville L’avenel",
+          "description": "Cherbourg ditinggalkan karena para suster Penyelenggaraan Ilahi kembali ke tempat itu. Ia lalu mencari tempat baru di Octeville L’avenel, tinggal di dalam sebuah kandang."
+        },
+        "tamerville1": {
+          "title": "Periode Tamerville",
+          "description": "Karena Octeville L’avenel tak memadai lagi, rombongan pindah ke Tamerville. Di sini para suster menerima 12 anak yatim piatu, namun juga mulai dirasakan ada iri hati akan kehadiran mereka."
+        },
+        "valognes": {
+          "title": "Periode Valognes (Rumah Sakrat Maut)",
+          "description": "Menetap di Valognes yang dapat disamakan dengan rumah sakrat maut. Namun ia tetap gigih untuk meneruskan perjuangan, sekalipun didinasehati untuk membubarkan kongregasinya."
+        },
+        "hamel": {
+          "title": "Pindah ke Hamel au Bon",
+          "description": "Dari Valognes ia pindah ke Hamel au Bon, sebuah pondok beratap jerami. Di sinilah ia menyusun Konstitusi yang pertama di tengah perjuangan yang tak kunjung padam."
+        },
+        "tamerville2": {
+          "title": "Kembali ke Tamerville",
+          "description": "Para suster dipanggil kembali ke Tamerville. Agar dapat diakui oleh pemerintah Kerajaan, kongregasi harus mencari Induk, dan Rm. Lerenard mencarikan sebuah rumah."
+        },
+        "abbaye": {
+          "title": "Menetap di Saint-Sauveur-le-Vicomte (L’Abbaye)",
+          "description": "Pada 7 Juni 1832 jual beli tanah selesai (L’Abbaye), menggenapi ramalan Marie Rose Dadure bahwa seorang imam akan mengantarnya ke L’Abbaye. Pada 15 Oktober, bersama 14 suster, ia pindah ke tempat ini hingga wafatnya."
+        },
+        "death": {
+          "title": "Wafatnya Pendiri Kongregasi",
+          "description": "Meninggal dunia pada 16 Juli pada usia 90 tahun, tepat pada Hari Raya Santa Maria dari Gunung Karmel, setelah berhasil mempertahankan kongregasi dan menetap di Saint-Sauveur-le-Vicomte."
+        },
+        "canonization": {
+          "title": "Kanonisasi Menjadi Santa",
+          "description": "Dinyatakan kudus secara resmi oleh Paus Pius XI pada 24 Mei 1925."
+        },
+        "present": {
+          "year": "Sekarang",
+          "title": "Penyebaran Misi Internasional",
+          "description": "Semangat belas kasih kongregasi meluas ke berbagai belahan dunia, melayani dan berkarya di Italia, Belanda, Inggris, Irlandia, Kongo, India, serta Indonesia."
+        }
+      }
     },
     "identity": {
       "title": "Visi, Misi, dan Moto",
@@ -105,19 +217,93 @@
     },
     "saints": {
       "title": "Tiga Orang Kudus Kongregasi",
-      "description": "Pelajari tentang orang kudus kami yang diberkati"
+      "description": "Pelajari tentang orang kudus kami yang diberkati",
+      "subtitle": "Teladan Kekudusan dan Pengabdian",
+      "paragraph": "Kongregasi dibangun atas fondasi kasih yang kokoh dan pengabdian tanpa batas. Meneladani jejak langkah dan keteladanan hidup dari para pendiri serta tokoh utama kami—Santa Maria Magdalena Postel, Beata Martha, dan Beata Placida—yang mendedikasikan hidup sepenuhnya bagi sesama dan kemuliaan Tuhan.",
+      "saint1": {
+        "name": "Santa Maria Magdalena Postel",
+        "description": "Pendiri kongregasi yang lahir dengan nama Julie Postel. Di tengah gejolak Revolusi Prancis, ia secara rahasia membantu para imam yang dikejar-kejar rezim serta mengajar anak-anak miskin. Pada tahun 1807, ia mendirikan kongregasi ini dengan fokus utama pada pendidikan anak-anak perempuan dan perawatan orang sakit. Ia memimpin komunitas melalui masa-masa sulit kemiskinan ekstrem serta berhasil membangun kembali biara kuno Saint-Sauveur-le-Vicomte sebagai pusat kongregasi sebelum wafat pada usia 89 tahun.",
+        "caption": "Pohon Chêne yang kuat"
+      },
+      "saint2": {
+        "name": "Beata Placida Viel",
+        "description": "Penerus kepemimpinan kongregasi sebagai Pemimpin Umum kedua setelah wafatnya Santa Maria Magdalena Postel. Lahir dengan nama Eulalie Viel, ia merupakan keponakan dan murid terdekat sang pendiri. Di bawah kepemimpinannya yang tenang dan bijaksana, kongregasi mengalami perkembangan pesat, memperoleh pengakuan resmi dari Takhta Suci, serta memperluas karya pelayanan hingga ke luar Prancis, khususnya ke Jerman.",
+        "caption": "Pohon Tilleul yang lembut"
+      },
+      "saint3": {
+        "name": "Beata Martha Le Bouteiller",
+        "description": "Seorang biarawati yang menghidupi kekudusan melalui kesederhanaan tugas sehari-hari di biara Saint-Sauveur-le-Vicomte. Lahir dengan nama Aimée Le Bouteiller, ia menghabiskan hampir seluruh hidup membiaranya dengan bekerja keras di dapur, mengurus kebun, dan mengelola binatu biara. Ia dikenal karena ketaatan, kerendahan hati, serta ketekunannya dalam doa di tengah rutinitas kerja fisik yang berat tanpa pernah mengeluh.",
+        "caption": "Pohon Apel yang menghasilkan buah lezat"
+      }
     },
     "spirituality": {
       "title": "Spiritualitas Kami",
-      "description": "Pelajari tentang praktik spiritual kami"
+      "description": "Pelajari tentang praktik spiritual kami",
+      "subtitle": "Semangat rohani, <highlight>Belas Kasih</highlight>",
+      "paragraph": "Untuk menghayati anugerah panggilan secara mendalam, para religius melandasi hidup mereka dengan spiritualitas belas kasih. Semangat ini diwujudkan dengan mengikuti sedekat mungkin pribadi Yesus Kristus yang miskin dan direndahkan, serta meneladan belas kasih-Nya kepada umat manusia. Wujud nyata dari penghayatan ini tercermin melalui kepedulian, solidaritas, kepekaan terhadap kesulitan sesama yang menderita, dan keramahan yang tulus. Melalui kerendahan hati, mereka terus terpanggil untuk menghidupi keutamaan tersebut dalam pelayanan sehari-hari.",
+      "practices": {
+        "title": "Karakter suster Misericordia sejati",
+        "openness": {
+          "title": "Keterbukaannya",
+          "description": "Terbuka terhadap perubahan jaman, mudah menyesuaikan diri, terbuka terhadap masukan, ide-ide juga kritik yang membangun."
+        },
+        "simplicity": {
+          "title": "Kesederhanaan",
+          "description": "Apa adanya, tidak menuntut hal-hal yang muluk-muluk, gaya hidup yang sederhana."
+        },
+        "poverty": {
+          "title": "Kemiskinannya",
+          "description": "Merasa cukup, tidak serakah, tidak menginginkan barang-barang secara berlebihan."
+        },
+        "humility": {
+          "title": "Kerendahan hatinya",
+          "description": "Mau terus belajar, menyadari dan menerima keterbatasan dan kelemahan diri sendiri, dapat menghargai kelebihan orang lain dan punya semangat pengampunan."
+        }
+      },
+      "quote": "Anda telah menyerahkan diri kepada Allah; korbankanlah seluruhnya. Ia tidak menghendaki sebagian, melainkan seluruh dirimu.",
+      "cite": "St. Maria Magdalena Postel"
     },
     "gallery": {
       "title": "Galeri",
       "description": "Sebuah kumpulan momen"
     },
     "services": {
-      "title": "Bidang Pelayanan Kongregasi",
-      "description": "Aktivitas pelayanan kami"
+      "title": "Karya Pelayanan",
+      "description": "Pergi ke ujung dunia untuk menyelamatkan satu jiwa bagi Kristus",
+      "subtitle": "Melayani dengan <highlight>Belas Kasih</highlight> Nyata",
+      "paragraph1": "Dijiwai oleh semangat untuk mendidik dan meringankan setiap ketidakbahagiaan sesama, para suster St. Maria Magdalena Postel terpanggil untuk menyatakan kemurahan hati, belas kasihan dan kelembutan Allah di tengah-tengah dunia, dengan hadir secara aktif dalam kehidupan manusia dan melibatkan diri melalui aneka ragam tugas pelayanan, guna mewujudkan solidaritas pada sesama yang miskin dalam rupa apapun.",
+      "paragraph2": "Sebagai bentuk nyata keterlibatan para suster meringankan ketidakbahagiaan sesama, mereka ikut aktif dalam kegiatan kerasulan di bidang pendidikan, kesehatan, sosial dan pastoral. Dalam perutusannya, para suster mengambil bagian dalam upaya merawat orang-orang sakit, mengajar siswa di sekolah-sekolah maupun mendukung pendidikan anak-anak yang kesulitan biaya untuk melanjutkan studi, membantu orang-orang miskin, melayani para lanjut usia, mendampingi anak-anak yatim piatu, terlibat aktif dalam berbagai kegiatan pastoral di paroki maupun membimbing sesama yang merindukan kesejukan rohani dan spiritualitas.",
+      "paragraph3": "Melalui berbagai cara para suster memberikan suatu kesaksian hidup menghadirkan dan meluaskan Kerajaan Allah dalam karya-karya kerasulan.",
+      "services": {
+        "healthcare": {
+          "title": "Kesehatan",
+          "tagline": "MEMULIHKAN RAGA, MERAWAT JIWA",
+          "description": "Merawat orang sakit bukan tugas yang ringan namun panggilan misi di ladang ini membuka jalan menuju rahasia Keagungan Tuhan. Belaskasihan bagi orang sakit adalah wujud nyata merawat Yesus dalam diri orang Samaria yang terluka.",
+          "caption": "Penyembuhan Fisik dan Rohani",
+          "secondaryCaption": "Sebuah Warisan Kebaikan"
+        },
+        "educational": {
+          "title": "Pendidikan",
+          "tagline": "MENABUR ILMU, MEMBENTUK MASA DEPAN",
+          "description": "Di tengah-tengah kemajuan pesat akal budi manusia jaman ini, penderitaan siswa yang putus sekolah menjadi kesedihan dunia. Menabur benih harapan demi masa depan generasi muda yang berakar pada kasih Allah.",
+          "caption": "Menuntun Generasi Muda",
+          "secondaryCaption": "Jejak Para Pendidik"
+        },
+        "social": {
+          "title": "Sosial",
+          "tagline": "MENGULUR KASIH, MERANGKUL SESAMA",
+          "description": "Pancaran hati yang berbelaskasih mampu menembus setiap keterbatasan, kerapuhan dan kelemahan manusiawi kita. Mimpi para yatim piatu menuju kemandirian hidup adalah mimpi terdalam nurani kita.",
+          "caption": "Merangkul yang Terpinggirkan",
+          "secondaryCaption": "Kasih yang Tak Bersyarat"
+        },
+        "pastoral": {
+          "title": "Pastoral",
+          "tagline": "MEMBINA IMAN, MENUNTUN LANGKAH",
+          "description": "Kerinduan jiwa setiap insan adalah menyejukkan setiap batin yang haus akan kasih Tuhan. Kekurangan dan kelebihan yang kita persembahkan selalu cukup untuk meringankan ketidakbahagiaan sesama.",
+          "caption": "Mendampingi Umat Beriman",
+          "secondaryCaption": "Berakar dalam Doa"
+        }
+      }
     },
     "formation": {
       "title": "Formasi",

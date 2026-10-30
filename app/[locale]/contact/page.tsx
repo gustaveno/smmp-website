@@ -88,7 +88,7 @@ const monasteries = [
 
 export default function ContactPage() {
   const intl = useIntl()
-  
+
   return (
     <main className="min-h-screen bg-background">
       {/* Hero */}
@@ -115,10 +115,10 @@ export default function ContactPage() {
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="text-center">
           <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted-foreground">
-            Our Headquarters
+            {intl.formatMessage({ id: 'pages.contact.subsubtitle1', defaultMessage: 'Find Us at Our Motherhouse' })}
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Visit Us in Person
+            {intl.formatMessage({ id: 'pages.contact.subtitle1', defaultMessage: 'We’d Love to Hear from You' })}
           </h2>
         </div>
 
@@ -130,7 +130,9 @@ export default function ContactPage() {
                 <MapPin className="h-5 w-5 text-foreground" />
               </div>
               <div>
-                <h3 className="text-lg font-medium">Address</h3>
+                <h3 className="text-lg font-medium">
+                  {intl.formatMessage({ id: 'pages.contact.address', defaultMessage: 'Address' })}
+                </h3>
                 <p className="mt-1 text-base leading-relaxed text-muted-foreground">
                   11 route de l'Abbaye, BP 300
                   <br />
@@ -146,7 +148,9 @@ export default function ContactPage() {
                 <Phone className="h-5 w-5 text-foreground" />
               </div>
               <div>
-                <h3 className="text-lg font-medium">Phone</h3>
+                <h3 className="text-lg font-medium">
+                  {intl.formatMessage({ id: 'pages.contact.phone', defaultMessage: 'Phone' })}
+                </h3>
                 <p className="mt-1 text-base leading-relaxed text-muted-foreground">
                   +33 233216320
                 </p>
@@ -158,7 +162,9 @@ export default function ContactPage() {
                 <Mail className="h-5 w-5 text-foreground" />
               </div>
               <div>
-                <h3 className="text-lg font-medium">Email</h3>
+                <h3 className="text-lg font-medium">
+                  {intl.formatMessage({ id: 'pages.contact.email', defaultMessage: 'Email' })}
+                </h3>
                 <p className="mt-1 text-base leading-relaxed text-muted-foreground">
                   congregation.mmpostel@wanadoo.fr
                 </p>
@@ -187,40 +193,53 @@ export default function ContactPage() {
               <Heart className="h-6 w-6" />
             </div>
             <h2 className="mt-6 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Support Our Mission
+              {intl.formatMessage({ id: 'pages.contact.subtitle2', defaultMessage: 'Support Our Mission' })}
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Your generosity sustains our community, preserves our historic
-              sanctuary, and extends our outreach to those in need. Every
-              gift, large or small, makes a meaningful difference.
+              {intl.formatMessage({
+                id: 'pages.contact.paragraph2',
+                defaultMessage: 'Your generosity sustains our community, preserves our historic sanctuary, and extends our outreach to those in need. Every gift, large or small, makes a meaningful difference.'
+              })}
             </p>
 
             <Button size="lg" className="mt-8 gap-2">
-              Donate Now
+              {intl.formatMessage({ id: 'pages.contact.donateNow', defaultMessage: 'Donate Now' })}
               <ArrowRight className="h-4 w-4" />
             </Button>
           </div>
 
           <div className="mt-14 grid gap-5 sm:grid-cols-3">
             <div className="rounded-xl border border-border/60 bg-background p-5">
-              <h3 className="font-medium">Give Online</h3>
+              <h3 className="font-medium">
+                {intl.formatMessage({ id: 'pages.contact.onlineDonation', defaultMessage: 'Give Online' })}
+              </h3>
               <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                Make a secure one-time or recurring donation through our
-                online portal.
+                {intl.formatMessage({
+                  id: 'pages.contact.onlineDonationDesc',
+                  defaultMessage: 'Make a secure one-time or recurring donation through our online portal.'
+                })}
               </p>
             </div>
             <div className="rounded-xl border border-border/60 bg-background p-5">
-              <h3 className="font-medium">Give by Mail</h3>
+              <h3 className="font-medium">
+                {intl.formatMessage({ id: 'pages.contact.mailDonation', defaultMessage: 'Give by Mail' })}
+              </h3>
               <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                Send checks payable to our congregation at the headquarters
-                address above.
+                {intl.formatMessage({
+                  id: 'pages.contact.mailDonationDesc',
+                  defaultMessage: 'Send your donation to our headquarters at the address provided.'
+                })}
               </p>
             </div>
             <div className="rounded-xl border border-border/60 bg-background p-5">
-              <h3 className="font-medium">Planned Giving</h3>
+              <h3 className="font-medium">
+                {intl.formatMessage({ id: 'pages.contact.plannedDonation', defaultMessage: 'Planned Giving' })}
+              </h3>
               <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                Include our congregation in your estate plans and create a
-                lasting legacy.
+                {intl.formatMessage({
+                  id: 'pages.contact.plannedDonationDesc',
+                  defaultMessage: 'Include our congregation in your estate plans and create a lasting legacy.'
+                })}
               </p>
             </div>
           </div>
@@ -231,18 +250,20 @@ export default function ContactPage() {
       <section className="mx-auto max-w-5xl px-6 py-20">
         <div className="text-center">
           <p className="text-sm font-medium uppercase tracking-[0.18em] text-muted-foreground">
-            Interactive Map
+            {intl.formatMessage({ id: 'pages.contact.subsubtitle3', defaultMessage: 'Explore Our Global Communities' })}
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Our Monasteries Worldwide
+            {intl.formatMessage({ id: 'pages.contact.subtitle3', defaultMessage: 'Where Our Mission Lives' })}
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            Hover over a marker to discover each monastery’s location. On
-            mobile, tap a marker to reveal the details.
+            {intl.formatMessage({
+              id: 'pages.contact.paragraph3',
+              defaultMessage: 'Hover over a marker to discover each monastery’s location. On mobile, tap a marker to reveal the details.'
+            })}
           </p>
         </div>
 
-                <div className="mt-12">
+        <div className="mt-12">
           <WorldMap locations={monasteries} />
 
           {/* Monastery contact list */}

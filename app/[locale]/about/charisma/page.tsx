@@ -22,20 +22,25 @@ export default function CharismaPage() {
             {intl.formatMessage({ id: 'pages.charisma.title', defaultMessage: 'Charisma' })}
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-            Panggilan untuk mencintai, memuliakan, dan menghidupi kasih Kristus.
+            {intl.formatMessage({ id: 'pages.charisma.description', defaultMessage: 'A calling to love, to glorify, and to embody the love of Christ.' })}
           </p>
         </div>
       </section>
 
       <section className="mx-auto max-w-4xl px-6 py-16 sm:px-8 sm:py-24 text-center">
         <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-          Kharisma adalah<br />
-          <span className="italic text-amber-700 bg-amber-100/70 box-decoration-clone px-1.5 py-0.5 rounded">
-            Hidup bagi Allah
-          </span>
+          {intl.formatMessage({ id: 'pages.charisma.subtitle1' },
+            {
+              br: () => <br />,
+              highlight: (chunks) => (
+                <span className="italic text-amber-700 px-1.5 py-0.5 rounded">
+                  {chunks}
+                </span>
+              ),
+            })}
         </h2>
         <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-          Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita. Itulah kharisma atau anugrah yang dimiliki Kongregasi. Panggilan untuk mencintai, memuliakan, dan menghidupi kasih Kristus.
+          {intl.formatMessage({ id: 'pages.charisma.paragraph1' })}
         </p>
       </section>
 
@@ -43,55 +48,55 @@ export default function CharismaPage() {
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-4xl">
             <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
-              Hidup bagi Allah?
+              {intl.formatMessage({ id: 'pages.charisma.subtitle2' })}
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Maksudnya, para suster mendapat panggilan untuk.
+              {intl.formatMessage({ id: 'pages.charisma.paragraph2' })}
             </p>
           </div>
 
           <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">
             {/* Kolom 1 */}
             <div>
-              <h3 className="font-semibold tracking-tight">Mengasihi Allah</h3>
+              <h3 className="font-semibold tracking-tight">{intl.formatMessage({ id: 'pages.charisma.point1Title' })}</h3>
               <div className="mt-4 flex items-start gap-4">
                 <img
                   src="/kharisma/1.jpg"
-                  alt="Mengasihi Allah"
+                  alt={intl.formatMessage({ id: 'pages.charisma.point1Title' })}
                   className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
                 />
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Mencintai Allah tanpa batas dan berusaha sekuat tenaga agar Ia dicintai.
+                  {intl.formatMessage({ id: 'pages.charisma.point1Desc' })}
                 </p>
               </div>
             </div>
 
             {/* Kolom 2 */}
             <div>
-              <h3 className="font-semibold tracking-tight">Memuliakan Allah</h3>
+              <h3 className="font-semibold tracking-tight">{intl.formatMessage({ id: 'pages.charisma.point2Title' })}</h3>
               <div className="mt-4 flex items-start gap-4">
                 <img
                   src="/kharisma/2.jpg"
-                  alt="Memuliakan Allah"
+                  alt={intl.formatMessage({ id: 'pages.charisma.point2Title' })}
                   className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
                 />
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Hidup untuk lebih memuliakan Allah.
+                  {intl.formatMessage({ id: 'pages.charisma.point2Desc' })}
                 </p>
               </div>
             </div>
 
             {/* Kolom 3 */}
             <div>
-              <h3 className="font-semibold tracking-tight">Hidup dalam Kristus</h3>
+              <h3 className="font-semibold tracking-tight">{intl.formatMessage({ id: 'pages.charisma.point3Title' })}</h3>
               <div className="mt-4 flex items-start gap-4">
                 <img
                   src="/kharisma/3.jpg"
-                  alt="Hidup dalam Kristus"
+                  alt={intl.formatMessage({ id: 'pages.charisma.point3Title' })}
                   className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
                 />
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  Usaha terus menerus membuat hidup kami dihidupi oleh Yesus.
+                  {intl.formatMessage({ id: 'pages.charisma.point3Desc' })}
                 </p>
               </div>
             </div>
@@ -104,7 +109,7 @@ export default function CharismaPage() {
           {/* Kolom 1: Judul */}
           <div>
             <h2 className="font-serif text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
-              Menjadi pelayan mereka yang menderita
+              {intl.formatMessage({ id: 'pages.charisma.subtitle3' })}
             </h2>
           </div>
 
@@ -120,12 +125,7 @@ export default function CharismaPage() {
           {/* Kolom 3: Deskripsi + Link */}
           <div>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Para suster Misericordia itu adalah sahabat-sahabat jiwa orang-orang yang sakit,
-              miskin dan tak berdaya. Kehadiran mereka membawa penghiburan serta harapan nyata
-              bagi mereka yang tersisih di tengah masyarakat. Melalui ketulusan hati dalam
-              melayani, mereka membuktikan
-              bahwa belas kasih dapat menjadi tumpuan bagi siapa saja yang sedang berjuang
-              melawan kesulitan hidup.
+              {intl.formatMessage({ id: 'pages.charisma.paragraph3' })}
             </p>
           </div>
         </div>
@@ -135,11 +135,11 @@ export default function CharismaPage() {
         <Quote className="mx-auto h-10 w-10 text-muted-foreground/60" />
         <blockquote className="mt-8">
           <p className="text-3xl font-medium leading-snug tracking-tight text-foreground sm:text-3xl">
-            Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita.
+            {intl.formatMessage({ id: 'pages.charisma.quote' })}
           </p>
         </blockquote>
         <footer className="mt-8 text-sm uppercase tracking-[0.18em] text-muted-foreground">
-          Santa Maria Magdalena Postel
+          {intl.formatMessage({ id: 'pages.charisma.cite' })}
         </footer>
       </section>
     </main>

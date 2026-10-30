@@ -1,5 +1,9 @@
 {
   "common": {
+    "title": {
+      "upper": "Congregation of the Sisters",
+      "lower": "of Saint Mary Magdalene Postel"
+    },
     "navigation": {
       "home": "Home",
       "about": "About Us",
@@ -36,8 +40,22 @@
   },
   "pages": {
     "home": {
-      "title": "Our Church",
-      "description": "Welcome to our community"
+      "hero1": "Misericordia",
+      "hero2": "Love, love without limits",
+      "overviewquote": "Children, love God with all your heart and show that love through sacrifice.",
+      "overview": "Our Congregation",
+      "overviewdesc1": "The Congregation of the Sisters of Saint Mary Magdalene Postel, also known as the Sisters of Mercy, is a women’s religious congregation within the Roman Catholic Church founded by Saint Mary Magdalene Postel.",
+      "overviewdesc2": "Julie Postel (1756–1846) was born in Barfleur, Normandy, France. During the turbulent French Revolution, she secretly helped persecuted priests and educated poor children. Her congregation was founded in 1807 in Cherbourg; together with Sr. Jeanne-Catherine Bellot, Sr. Louisa Viel, and Sr. Angelique Ledanois, she took her religious vows and established a congregation dedicated to educating young people, instilling a love for God and a love for work, and sacrificing herself to help the poor and alleviate the suffering of as many people as possible.",
+      "overviewdesc3": "That was Julie Postel’s original vision and goal in founding a religious congregation.",
+      "quote": "Living for God and serving others, especially those who are suffering",
+      "cite": "St. Mary Magdalene Postel",
+      "articlesub": "Explore Our Community",
+      "articletitle": "What We Offer",
+      "articledesc": "Discover our community's spiritual programs and activities, designed to nourish faith and foster connection.",
+      "news": "Latest News",
+      "newsviewall": "View All",
+      "ctatitle": "Would you like to join our mission?",
+      "ctadesc": "I will go to the ends of the earth to seek out a single soul for Jesus Christ, even if, at the end of my journey, I face martyrdom."
     },
     "news": {
       "title": "News",
@@ -84,20 +102,114 @@
     "contact": {
       "title": "Contact Us",
       "description": "Reach out, visit our headquarters, or learn about our monasteries",
-      "name": "Name",
+      "address": "Address",
+      "phone": "Phone",
       "email": "Email",
-      "message": "Message",
-      "send": "Send",
-      "success": "Thank you for contacting us",
-      "error": "Failed to send message"
+      "subtitle1": "We’d Love to Hear from You",
+      "subsubtitle1": "Find Us at Our Motherhouse",
+      "subtitle2": "Support Our Mission",
+      "paragraph2": "Your generosity sustains our community, preserves our historic sanctuary, and extends our outreach to those in need. Every gift, large or small, makes a meaningful difference.",
+      "donateNow": "Donate Now",
+      "onlineDonation": "Give Online",
+      "onlineDonationDesc": "Make a secure one-time or recurring donation through our online portal.",
+      "mailDonation": "Give by Mail",
+      "mailDonationDesc": "Send your donation to our headquarters at the address provided.",
+      "plannedDonation": "Planned Giving",
+      "plannedDonationDesc": "Include our congregation in your estate plans and create a lasting legacy.",
+      "subtitle3": "Where Our Mission Lives",
+      "subsubtitle3": "Explore Our Global Communities",
+      "paragraph3": "Hover over a marker to discover each monastery’s location. On mobile, tap a marker to reveal the details."
     },
     "charisma": {
       "title": "Charisma",
-      "description": "The charisma of our community"
+      "description": "A calling to love, to glorify, and to embody the love of Christ",
+      "subtitle1": "Charism is<br></br><highlight>Living for God</highlight>",
+      "paragraph1": "Living for God and serving others, especially those who suffer. That is the charism or gift of the Congregation: a call to love, glorify, and live out the love of Christ.",
+      "subtitle2": "Living for God?",
+      "paragraph2": "What I mean is, the sisters were called to…",
+      "point1Title": "To Love God",
+      "point1Desc": "To love God without limit and to do one’s utmost to ensure that He is loved.",
+      "point2Title": "To Glorify God",
+      "point2Desc": "Live to glorify God even more.",
+      "point3Title": "To Live in Christ",
+      "point3Desc": "Our ongoing effort makes our lives truly lived by Jesus.",
+      "subtitle3": "To be a servant to those who suffer",
+      "paragraph3": "The Misericordia Sisters are soulmates to the sick, the poor, and the vulnerable. Their presence brings comfort and real hope to those who are marginalized in society. Through their sincere dedication to service, they demonstrate that compassion can be a source of strength for anyone struggling with life’s hardships.",
+      "quote": "To live for God and to serve our neighbors, especially those in suffering.",
+      "cite": "St. Mary Magdalene Postel"
     },
     "history": {
       "title": "History",
-      "description": "Our history"
+      "description": "Our history",
+      "subtitle": "Seeds of a <highlight>Heart of Mercy</highlight> that Grow",
+      "paragraph": "The journey began with Julie Postel’s spirit of service and, through many seasons filled with challenges and hope, grew into the congregation we know today. Join us as we explore the moments that have shaped who we are.",
+      "milestones": {
+        "birth": {
+          "title": "Birth of Julie Postel",
+          "description": "Born on November 28 in Barfleur, Northern France, as Julie Françoise Catherine Postel, the eldest of the Jean Postel le Vallois family. Her early aspiration was to dedicate herself to God by serving the poor."
+        },
+        "firstCommunion": {
+          "title": "First Communion",
+          "description": "Received first communion at the age of 9, thanks to her exemplary behavior and outstanding qualities while attending the Benedictine sisters' boarding school in Valognes."
+        },
+        "godmother": {
+          "title": "Becoming a Godmother",
+          "description": "Asked to be a godmother for the baptism of several infants on July 11th when she was 12 years old."
+        },
+        "valognesStudy": {
+          "title": "Education in Valognes",
+          "description": "Studied as a teacher for 6 years at the Benedictine sisters' school in Valognes, receiving a strong human and religious formation."
+        },
+        "barfleur": {
+          "title": "Educational Ministry in Barfleur",
+          "description": "Opened a school and boarding house for poor children. During the French Revolution, she helped a priest escape to England to save his priesthood and kept the Blessed Sacrament in her house beneath a staircase."
+        },
+        "cherbourg": {
+          "title": "Move to Cherbourg",
+          "description": "On May 12, 1805, she left Barfleur for Cherbourg. There she opened a school and soon 3 young women joined her."
+        },
+        "foundation": {
+          "title": "Vows Profession and Foundation of the Congregation",
+          "description": "Thanks to her perseverance, the Church finally approved her vision. On September 8, 1807, she professed her vows alongside three companions, marking the official establishment of the Congregation."
+        },
+        "octeville": {
+          "title": "Relocation to Octeville L’avenel",
+          "description": "Cherbourg was left behind as the Sisters of Providence returned there. She then sought a new place in Octeville L’avenel, living inside a stable."
+        },
+        "tamerville1": {
+          "title": "The Tamerville Period",
+          "description": "As Octeville L’avenel became inadequate, the group moved to Tamerville. Here the sisters took in 12 orphans, but jealousy towards their presence also began to emerge."
+        },
+        "valognes": {
+          "title": "The Valognes Period (House of the Dying)",
+          "description": "Settled in Valognes, which could be likened to a deathbed house. However, she remained steadfast in continuing the struggle, even when advised to dissolve her congregation."
+        },
+        "hamel": {
+          "title": "Move to Hamel au Bon",
+          "description": "From Valognes she moved to Hamel au Bon, a thatched-roof cottage. It was here that she drafted the first Constitution amidst unceasing struggles."
+        },
+        "tamerville2": {
+          "title": "Return to Tamerville",
+          "description": "The sisters were called back to Tamerville. To be recognized by the Royal government, the congregation needed to find a Motherhouse, and Fr. Lerenard secured a house for them."
+        },
+        "abbaye": {
+          "title": "Settling in Saint-Sauveur-le-Vicomte (L’Abbaye)",
+          "description": "On June 7, 1832, the land purchase (L’Abbaye) was finalized, fulfilling Marie Rose Dadure's prophecy that a priest would lead her to L’Abbaye. On October 15, together with 14 sisters, she moved to this place until her death."
+        },
+        "death": {
+          "title": "Passing of the Congregation's Founder",
+          "description": "Passed away on July 16 at the age of 90, precisely on the Feast of Our Lady of Mount Carmel, after successfully preserving the congregation and settling in Saint-Sauveur-le-Vicomte."
+        },
+        "canonization": {
+          "title": "Canonization as a Saint",
+          "description": "Officially declared a saint by Pope Pius XI on May 24, 1925."
+        },
+        "present": {
+          "year": "Present",
+          "title": "International Mission Expansion",
+          "description": "The congregation's spirit of compassion spread to various parts of the world, serving and working in Italy, the Netherlands, England, Ireland, Congo, India, and Indonesia."
+        }
+      }
     },
     "identity": {
       "title": "Vision, Mission, and Motto",
@@ -105,19 +217,93 @@
     },
     "saints": {
       "title": "Three Saints of Congregation",
-      "description": "Learn about our blessed saints"
+      "description": "Learn about our blessed saints",
+      "subtitle": "Model of Holiness and Dedication",
+      "paragraph": "The congregation was built on a foundation of solid love and unlimited dedication. Following in the footsteps and embodying the lifestyle of our founders and key figures—Saint Mary Magdalene Postel, Beata Martha, and Beata Placida—these saints devoted their entire lives to serving others and glorifying God.",
+      "saint1": {
+        "name": "Saint Mary Magdalene Postel",
+        "description": "The founder of the congregation was born Julie Postel. Amid the turmoil of the French Revolution, she secretly helped priests who were being persecuted by the regime and taught poor children. In 1807, she founded this congregation with a primary focus on the education of girls and the care of the sick. She led the community through difficult times of extreme poverty and succeeded in restoring the ancient monastery of Saint-Sauveur-le-Vicomte as the congregation’s headquarters before passing away at the age of 89.",
+        "caption": "The Sturdy Chêne Tree"
+      },
+      "saint2": {
+        "name": "Beata Placida Viel",
+        "description": "She succeeded as the second Superior General of the congregation following the death of Saint Mary Magdalene Postel. Born Eulalie Viel, she was the niece and closest disciple of the founder. Under her calm and wise leadership, the congregation experienced rapid growth, received official recognition from the Holy See, and expanded its ministry beyond France, particularly to Germany.",
+        "caption": "The Gentle Tilleul Tree"
+      },
+      "saint3": {
+        "name": "Beata Martha Le Bouteiller",
+        "description": "A nun who lived out her holiness through the simplicity of her daily tasks at the Saint-Sauveur-le-Vicomte convent. Born Aimée Le Bouteiller, she spent nearly her entire religious life working hard in the kitchen, tending the garden, and managing the convent’s laundry. She was known for her obedience, humility, and perseverance in prayer amid a grueling routine of physical labor, without ever complaining.",
+        "caption": "The Apple Tree that bears delicious fruit"
+      }
     },
     "spirituality": {
       "title": "Our Spirituality",
-      "description": "Learn about our spiritual practices"
+      "description": "Learn about our spiritual practices",
+      "subtitle": "Spiritual Life, <highlight>Heart of Mercy</highlight>",
+      "paragraph": "To deeply appreciate the gift of their vocation, religious ground their lives in a spirituality of compassion. This spirit is embodied by following as closely as possible the example of Jesus Christ—who was poor and humbled—and by emulating His compassion toward humanity. The tangible expression of this commitment is reflected in care, solidarity, sensitivity to the suffering of others, and sincere kindness. Through humility, they are continually called to live out these virtues in their daily ministry.",
+      "practices": {
+        "title": "The True Character of Sister Misericordia",
+        "openness": {
+          "title": "Openness",
+          "description": "Open to changing times, adaptable, and receptive to feedback, ideas, and constructive criticism."
+        },
+        "simplicity": {
+          "title": "Simplicity",
+          "description": "Authentic, free from grand ambitions, embracing a humble lifestyle."
+        },
+        "poverty": {
+          "title": "Poverty",
+          "description": "Feeling content, not being greedy, and not desiring material possessions excessively."
+        },
+        "humility": {
+          "title": "Humility",
+          "description": "Eager to keep learning, aware of and accepting of one's own human limitations and frailties, appreciative of the gifts of others, and rich in the spirit of forgiveness."
+        }
+      },
+      "quote": "You have given yourself to God; sacrifice it all. He desires not a part, but the whole of you.",
+      "cite": "St. Mary Magdalene Postel"
     },
     "gallery": {
       "title": "Gallery",
       "description": "A collection of moments"
     },
     "services": {
-      "title": "Congressional Service Fields",
-      "description": "Our service activities"
+      "title": "Works of Ministry",
+      "description": "To the ends of the earth to save a single soul for Christ",
+      "subtitle": "Serving with a Tangible <highlight>Heart of Mercy</highlight>",
+      "paragraph1": "Inspired by a passion for educating others and alleviating the suffering of their neighbors, the Sisters of St. Mary Magdalene Postel are called to manifest God’s generosity, compassion, and tenderness in the world by actively engaging in people’s lives and dedicating themselves to a wide variety of ministerial tasks, in order to show solidarity with the poor in all their forms.",
+      "paragraph2": "As a tangible expression of the sisters’ commitment to alleviating the suffering of others, they actively participate in apostolic work in the fields of education, health, social services, and pastoral care. In carrying out their mission, the sisters take part in caring for the sick, teaching students in schools, and supporting the education of children who face financial difficulties in continuing their studies; they assist the poor, serve the elderly, accompany orphans, actively participate in various pastoral activities in parishes, and guide others who seek spiritual refreshment and deepening of their spirituality.",
+      "paragraph3": "Through various means, the sisters bear witness through their lives to the presence and expansion of the Kingdom of God in their apostolic works.",
+      "services": {
+        "healthcare": {
+          "title": "Healthcare",
+          "tagline": "HEAL THE BODY, TEND THE SOUL",
+          "description": "Caring for the sick is not an easy task, but the call to mission in this field opens the way to the mystery of God's glory. Compassion for the sick is a tangible expression of caring for Jesus in the wounded Samaritan.",
+          "caption": "Physical and Spiritual Healing",
+          "secondaryCaption": "A Legacy of Kindness"
+        },
+        "educational": {
+          "title": "Education",
+          "tagline": "NURTURE KNOWLEDGE, SHAPE THE FUTURE",
+          "description": "In the midst of rapid intellectual advancement in our time, the suffering of students who drop out of school is a sorrow for the world. Sowing seeds of hope for the future of the youth rooted in God's love.",
+          "caption": "Guiding the Youth",
+          "secondaryCaption": "Legacies of Educators"
+        },
+        "social": {
+          "title": "Social",
+          "tagline": "EXTENDING LOVE, EMBRACING ALL",
+          "description": "The radiance of a compassionate heart can transcend all our human limitations, fragility, and weaknesses. The dream of orphans to achieve independence is the deepest dream of our conscience.",
+          "caption": "Embracing the Marginalized",
+          "secondaryCaption": "Unconditional Love"
+        },
+        "pastoral": {
+          "title": "Pastoral",
+          "tagline": "BUILDING FAITH, LIGHTING THE WAY",
+          "description": "The longing of every person's soul is to refresh the heart of anyone who thirsts for God's love. What we offer, whether in lack or abundance, is always sufficient to alleviate the unhappiness of our fellow beings.",
+          "caption": "Accompanying the Faithful",
+          "secondaryCaption": "Rooted in Prayer"
+        }
+      }
     },
     "formation": {
       "title": "Formation",

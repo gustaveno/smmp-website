@@ -29,16 +29,16 @@ export default function SaintsPage() {
 
       <section className="mx-auto max-w-4xl px-6 py-16 sm:px-8 sm:py-24 text-center">
         <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-          Teladan Kekudusan dan Pengabdian
+          {intl.formatMessage({ id: 'pages.saints.subtitle', defaultMessage: 'Models of Holiness and Devotion' })}
         </h2>
         <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-          Kongregasi dibangun atas fondasi kasih yang kokoh dan pengabdian tanpa batas. Meneladani jejak langkah dan keteladanan hidup dari para pendiri serta tokoh utama kami—Santa Maria Magdalena Postel, Beata Martha, dan Beata Placida—yang mendedikasikan hidup sepenuhnya bagi sesama dan kemuliaan Tuhan.
+          {intl.formatMessage({ id: 'pages.saints.paragraph', defaultMessage: 'The congregation was built on a foundation of solid love and unlimited dedication. Following in the footsteps and embodying the lifestyle of our founders and key figures—Saint Mary Magdalene Postel, Beata Martha, and Beata Placida—these saints devoted their entire lives to serving others and glorifying God.' })}
         </p>
       </section>
 
       <section className="mx-auto max-w-5xl px-6 py-10 sm:py-12">
         <h2 className="border-b border-border pb-3 font-serif text-xl font-bold leading-tight tracking-tight sm:text-2xl">
-          Santa Maria Magdalena Postel
+          {intl.formatMessage({ id: 'pages.saints.saint1.name', defaultMessage: 'Saint Mary Magdalene Postel' })}
         </h2>
         <div className="mt-6 grid items-center gap-8 sm:mt-8 md:grid-cols-[170px_1fr_210px] md:gap-10">
           <div className="mx-auto w-40 overflow-hidden rounded-xl shadow-md md:mx-0 md:w-full">
@@ -49,14 +49,7 @@ export default function SaintsPage() {
             />
           </div>
           <p className="text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
-            Pendiri kongregasi yang lahir dengan nama Julie Postel. Di tengah gejolak
-            Revolusi Prancis, ia secara rahasia membantu para imam yang dikejar-kejar
-            rezim serta mengajar anak-anak miskin. Pada tahun 1807, ia mendirikan
-            kongregasi ini dengan fokus utama pada pendidikan anak-anak perempuan dan
-            perawatan orang sakit. Ia memimpin komunitas melalui masa-masa sulit
-            kemiskinan ekstrem serta berhasil membangun kembali biara kuno
-            Saint-Sauveur-le-Vicomte sebagai pusat kongregasi sebelum wafat pada usia
-            89 tahun.
+            {intl.formatMessage({ id: 'pages.saints.saint1.description', defaultMessage: 'The founder of the congregation was born Julie Postel. Amid the turmoil of the French Revolution, she secretly helped priests who were being persecuted by the regime and taught poor children. In 1807, she founded this congregation with a primary focus on the education of girls and the care of the sick. She led the community through difficult times of extreme poverty and succeeded in restoring the ancient monastery of Saint-Sauveur-le-Vicomte as the congregation’s headquarters before passing away at the age of 89.' })}
           </p>
           <figure className="mx-auto w-full max-w-[260px] md:max-w-none">
             <div className="overflow-hidden rounded-sm">
@@ -67,14 +60,14 @@ export default function SaintsPage() {
               />
             </div>
             <figcaption className="mt-2 text-center text-xs text-muted-foreground">
-              Pohon Chêne yang kuat
+              {intl.formatMessage({ id: 'pages.saints.saint1.caption', defaultMessage: 'The Sturdy Chêne Tree' })}
             </figcaption>
           </figure>
         </div>
       </section>
       <section className="mx-auto max-w-5xl px-6 py-10 sm:py-12">
         <h2 className="border-b border-border pb-3 font-serif text-xl font-bold leading-tight tracking-tight sm:text-2xl">
-          Beata Placida Viel
+          {intl.formatMessage({ id: 'pages.saints.saint2.name', defaultMessage: 'Beata Placida Viel' })}
         </h2>
         <div className="mt-6 grid items-center gap-8 sm:mt-8 md:grid-cols-[170px_1fr_210px] md:gap-10">
           <div className="mx-auto w-40 overflow-hidden rounded-xl shadow-md md:mx-0 md:w-full">
@@ -85,12 +78,7 @@ export default function SaintsPage() {
             />
           </div>
           <p className="text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
-            Penerus kepemimpinan kongregasi sebagai Pemimpin Umum kedua setelah wafatnya
-            Santa Maria Magdalena Postel. Lahir dengan nama Eulalie Viel, ia merupakan
-            keponakan dan murid terdekat sang pendiri. Di bawah kepemimpinannya yang
-            tenang dan bijaksana, kongregasi mengalami perkembangan pesat, memperoleh
-            pengakuan resmi dari Takhta Suci, serta memperluas karya pelayanan hingga ke
-            luar Prancis, khususnya ke Jerman.
+          {intl.formatMessage({ id: 'pages.saints.saint2.description', defaultMessage: 'She succeeded as the second Superior General of the congregation following the death of Saint Mary Magdalene Postel. Born Eulalie Viel, she was the niece and closest disciple of the founder. Under her calm and wise leadership, the congregation experienced rapid growth, received official recognition from the Holy See, and expanded its ministry beyond France, particularly to Germany.' })}   
           </p>
           <figure className="mx-auto w-full max-w-[260px] md:max-w-none">
             <div className="overflow-hidden rounded-sm">
@@ -101,14 +89,14 @@ export default function SaintsPage() {
               />
             </div>
             <figcaption className="mt-2 text-center text-xs text-muted-foreground">
-              Pohon Tilleul yang lembut
+              {intl.formatMessage({ id: 'pages.saints.saint2.caption', defaultMessage: 'The Gentle Tilleul Tree' })}
             </figcaption>
           </figure>
         </div>
       </section>
       <section className="mx-auto max-w-5xl px-6 py-10 sm:py-12">
         <h2 className="border-b border-border pb-3 font-serif text-xl font-bold leading-tight tracking-tight sm:text-2xl">
-          Beata Martha Le Bouteiller
+          {intl.formatMessage({ id: 'pages.saints.saint3.name', defaultMessage: 'Beata Martha Le Bouteiller' })}
         </h2>
         <div className="mt-6 grid items-center gap-8 sm:mt-8 md:grid-cols-[170px_1fr_210px] md:gap-10">
           <div className="mx-auto w-40 overflow-hidden rounded-xl shadow-md md:mx-0 md:w-full">
@@ -120,12 +108,7 @@ export default function SaintsPage() {
           </div>
 
           <p className="text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
-            Seorang biarawati yang menghidupi kekudusan melalui kesederhanaan tugas
-            sehari-hari di biara Saint-Sauveur-le-Vicomte. Lahir dengan nama Aimée Le
-            Bouteiller, ia menghabiskan hampir seluruh hidup membiaranya dengan bekerja
-            keras di dapur, mengurus kebun, dan mengelola binatu biara. Ia dikenal
-            karena ketaatan, kerendahan hati, serta ketekunannya dalam doa di tengah
-            rutinitas kerja fisik yang berat tanpa pernah mengeluh.
+            {intl.formatMessage({ id: 'pages.saints.saint3.description', defaultMessage: 'A nun who lived out her holiness through the simplicity of her daily tasks at the Saint-Sauveur-le-Vicomte convent. Born Aimée Le Bouteiller, she spent nearly her entire religious life working hard in the kitchen, tending the garden, and managing the convent’s laundry. She was known for her obedience, humility, and perseverance in prayer amid a grueling routine of physical labor, without ever complaining.' })}
           </p>
 
           <figure className="mx-auto w-full max-w-[260px] md:max-w-none">
@@ -137,7 +120,7 @@ export default function SaintsPage() {
               />
             </div>
             <figcaption className="mt-2 text-center text-xs text-muted-foreground">
-              Pohon Apel yang menghasilkan buah lezat
+              {intl.formatMessage({ id: 'pages.saints.saint3.caption', defaultMessage: 'The Apple Tree that bears delicious fruit' })}
             </figcaption>
           </figure>
         </div>

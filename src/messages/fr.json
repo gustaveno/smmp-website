@@ -2,7 +2,7 @@
   "common": {
     "title": {
       "upper": "La Congrégation des Sœurs",
-      "lower": "de Marie-Madeleine Postel"
+      "lower": "de Sainte-Marie-Madeleine Postel"
     },
     "navigation": {
       "home": "Accueil",
@@ -40,12 +40,12 @@
   },
   "pages": {
     "home": {
-      "hero1": "Misericordia",
+      "hero1": "Sainte Marie-Madeleine Postel",
       "hero2": "L'amour, l'amour sans limites",
       "overviewquote": "Enfants, aimez Dieu de tout votre cœur et montrez cet amour par le sacrifice.",
       "overview": "Notre Congrégation",
-      "overviewdesc1": "La Congrégation des Sœurs de Sainte Marie-Madeleine Postel, également connue sous le nom de Sœurs de la Miséricorde, est une congrégation religieuse féminine au sein de l'Église catholique romaine fondée par Sainte Marie-Madeleine Postel.",
-      "overviewdesc2": "Julie Postel (1756–1846) est née à Barfleur, en Normandie, en France. Pendant la révolution française tumultueuse, elle a secrètement aidé les prêtres persécutés et éduqué les enfants pauvres. Sa congrégation a été fondée en 1807 à Cherbourg ; avec les sœurs Jeanne-Catherine Bellot, Louisa Viel et Angelique Ledanois, elle a pris ses vœux religieux et a établi une congrégation dédiée à l'éducation des jeunes, à l'instillation d'un amour pour Dieu et d'un amour pour le travail, et au sacrifice pour aider les pauvres et soulager la souffrance de autant de personnes que possible.",
+      "overviewdesc1": "La Congrégation des Sœurs de Sainte Marie-Madeleine Postel est une congrégation religieuse féminine au sein de l'Église catholique romaine, fondée par Sainte Marie-Madeleine Postel.",
+      "overviewdesc2": "Julie Postel (1756–1846) est née à Barfleur, en Normandie, dans le nord de la France. Pendant la période tumultueuse de la Révolution française, elle a secrètement aidé les prêtres persécutés et s’est occupée de l’éducation des enfants pauvres. Sa congrégation a été fondée en 1807 à Cherbourg. Avec Sœur Jeanne-Catherine Bellot, Sœur Louise Viel et Sœur Angélique Ledanois, elle a prononcé ses vœux religieux et fondé une congrégation destinée à éduquer les jeunes, à leur inculquer l’amour de Dieu et l’amour du travail, ainsi qu’à se sacrifier pour venir en aide aux pauvres et soulager autant que possible les souffrances du plus grand nombre.",
       "overviewdesc3": "C'était la vision et l'objectif original de Julie Postel dans la fondation d'une congrégation religieuse.",
       "quote": "Vivre pour Dieu et servir les autres, surtout ceux qui souffrent",
       "cite": "St. Marie-Madeleine Postel",
@@ -123,7 +123,7 @@
     "charisma": {
       "title": "Charisme",
       "description": "Une vocation à aimer, à glorifier et à incarner l'amour du Christ",
-      "subtitle1": "Le charisme est de<br></br><highlight>Vivre pour Dieu</highlight>",
+      "subtitle1": "Charisme",
       "paragraph1": "Vivre pour Dieu et servir les autres, en particulier ceux qui souffrent. Tel est le charisme, ou don, de la Congrégation : un appel à aimer, à glorifier et à vivre l’amour du Christ.",
       "subtitle2": "Vivre pour Dieu?",
       "paragraph2": "Ce que je veux dire, c'est que les sœurs ont été appelées à…",
@@ -134,7 +134,7 @@
       "point3Title": "Vivre en Christ",
       "point3Desc": "Notre effort continu rend nos vies véritablement vécues par Jésus.",
       "subtitle3": "Être un serviteur de ceux qui souffrent",
-      "paragraph3": "Les Sœurs de la Miséricorde sont des âmes jumelles des malades, des pauvres et des vulnérables. Leur présence apporte du réconfort et un espoir réel à ceux qui sont marginalisés dans la société. Grâce à leur dévouement sincère au service, elles démontrent que la compassion peut être une source de force pour quiconque lutte contre les difficultés de la vie.",
+      "paragraph3": "Les sœurs de Sainte Marie-Madeleine Postel sont les amies de cœur des malades, des pauvres et des plus démunis. Leur présence apporte réconfort et espoir concret à ceux qui sont en marge de la société. Par la sincérité de leur dévouement, elles prouvent que la compassion peut être un soutien pour tous ceux qui luttent contre les difficultés de la vie.",
       "quote": "Vivre pour Dieu et servir nos proches, surtout ceux qui souffrent.",
       "cite": "St. Marie-Madeleine Postel"
     },
@@ -142,7 +142,8 @@
       "title": "Histoire",
       "description": "Notre histoire",
       "subtitle": "Des graines d'un <highlight>Cœur de miséricorde</highlight> qui grandissent",
-      "paragraph": "Ce parcours a pris naissance dans l'esprit de dévouement de Julie Postel et s'est développé, au fil de nombreuses saisons marquées par des défis et des espoirs, pour devenir la congrégation que nous connaissons aujourd'hui. Retracez avec nous les moments qui ont façonné notre identité.",
+      "paragraph1": "Les sœurs de Sainte Marie-Madeleine Postel sont les amies de cœur des malades, des pauvres et des plus démunis. Leur présence apporte réconfort et espoir concret à ceux qui sont en marge de la société. Par la sincérité de leur dévouement, elles prouvent que la compassion peut être un soutien pour tous ceux qui luttent contre les difficultés de la vie.",
+      "paragraph2": "Découvrez avec nous ces beaux moments, marqués par la lutte et le sacrifice, qui ont façonné la congrégation.",
       "milestones": {
         "birth": {
           "title": "Naissance de Julie Postel",
@@ -154,7 +155,7 @@
         },
         "godmother": {
           "title": "Devenant Mère Baptismale",
-          "description": "Demandée à devenir mère baptismale pour le baptême de plusieurs bébés le 11 juillet à l'âge de 12 ans."
+          "description": "À l'âge de 12 ans, elle a été sollicitée pour être la marraine de plusieurs bébés lors de leur baptême."
         },
         "valognesStudy": {
           "title": "Études à Valognes",
@@ -162,7 +163,7 @@
         },
         "barfleur": {
           "title": "Ministère éducatif à Barfleur",
-          "description": "Ouverture d'une école et d'un internat pour les enfants pauvres. Pendant la Révolution française, elle a aidé un prêtre à fuir en Angleterre pour sauver son sacerdoce et a gardé le Saint-Sacrement dans sa maison sous un escalier."
+          "description": "Il a ouvert une école et un internat pour les enfants pauvres. À l'époque de la Révolution française, il a aidé un prêtre à se rendre en Angleterre pour sauver son sacerdoce et a conservé le Saint-Sacrement chez lui, sous un escalier."
         },
         "cherbourg": {
           "title": "Déménagement à Cherbourg",
@@ -177,11 +178,11 @@
           "description": "Cherbourg est délaissé lorsque les Sœurs de la Providence y retournent. Elle cherche alors un nouvel endroit à Octeville L’avenel, vivant à l'intérieur d'une écurie."
         },
         "tamerville1": {
-          "title": "La période de Tamerville",
+          "title": "Tamerville",
           "description": "Comme Octeville L’avenel devient insuffisant, le groupe déménage à Tamerville. Ici, les sœurs accueillent 12 orphelins, mais la jalousie commence également à se faire sentir face à leur présence."
         },
         "valognes": {
-          "title": "La période de Valognes (Maison des mourants)",
+          "title": "Valognes",
           "description": "Elle s'installe à Valognes, que l'on peut comparer à une maison de mourants. Cependant, elle reste déterminée à poursuivre la lutte, même lorsqu'on lui conseille de dissoudre sa congrégation."
         },
         "hamel": {
@@ -190,7 +191,7 @@
         },
         "tamerville2": {
           "title": "Retour à Tamerville",
-          "description": "Les sœurs sont rappelées à Tamerville. Pour être reconnue par le gouvernement royal, la congrégation doit trouver une maison mère, et le P. Lerenard leur trouve une maison."
+          "description": "Les sœurs furent rappelées à Tamerville. Pour être reconnue par le gouvernement royal, la congrégation devait trouver une maison mère. Le père Lerenard leur trouva une maison."
         },
         "abbaye": {
           "title": "Installation à Saint-Sauveur-le-Vicomte (L’Abbaye)",
@@ -207,7 +208,7 @@
         "present": {
           "year": "Présent",
           "title": "Expansion de la mission internationale",
-          "description": "L'esprit de compassion de la congrégation s'est étendu à diverses parts du monde, servant et œuvrant en Italie, aux Pays-Bas, en Angleterre, en Irlande, au Congo, en Inde et en Indonésie."
+          "description": "L'esprit de charité de la congrégation rayonne aux quatre coins du monde à travers ses services et ses œuvres sur tous les continents."
         }
       }
     },
@@ -216,18 +217,18 @@
       "description": "Notre identité"
     },
     "saints": {
-      "title": "Les Trois Saints de la Congrégation",
+      "title": "Les Trois Saints de la<br></br>Congrégation",
       "description": "Découvrez nos saints bienheureux",
       "subtitle": "Modèle de sainteté et de dévouement",
-      "paragraph": "La congrégation a été construite sur une fondation d'amour solide et d'engagement illimité. En suivant les traces et en incarnant le mode de vie de nos fondateurs et figures clés—Sainte Marie-Madeleine Postel, Beata Martha, et Beata Placida—ces saints ont consacré toute leur vie à servir les autres et à glorifier Dieu.",
+      "paragraph": "La congrégation repose sur les fondements solides de l'amour et d'un dévouement sans limites. Elle suit les traces, les vertus et l'exemple de vie de son fondateur et des saints de la congrégation, qui ont entièrement consacré leur vie au service de leur prochain et à la gloire de Dieu.",
       "saint1": {
         "name": "Sainte Marie-Madeleine Postel",
-        "description": "La fondatrice de la congrégation s'appelait Julie Postel. Au cœur des troubles de la Révolution française, elle aidait en secret les prêtres persécutés par le régime et enseignait aux enfants pauvres. En 1807, elle fonda cette congrégation dont les principales missions étaient l’éducation des jeunes filles et les soins aux malades. Elle dirigea la communauté pendant des périodes difficiles marquées par une extrême pauvreté et réussit à restaurer l’ancien monastère de Saint-Sauveur-le-Vicomte pour en faire le siège de la congrégation, avant de s’éteindre à l’âge de 89 ans.",
+        "description": "La fondatrice de la congrégation s'appelait à l'origine Julie Postel. Au cœur des troubles de la Révolution française, elle aidait en secret les prêtres pourchassés par les révolutionnaires et enseignait aux enfants pauvres. En 1807, elle fonda cette congrégation dont l’objectif principal était d’éduquer les jeunes, de leur insuffler l’amour de Dieu et l’esprit de travail, de se sacrifier pour aider les pauvres et d’alléger leur sort autant que possible. Elle a guidé la communauté à travers des périodes difficiles marquées par une extrême pauvreté et a réussi à restaurer l’ancien couvent de Saint-Sauveur-le-Vicomte pour en faire le siège de la congrégation, avant de décéder à l’âge de 89 ans.",
         "caption": "Le chêne robuste"
       },
       "saint2": {
         "name": "Beata Placida Viel",
-        "description": "Elle succéda à Sainte Marie-Madeleine Postel en tant que deuxième supérieure générale de la congrégation après le décès de celle-ci. Née Eulalie Viel, elle était la nièce et la disciple la plus proche de la fondatrice. Sous sa direction sereine et avisée, la congrégation connut une croissance rapide, obtint la reconnaissance officielle du Saint-Siège et étendit son action au-delà de la France, notamment en Allemagne.",
+        "description": "Elle succéda à la tête de la congrégation en tant que deuxième supérieure générale après le décès de sainte Marie-Madeleine Postel. Née sous le nom d’Eulalie Victoire Jacqueline Viel, elle était la nièce et la disciple la plus proche de la fondatrice. Sous sa direction sereine et avisée, la congrégation connut un essor rapide, obtint la reconnaissance officielle du Saint-Siège et étendit son œuvre de charité au-delà des frontières de la France, notamment en Allemagne.",
         "caption": "Le tilleul tout doux"
       },
       "saint3": {
@@ -237,12 +238,12 @@
       }
     },
     "spirituality": {
-      "title": "Notre Spiritualité",
+      "title": "Spiritualité",
       "description": "Découvrez nos pratiques spirituelles",
       "subtitle": "Vie spirituelle, <highlight>Cœur de miséricorde</highlight>",
-      "paragraph": "Pour apprécier pleinement le don de leur vocation, les religieux ancrent leur vie dans une spiritualité de compassion. Cet esprit se concrétise en suivant autant que possible l’exemple de Jésus-Christ — qui était pauvre et humble — et en imitant sa compassion envers l’humanité. L’expression concrète de cet engagement se traduit par la bienveillance, la solidarité, la sensibilité à la souffrance d’autrui et une gentillesse sincère. Dans l’humilité, ils sont sans cesse appelés à mettre en pratique ces vertus dans leur ministère quotidien.",
+      "paragraph": "Pour vivre pleinement le don de leur vocation, les sœurs de Sainte Marie-Madeleine Postel fondent leur vie sur une spiritualité de miséricorde. Cet esprit se concrétise en suivant de près la personne de Jésus-Christ, pauvre et humilié, et en imitant sa miséricorde envers l’humanité. Cette expérience se traduit concrètement par la bienveillance, la solidarité, la sensibilité aux difficultés de ceux qui souffrent et une hospitalité sincère. Dans l’humilité, elles sont sans cesse appelées à vivre ces vertus dans leur service quotidien.",
       "practices": {
-        "title": "La véritable personnalité de sœur Misericordia",
+        "title": "Le caractère d'une vraie sœur de Sainte-Marie-Madeleine Postel",
         "openness": {
           "title": "l'ouverture",
           "description": "Ouvert aux temps qui changent, adaptable, et réceptif aux commentaires, idées et critiques constructives."
@@ -307,7 +308,43 @@
     },
     "formation": {
       "title": "Formation",
-      "description": "Formé dans la foi, enraciné dans la prière et envoyé pour servir"
+      "description": "Formée dans la foi, enracinée dans la prière et envoyée pour servir.",
+      "subtitle": "Les Étapes de Formation des Sœurs",
+      "paragraph1": "La formation des sœurs suit son propre programme à chaque niveau. Une sœur passe par les étapes de formation selon le parcours suivant :",
+      "paragraph2": "Les aspects abordés durant la formation comprennent :",
+      "point1": "Formation Humaine",
+      "point2": "Formation Chrétienne",
+      "point3": "Formation à la Spiritualité de Ste. Marie-Madeleine Postel",
+      "stages": {
+        "01": {
+          "title": "PRÉ-POSTULAT",
+          "duration": "1 an",
+          "description": "Une jeune fille intéressée par la vie religieuse et désirant devenir sœur peut être motivée par diverses raisons : rêves d'enfance, admiration pour la figure d'une sœur, fascination pour ses « attributs » (voile, crucifix), etc. À ce stade, son intérêt évolue vers une curiosité et un désir d'apprendre à connaître la vie quotidienne des sœurs (prières quotidiennes, œuvres apostoliques, vie fraternelle, etc.). Les candidates font une expérience d'immersion (« live-in ») au sein de plusieurs communautés pour découvrir le rythme de vie des sœurs. Les candidates suivent une période d'aspirantat d'un an. Elles portent des vêtements ordinaires (jupe et chemisier) et reçoivent un badge d'identification à l'effigie de la Fondatrice, Sainte Marie-Madeleine Postel."
+        },
+        "02": {
+          "title": "POSTULAT",
+          "duration": "6 mois",
+          "description": "La curiosité amène l'aspirante à faire le pas pour « FAIRE CONNAISSANCE » plus profondément avec la Congrégation. À cette étape, la candidate commence à découvrir l'esprit qui anime les sœurs à choisir cette Congrégation, son histoire ainsi que la vision de ses fondateurs. Le postulat dure 6 mois. Les postulantes portent la croix/médaille de postulat de la Congrégation."
+        },
+        "03": {
+          "title": "NOVICIAT",
+          "duration": "2 ans",
+          "description": "À ce stade, la postulante se sent plus affermie et ose choisir fermement la Congrégation dans laquelle elle entre. Elle accepte de franchir l'étape du noviciat pour suivre la formation initiale d'une future sœur. La candidate décide de devenir un « HOMME NOUVEAU » (UNE PERSONNE NOUVELLE), formée et guidée selon l'esprit et la spiritualité de la Congrégation. Une novice suit le noviciat pendant 2 ans (1re et 2e année de noviciat). Les novices reçoivent le collier de la Congrégation et le livre des Constitutions."
+        },
+        "04": {
+          "title": "JUNIORAT",
+          "duration": "9 ans maximum",
+          "description": "Après 2 ans de noviciat, la novice peut demander à passer à l'étape suivante : les Premiers Vœux (vœux temporaires). Elle professe les conseils évangéliques (les trois vœux d'obéissance, de chasteté et de pauvreté), s'engageant à vivre uniquement pour Dieu dans la Congrégation en obéissant aux Supérieures, en vivant pauvrement et dans le célibat. Les novices entrent ensuite dans le juniorat, où elles sont envoyées en mission dans les œuvres de la Congrégation. Le juniorat dure jusqu'à la quatrième année, et dès la cinquième année, la sœur peut demander à professer ses vœux perpétuels. La durée maximale des vœux temporaires est de 9 ans, période à l'issue de laquelle la juniore doit décider d'engager ses Vœux Perpétuels ou de quitter la Congrégation."
+        },
+        "05": {
+          "title": "FORMATION CONTINUÉE",
+          "duration": "toute la vie",
+          "description": "Après le juniorat et la profession des vœux perpétuels, la formation de la sœur entre dans l'étape de la Formation Continuée (Ongoing Formation). Les sœurs (médiores à séniores) suivent un parcours de formation continuée pour s'intégrer et s'enraciner davantage dans tous les aspects de leur vocation."
+        }
+      },
+      "called": "Vous sentez-vous appelée ?",
+      "paragraph3": "Votre cœur est-il touché pour répondre à l'appel de Dieu et vivre la vie consacrée ? Ne craignez rien, vous n'avez pas à cheminer seule. Contactez-nous à tout moment pour échanger sur le discernement de la volonté de Dieu et faire vos premiers pas dans la formation.",
+      "contactUs": "Contactez-nous"
     }
   },
   "footer": {

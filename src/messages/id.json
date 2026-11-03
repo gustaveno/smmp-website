@@ -1,8 +1,8 @@
 {
   "common": {
     "title": {
-      "upper": "Kongregasi Suster",
-      "lower": "Maria Magdalena Postel"
+      "upper": "Kongregasi Para Suster",
+      "lower": "Santa Maria Magdalena Postel"
     },
     "navigation": {
       "home": "Beranda",
@@ -40,12 +40,12 @@
   },
   "pages": {
     "home": {
-      "hero1": "Misericordia",
+      "hero1": "Santa Maria Magdalena Postel",
       "hero2": "Cintailah, cintailah tanpa batas",
       "overviewquote": "Anak-anak cintailah Allah dengan sepenuh hatimu dan tunjukkanlah cintamu itu dalam korban.",
       "overview": "Kongregasi Kami",
-      "overviewdesc1": "Kongregasi Para Suster Santa Maria Magdalena Postel dikenal juga sebagai Suster Misericordia adalah sebuah kongregasi religius wanita dalam Gereja Katolik Roma yang didirikan oleh Santa Maria Magdalena Postel.",
-      "overviewdesc2": "Julie Postel (1756–1846) lahir di Barfleur, Normandia, Prancis. Pada masa Revolusi Prancis yang penuh pergolakan, ia diam-diam membantu para imam yang dikejar-kejar serta mendidik anak-anak miskin. Kongregasinya berdiri pada tahun 1807 di Cherbourg, ia bersama Sr. Jeanne-Catherine Bellot, Sr. Louisa Viel, Sr. Angelique Ledanois mengucapkan kaul religius dan mendirikan kongregasi untuk mendidik kaum muda, menanamkan cinta kepada Tuhan dan cinta terhadap pekerjaan, serta mengorbankan diri guna membantu orang miskin dan meringankan penderitaan sebanyak mungkin orang.",
+      "overviewdesc1": "Kongregasi Para Suster Santa Maria Magdalena Postel merupakan kongregasi religius wanita dalam Gereja Katolik Roma yang didirikan oleh Santa Maria Magdalena Postel.",
+      "overviewdesc2": "Julie Postel (1756–1846) lahir di Barfleur, Normandi, Perancis Utara. Pada masa Revolusi Perancis yang penuh pergolakan, ia diam-diam membantu para imam yang dikejar-kejar serta mendidik anak-anak miskin. Kongregasinya berdiri pada tahun 1807 di Cherbourg. Ia bersama Sr. Jeanne-Catherine Bellot, Sr. Louise Viel dan Sr. Angelique Ledanois mengucapkan kaul religius dan mendirikan kongregasi untuk mendidik kaum muda, menanamkan cinta kepada Tuhan dan cinta terhadap pekerjaan, serta mengorbankan diri guna membantu orang miskin dan meringankan penderitaan sebanyak mungkin orang.",
       "overviewdesc3": "Itulah cita-cita dan tujuan awal Julie Postel membangun sebuah kongregasi religius.",
       "quote": "Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita",
       "cite": "St. Maria Magdalena Postel",
@@ -123,7 +123,7 @@
     "charisma": {
       "title": "Kharisma",
       "description": "Panggilan untuk mencintai, memuliakan, dan menghidupi kasih Kristus",
-      "subtitle1": "Kharisma adalah<br></br><highlight>Hidup bagi Allah</highlight>",
+      "subtitle1": "Kharisma",
       "paragraph1": "Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita. Itulah kharisma atau anugrah yang dimiliki Kongregasi. Panggilan untuk mencintai, memuliakan, dan menghidupi kasih Kristus.",
       "subtitle2": "Hidup bagi Allah?",
       "paragraph2": "Maksudnya, para suster mendapat panggilan untuk…",
@@ -134,7 +134,7 @@
       "point3Title": "Hidup dalam Kristus",
       "point3Desc": "Usaha terus menerus membuat hidup kami dihidupi oleh Yesus.",
       "subtitle3": "Menjadi pelayan mereka yang menderita",
-      "paragraph3": "Para suster Misericordia itu adalah sahabat-sahabat jiwa orang-orang yang sakit, miskin dan tak berdaya. Kehadiran mereka membawa penghiburan serta harapan nyata bagi mereka yang tersisih di tengah masyarakat. Melalui ketulusan hati dalam melayani, mereka membuktikan bahwa belas kasih dapat menjadi tumpuan bagi siapa saja yang sedang berjuang melawan kesulitan hidup.",
+      "paragraph3": "Para suster Santa Maria Magdalena Postel itu adalah sahabat-sahabat jiwa orang-orang yang sakit, miskin dan tak berdaya. Kehadiran mereka membawa penghiburan serta harapan nyata bagi mereka yang tersisih di tengah masyarakat. Melalui ketulusan hati dalam melayani, mereka membuktikan bahwa belas kasih dapat menjadi tumpuan bagi siapa saja yang sedang berjuang melawan kesulitan hidup.",
       "quote": "Hidup bagi Allah dan pelayanan bagi sesama khususnya yang menderita.",
       "cite": "St. Maria Magdalena Postel"
     },
@@ -142,7 +142,8 @@
       "title": "Sejarah",
       "description": "Sejarah kami",
       "subtitle": "Benih <highlight>Belas Kasih</highlight> yang Tumbuh",
-      "paragraph": "Perjalanan bermula dari semangat pengabdian Julie Postel dan berkembang, melalui berbagai musim penuh tantangan dan pengharapan, menjadi kongregasi yang kita kenal hari ini. Telusuri bersama kami momen-momen yang membentuk siapa diri kami.",
+      "paragraph1": "Perjalanan belas kasih bermula dari semangat pengabdian Julie Postel yang berkembang melalui berbagai tantangan, penderitaan dan pengharapan. Peziarahan tersebut menjadi cikal bakal lahirnya kongregasi yang kita kenal hari ini.",
+      "paragraph2": "Telusuri bersama kami momen-momen indah penuh perjuangan dan pengorbanan yang membentuk kongregasi.",
       "milestones": {
         "birth": {
           "title": "Kelahiran Julie Postel",
@@ -154,7 +155,7 @@
         },
         "godmother": {
           "title": "Menjadi Ibu Baptis",
-          "description": "Diminta menjadi ibu baptis untuk pembaptisan beberapa bayi pada 11 Juli saat berusia 12 tahun."
+          "description": "Diminta menjadi ibu baptis untuk pembaptisan beberapa bayi pada usia 12 tahun."
         },
         "valognesStudy": {
           "title": "Pendidikan di Valognes",
@@ -162,7 +163,7 @@
         },
         "barfleur": {
           "title": "Pelayanan Pendidikan di Barfleur",
-          "description": "Membuka sekolah dan asrama untuk anak-anak miskin. Pada zaman Revolusi Prancis, ia membantu imam pergi ke Inggris untuk menyelamatkan imamatnya serta menyimpan Sakramen Mahakudus di rumahnya di bawah sebuah tangga."
+          "description": "Membuka sekolah dan asrama untuk anak-anak miskin. Pada zaman Revolusi Perancis, ia membantu imam pergi ke Inggris untuk menyelamatkan imamatnya serta menyimpan Sakramen Mahakudus di rumahnya di bawah sebuah tangga."
         },
         "cherbourg": {
           "title": "Pindah ke Cherbourg",
@@ -177,11 +178,11 @@
           "description": "Cherbourg ditinggalkan karena para suster Penyelenggaraan Ilahi kembali ke tempat itu. Ia lalu mencari tempat baru di Octeville L’avenel, tinggal di dalam sebuah kandang."
         },
         "tamerville1": {
-          "title": "Periode Tamerville",
+          "title": "Tamerville",
           "description": "Karena Octeville L’avenel tak memadai lagi, rombongan pindah ke Tamerville. Di sini para suster menerima 12 anak yatim piatu, namun juga mulai dirasakan ada iri hati akan kehadiran mereka."
         },
         "valognes": {
-          "title": "Periode Valognes (Rumah Sakrat Maut)",
+          "title": "Valognes",
           "description": "Menetap di Valognes yang dapat disamakan dengan rumah sakrat maut. Namun ia tetap gigih untuk meneruskan perjuangan, sekalipun didinasehati untuk membubarkan kongregasinya."
         },
         "hamel": {
@@ -190,7 +191,7 @@
         },
         "tamerville2": {
           "title": "Kembali ke Tamerville",
-          "description": "Para suster dipanggil kembali ke Tamerville. Agar dapat diakui oleh pemerintah Kerajaan, kongregasi harus mencari Induk, dan Rm. Lerenard mencarikan sebuah rumah."
+          "description": "Para suster dipanggil kembali ke Tamerville. Agar dapat diakui oleh pemerintah Kerajaan, kongregasi harus mencari rumah induk. Pastor Lerenard mencarikan sebuah rumah."
         },
         "abbaye": {
           "title": "Menetap di Saint-Sauveur-le-Vicomte (L’Abbaye)",
@@ -207,7 +208,7 @@
         "present": {
           "year": "Sekarang",
           "title": "Penyebaran Misi Internasional",
-          "description": "Semangat belas kasih kongregasi meluas ke berbagai belahan dunia, melayani dan berkarya di Italia, Belanda, Inggris, Irlandia, Kongo, India, serta Indonesia."
+          "description": "Semangat belas kasih kongregasi menjangkau berbagai penjuru dunia melalui pelayanan dan karya di berbagai benua."
         }
       }
     },
@@ -216,18 +217,18 @@
       "description": "Identitas kami"
     },
     "saints": {
-      "title": "Tiga Orang Kudus Kongregasi",
+      "title": "Tiga Orang Kudus<br></br>Kongregasi",
       "description": "Pelajari tentang orang kudus kami yang diberkati",
       "subtitle": "Teladan Kekudusan dan Pengabdian",
-      "paragraph": "Kongregasi dibangun atas fondasi kasih yang kokoh dan pengabdian tanpa batas. Meneladani jejak langkah dan keteladanan hidup dari para pendiri serta tokoh utama kami—Santa Maria Magdalena Postel, Beata Martha, dan Beata Placida—yang mendedikasikan hidup sepenuhnya bagi sesama dan kemuliaan Tuhan.",
+      "paragraph": "Kongregasi dibangun atas fondasi kasih yang kokoh dan pengabdian tanpa batas. Meneladani jejak langkah, kebajikan dan keteladanan hidup dari pendiri dan para kudus kongregasi yang mendedikasikan hidup sepenuhnya bagi sesama dan demi kemuliaan Tuhan.",
       "saint1": {
         "name": "Santa Maria Magdalena Postel",
-        "description": "Pendiri kongregasi yang lahir dengan nama Julie Postel. Di tengah gejolak Revolusi Prancis, ia secara rahasia membantu para imam yang dikejar-kejar rezim serta mengajar anak-anak miskin. Pada tahun 1807, ia mendirikan kongregasi ini dengan fokus utama pada pendidikan anak-anak perempuan dan perawatan orang sakit. Ia memimpin komunitas melalui masa-masa sulit kemiskinan ekstrem serta berhasil membangun kembali biara kuno Saint-Sauveur-le-Vicomte sebagai pusat kongregasi sebelum wafat pada usia 89 tahun.",
+        "description": "Pendiri kongregasi lahir dengan nama Julie Postel. Di tengah gejolak Revolusi Perancis, ia secara rahasia membantu para imam yang dikejar-kejar para revolusioner serta mengajar anak-anak miskin. Pada tahun 1807, ia mendirikan kongregasi ini dengan fokus utama mendidik kaum muda, menyemangati mereka cinta akan Allah dan semangat kerja, mengorbankan diri untuk membantu para miskin dan meringankan nasib mereka sedapat mungkin. Ia memimpin komunitas melalui masa-masa sulit kemiskinan ekstrem serta berhasil membangun kembali biara kuno Saint-Sauveur-le-Vicomte sebagai pusat kongregasi sebelum wafat pada usia 89 tahun.",
         "caption": "Pohon Chêne yang kuat"
       },
       "saint2": {
         "name": "Beata Placida Viel",
-        "description": "Penerus kepemimpinan kongregasi sebagai Pemimpin Umum kedua setelah wafatnya Santa Maria Magdalena Postel. Lahir dengan nama Eulalie Viel, ia merupakan keponakan dan murid terdekat sang pendiri. Di bawah kepemimpinannya yang tenang dan bijaksana, kongregasi mengalami perkembangan pesat, memperoleh pengakuan resmi dari Takhta Suci, serta memperluas karya pelayanan hingga ke luar Prancis, khususnya ke Jerman.",
+        "description": "Penerus kepemimpinan kongregasi sebagai Pemimpin Umum kedua setelah wafatnya Santa Maria Magdalena Postel. Lahir dengan nama Eulalie Victoire Jacqueline Viel, ia merupakan keponakan dan murid terdekat sang pendiri. Di bawah kepemimpinannya yang tenang dan bijaksana, kongregasi mengalami perkembangan pesat, memperoleh pengakuan resmi dari Takhta Suci, serta memperluas karya pelayanan hingga ke luar Perancis, khususnya ke Jerman.",
         "caption": "Pohon Tilleul yang lembut"
       },
       "saint3": {
@@ -237,12 +238,12 @@
       }
     },
     "spirituality": {
-      "title": "Spiritualitas Kami",
+      "title": "Spiritualitas",
       "description": "Pelajari tentang praktik spiritual kami",
       "subtitle": "Semangat rohani, <highlight>Belas Kasih</highlight>",
-      "paragraph": "Untuk menghayati anugerah panggilan secara mendalam, para religius melandasi hidup mereka dengan spiritualitas belas kasih. Semangat ini diwujudkan dengan mengikuti sedekat mungkin pribadi Yesus Kristus yang miskin dan direndahkan, serta meneladan belas kasih-Nya kepada umat manusia. Wujud nyata dari penghayatan ini tercermin melalui kepedulian, solidaritas, kepekaan terhadap kesulitan sesama yang menderita, dan keramahan yang tulus. Melalui kerendahan hati, mereka terus terpanggil untuk menghidupi keutamaan tersebut dalam pelayanan sehari-hari.",
+      "paragraph": "Untuk menghayati anugerah panggilan secara mendalam, para suster Santa Maria Magdalena Postel melandasi hidup mereka dengan spiritualitas belas kasih. Semangat ini diwujudkan dengan mengikuti sedekat mungkin pribadi Yesus Kristus yang miskin dan direndahkan, serta meneladan belas kasih-Nya kepada umat manusia. Wujud nyata dari penghayatan ini tercermin melalui kepedulian, solidaritas, kepekaan terhadap kesulitan sesama yang menderita, dan keramahan yang tulus. Melalui kerendahan hati, mereka terus terpanggil untuk menghidupi keutamaan tersebut dalam pelayanan sehari-hari.",
       "practices": {
-        "title": "Karakter suster Misericordia sejati",
+        "title": "Karakter suster Santa Maria Magdalena Postel sejati",
         "openness": {
           "title": "Keterbukaannya",
           "description": "Terbuka terhadap perubahan jaman, mudah menyesuaikan diri, terbuka terhadap masukan, ide-ide juga kritik yang membangun."
@@ -269,7 +270,7 @@
     },
     "services": {
       "title": "Karya Pelayanan",
-      "description": "Pergi ke ujung dunia untuk menyelamatkan satu jiwa bagi Kristus",
+      "description": "Saya akan pergi ke ujung dunia untuk menyelamatkan satu jiwa bagi Kristus",
       "subtitle": "Melayani dengan <highlight>Belas Kasih</highlight> Nyata",
       "paragraph1": "Dijiwai oleh semangat untuk mendidik dan meringankan setiap ketidakbahagiaan sesama, para suster St. Maria Magdalena Postel terpanggil untuk menyatakan kemurahan hati, belas kasihan dan kelembutan Allah di tengah-tengah dunia, dengan hadir secara aktif dalam kehidupan manusia dan melibatkan diri melalui aneka ragam tugas pelayanan, guna mewujudkan solidaritas pada sesama yang miskin dalam rupa apapun.",
       "paragraph2": "Sebagai bentuk nyata keterlibatan para suster meringankan ketidakbahagiaan sesama, mereka ikut aktif dalam kegiatan kerasulan di bidang pendidikan, kesehatan, sosial dan pastoral. Dalam perutusannya, para suster mengambil bagian dalam upaya merawat orang-orang sakit, mengajar siswa di sekolah-sekolah maupun mendukung pendidikan anak-anak yang kesulitan biaya untuk melanjutkan studi, membantu orang-orang miskin, melayani para lanjut usia, mendampingi anak-anak yatim piatu, terlibat aktif dalam berbagai kegiatan pastoral di paroki maupun membimbing sesama yang merindukan kesejukan rohani dan spiritualitas.",
@@ -307,7 +308,43 @@
     },
     "formation": {
       "title": "Formasi",
-      "description": "Dibentuk dalam iman, berakar dalam doa, dan diutus untuk melayani."
+      "description": "Dibentuk dalam iman, berakar dalam doa, dan diutus untuk melayani.",
+      "subtitle": "Tahapan Pendidikan Suster",
+      "paragraph1": "Formatio para suster berjalan sesuai programnya masing-masing di setiap jenjang. Seorang suster akan melalui tahapan-tahapan formasi dengan jenjang sebagai berikut :",
+      "paragraph2": "Aspek-aspek dalam formasi yang dijalankan meliputi:",
+      "point1": "Formasi Manusiawi",
+      "point2": "Formasi Kristiani",
+      "point3": "Formasi Spiritualitas St.Maria Magdalena Postel",
+      "stages": {
+        "01": {
+          "title": "PRA POSTULAT",
+          "duration": "1 tahun",
+          "description": "Seorang gadis yang tertarik dan ingin menjadi seorang suster dapat dilatar-belakangi oleh berbagai alasan dan motivasi baik itu cita-cita masa kecil, kekaguman pada figur suster, kekaguman pada “atribut-atribut” seorang suster (jubah, kalung salib) dan lain-lain. Pada tahap ini ketertarikan seorang simpatisan tersebut berkembang menjadi rasa ingin tahu dan ingin kenal, rasa penasaran tentang kehidupan para suster sehari-hari (kegiatan doa harian, kegiatan karya, persaudaraan,dst). Calon “live-in” di beberapa komunitas sambil mengenal dan melihat kehidupan para suster, serta ritme hidupnya. Para calon akan menjalani masa aspiran selama 1 tahun. Mereka mengenakan pakaian biasa (rok dan kemeja) dan diberi tanda pengenal berupa bros Ibu Pendiri St. Maria Magdalena Postel."
+        },
+        "02": {
+          "title": "POSTULAT",
+          "duration": "6 bulan",
+          "description": "Rasa penasaran akan membawa aspiran berani untuk “KENALAN” lebih lanjut dengan kongregasi. Pada tahap ini calon mulai mencari tahu semangat apa yang mendorong  para suster memilih kongregasi ini? Bagaimana sejarah kongregasi ini dan apa cita-cita para pendiri kongregasi ini? Masa postulant adalah 6 bulan. Mereka mengenakan kalung postulan kongregasi."
+        },
+        "03": {
+          "title": "NOVISIAT",
+          "duration": "2 tahun",
+          "description": "Pada tahap ini, seorang Postulan merasa semakin mantap dan berani menjatuhkan pilihan pada Kongregasi yang akan dimasuki. Seorang Postulan bersedia melangkah lebih lanjut dalam jenjang novisiat, menjalani pendidikan & pembinaan awal seorang calon suster. Calon berani memutuskan untuk menjadi “MANUSIA BARU”, dibentuk dan dibina menjadi seorang suster sesuai semangat/spiritualitas Kongregasi. Seorang novis akan menjalani tahap Novisiat selama 2 tahun (Novis tahun ke 1 dan tahun ke 2). Para novis akan mendapatkan kalung Kongregasi dan buku Konstitusi."
+        },
+        "04": {
+          "title": "YUNIOR",
+          "duration": "maksimal 9 tahun",
+          "description": "setelah 2 tahun di jenjang Novisiat, seorang novis dapat mengajukan permohonan ke jenjang berikutnya yakni Kaul Pertama (kaul sementara). Novis akan mengikrarkan trikaul (tiga janji) yakni Kaul ketaatan, kemurnian dan kemiskinan, artinya seorang Novis berjanji untuk hidup hanya bagi Allah dalam Kongregasi dengan taat pada Pimpinan, hidup miskin dan tidak menikah. Para novis memasuki masa Yunior dimana mereka diutus dalam karya-karya Kongregasi. Masa Yunior dijalankan seorang suster sampai tahun keempat dan di tahun kelima ia diperbolehkan mengajukan kaul kekal. Maksimal masa kaul sementara adalah sampai batas 9 tahun, yang mana seorang yunior wajib memutuskan untuk lanjut ke Kaul Kekal atau mundur."
+        },
+        "05": {
+          "title": "PEMBINAAN BERKELANJUTAN",
+          "duration": "seumur hidup",
+          "description": "Setelah melalui masa Yunior dan mengikrarkan kaul kekal, pembinaan seorang suster masuk dalam tahapan Ongoing Formation. Para suster medior sampai senior akan menjalani tahapan pembinaan berkelanjutan agar semakin terintegrasi dan mendalam pada seluruh aspek pembinaan."
+        }
+      },
+      "called": "Merasa Terpanggil?",
+      "paragraph3": "Apakah hatimu tergerak untuk menjawab panggilan Tuhan dan hidup membiara? Jangan cemas, kamu tidak perlu melangkah sendirian. Hubungi kami kapan saja untuk berbincang tentang mengenali kehendak Tuhan dan memulai langkah awal pembinaan.",
+      "contactUs": "Hubungi Kami"
     }
   },
   "footer": {

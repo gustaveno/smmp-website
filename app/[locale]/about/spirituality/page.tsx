@@ -5,6 +5,13 @@ import { Quote } from 'lucide-react';
 
 const PRACTICE_KEYS = ['openness', 'simplicity', 'poverty', 'humility'] as const
 
+const PRACTICE_COLORS = {
+  openness: 'text-[#bd8908]',
+  simplicity: 'text-emerald-700',
+  poverty: 'text-sky-700',
+  humility: 'text-rose-700',
+} as const
+
 export default function SpiritualityPage() {
   const intl = useIntl()
 
@@ -15,18 +22,13 @@ export default function SpiritualityPage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('/bg-spirtualitas.jpg')",
+            backgroundImage: "url('/bg-spirtualitas.jpg')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
-          <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
+        <div className="relative z-10 flex h-full flex-col items-start justify-start px-6 pt-12 text-left sm:px-10 md:px-16 md:pt-16">
+          <h1 className="max-w-3xl text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl">
             {intl.formatMessage({ id: 'pages.spirituality.title', defaultMessage: 'Our Spirituality' })}
           </h1>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-            {intl.formatMessage({ id: 'pages.spirituality.description', defaultMessage: 'Learn about our spiritual practices.' })}
-          </p>
         </div>
       </section>
 
@@ -45,7 +47,7 @@ export default function SpiritualityPage() {
                   ),
                 })}
             </h2>
-            <p className="mt-4 max-w-[38ch] text-lg text-justify leading-relaxed text-muted-foreground">
+            <p className="mt-4 max-w-[38ch] text-lg text-justify leading-relaxed text-foreground">
               {intl.formatMessage({ id: 'pages.spirituality.paragraph' })}
             </p>
           </div>
@@ -76,11 +78,11 @@ export default function SpiritualityPage() {
                 <span className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-foreground text-background">
                   <span className="h-2 w-2 rounded-full bg-background" />
                 </span>
-                <div>
-                  <h3 className="text-xl font-medium tracking-tight">
+                <div className='flex flex-col'>
+                  <h3 className={`text-2xl font-medium tracking-tight ${PRACTICE_COLORS[key]}`}>
                     {intl.formatMessage({ id: `pages.spirituality.practices.${key}.title` })}
                   </h3>
-                  <p className="mt-2 text-base leading-relaxed text-muted-foreground">
+                  <p className="text-lg mt-2 text-base leading-relaxed text-foreground">
                     {intl.formatMessage({ id: `pages.spirituality.practices.${key}.description` })}
                   </p>
                 </div>

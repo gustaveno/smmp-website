@@ -16,7 +16,7 @@ export default function Footer({ locale }: FooterProps) {
 
   return (
     <footer className="border-t border-border/70 bg-muted">
-      <div className="container mx-auto px-4 py-16 md:py-20 items-center justify-between">
+      <div className="container mx-auto px-4 py-6 md:py-10 items-center justify-between">
         <div className="grid grid-cols-1 gap-10 mb-12 sm:grid-cols-2 md:grid-cols-4">
           {/* About */}
           <div>
@@ -75,7 +75,7 @@ export default function Footer({ locale }: FooterProps) {
 
           {/* Social Media */}
           <div>
-            <h4 className="mb-4 text-base font-semibold">Follow Us</h4>
+            <h4 className="mb-4 text-base font-semibold">{intl.formatMessage({ id: 'footer.followUs' })}</h4>
             <div className="flex flex-wrap gap-3">
               {[
                 { label: 'Instagram', href: 'https://www.instagram.com/kongregasisustermisericordia/', Icon: SiInstagram },

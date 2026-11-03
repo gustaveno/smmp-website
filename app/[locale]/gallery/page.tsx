@@ -13,100 +13,40 @@ type Photo = {
 
 const photos: Photo[] = [
   {
-    src: 'https://images.pexels.com/photos/29422232/pexels-photo-29422232.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'A large congregation listens to a speaker in a modern church setting.',
-    caption: 'Sunday Worship Service',
+    src: '/galeri/rkz1.webp',
+    alt: 'Indonesian Sisters Praying.',
+    caption: 'Indonesian Sisters Praying',
   },
   {
-    src: 'https://images.pexels.com/photos/39005127/pexels-photo-39005127.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'A diverse group of people participating in a worship service, hands raised in devotion.',
-    caption: 'Hands Raised in Worship',
+    src: '/galeri/rkz2.webp',
+    alt: 'Indonesian Sisters.',
+    caption: 'Indonesian Sisters',
   },
   {
-    src: 'https://images.pexels.com/photos/38274945/pexels-photo-38274945.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'A vibrant congregation gathers in a beautifully lit church for worship.',
-    caption: 'Evening Prayer Gathering',
+    src: '/galeri/rkzmisa.webp',
+    alt: 'Mass in Chapel in Indonesia.',
+    caption: 'Mass in Chapel in Indonesia',
   },
   {
-    src: 'https://images.pexels.com/photos/20173216/pexels-photo-20173216.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Young woman standing with raised hand during a religious gathering indoors.',
-    caption: 'Youth Fellowship',
+    src: '/galeri/natal2025.webp',
+    alt: '2025 Christmas Celebration.',
+    caption: '2025 Christmas Celebration',
   },
   {
-    src: 'https://images.pexels.com/photos/34328510/pexels-photo-34328510.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Back view of people engaged in a vibrant religious service with colorful lighting.',
-    caption: 'Praise and Celebration',
+    src: '/galeri/retret.webp',
+    alt: 'Spiritual Retreat.',
+    caption: 'Spiritual Retreat',
   },
   {
-    src: 'https://images.pexels.com/photos/13899664/pexels-photo-13899664.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'A devotional gathering with people in prayer, expressing faith and unity.',
-    caption: 'Community Prayer Circle',
-  },
-  {
-    src: 'https://images.pexels.com/photos/6269056/pexels-photo-6269056.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Woman carrying a child inside a church with people worshipping in the background.',
-    caption: 'Family at Worship',
-  },
-  {
-    src: 'https://images.pexels.com/photos/34680726/pexels-photo-34680726.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'A man raises his hand during a church service, signifying worship and prayer.',
-    caption: 'Moment of Devotion',
-  },
-  {
-    src: 'https://images.pexels.com/photos/8814950/pexels-photo-8814950.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'A diverse group of people listens to a pastor in a well-lit church.',
-    caption: 'Sunday Teaching',
-  },
-  {
-    src: 'https://images.pexels.com/photos/12958129/pexels-photo-12958129.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'A group of people participating in a worship event with hands raised.',
-    caption: 'Worship Night',
-  },
-  {
-    src: 'https://images.pexels.com/photos/33816295/pexels-photo-33816295.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'An interior view of a church with a congregation attending a religious service.',
-    caption: 'Inside Our Sanctuary',
-  },
-  {
-    src: 'https://images.pexels.com/photos/16102722/pexels-photo-16102722.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'A diverse community raising hands in prayer during a religious service.',
-    caption: 'United in Prayer',
-  },
-  {
-    src: 'https://images.pexels.com/photos/34504326/pexels-photo-34504326.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'A congregation stands in reverence in a church, facing a stage with a worship team.',
-    caption: 'Worship Team Leading',
-  },
-  {
-    src: 'https://images.pexels.com/photos/34680729/pexels-photo-34680729.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'Senior woman singing during a church service with a diverse congregation.',
-    caption: 'Voices in Song',
-  },
-  {
-    src: 'https://images.pexels.com/photos/36425622/pexels-photo-36425622.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'A group of people with raised hands attending a lively worship service.',
-    caption: 'Joyful Praise',
-  },
-  {
-    src: 'https://images.pexels.com/photos/22046793/pexels-photo-22046793.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'A young woman with eyes closed, praying during a religious gathering.',
-    caption: 'Quiet Reflection',
-  },
-  {
-    src: 'https://images.pexels.com/photos/13908967/pexels-photo-13908967.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'A congregation gathered indoors, raising hands and praying together.',
-    caption: 'Gathered in Faith',
-  },
-  {
-    src: 'https://images.pexels.com/photos/11296106/pexels-photo-11296106.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    alt: 'A church service with people seated, colorful reflection on polished floor.',
-    caption: 'Light in the Sanctuary',
+    src: '/galeri/hidup-membiara.webp',
+    alt: 'Jubilee of Religious Life.',
+    caption: 'Jubilee of Religious Life',
   },
 ];
 
 export default function GalleryPage() {
   const intl = useIntl()
-  
+
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const closeLightbox = useCallback(() => setLightboxIndex(null), []);
@@ -150,14 +90,11 @@ export default function GalleryPage() {
               "url('/bg-galeri.jpg')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/30" />
+        <div className="relative z-10 flex h-full flex-col items-start justify-start px-20 pt-12 text-left sm:px-24 md:px-30 md:pt-16">
           <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
             {intl.formatMessage({ id: 'pages.gallery.title', defaultMessage: 'Gallery' })}
           </h1>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-            {intl.formatMessage({ id: 'pages.gallery.description', defaultMessage: 'A collection of moments' })}
-          </p>
         </div>
       </section>
 

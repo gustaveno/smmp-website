@@ -35,14 +35,11 @@ export default function HistoryPage() {
               "url('/bg-sejarah.jpg')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
           <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
             {intl.formatMessage({ id: 'pages.history.title', defaultMessage: 'History' })}
           </h1>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-            {intl.formatMessage({ id: 'pages.history.description', defaultMessage: 'Our History' })}
-          </p>
         </div>
       </section>
 
@@ -58,8 +55,11 @@ export default function HistoryPage() {
               ),
             })}
         </h2>
-        <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-          {intl.formatMessage({ id: 'pages.history.paragraph' })}
+        <p className="mt-6 text-lg leading-relaxed text-foreground">
+          {intl.formatMessage({ id: 'pages.history.paragraph1' })}
+        </p>
+        <p className="mt-6 text-lg leading-relaxed text-foreground">
+          {intl.formatMessage({ id: 'pages.history.paragraph2' })}
         </p>
       </section>
 
@@ -105,7 +105,7 @@ export default function HistoryPage() {
                             backgroundImage: `url('${m.image}')`,
                           }}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
                         <span className="absolute bottom-3 left-4 text-3xl font-bold tracking-tight text-white drop-shadow-sm">
                           {yearLabel}
                         </span>

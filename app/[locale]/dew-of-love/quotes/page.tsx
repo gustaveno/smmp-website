@@ -213,7 +213,7 @@ export default function QuotesPage() {
                     />
                   )}
                   <div className="absolute inset-0 animate-kenburns" style={{ pointerEvents: 'none' }}>
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/85" />
+                    {/* <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/85" /> */}
                     <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/30" />
                   </div>
                 </div>

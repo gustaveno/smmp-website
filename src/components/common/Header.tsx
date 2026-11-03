@@ -30,19 +30,18 @@ export default function Header({ locale }: HeaderProps) {
             href={`/${locale}`}
             className="flex items-center space-x-2 font-bold text-lg transition-colors hover:text-primary"
           >
-            <div className="w-16 h-16 relative">
+            <div className="w-20 h-20 relative">
               <Image
                 src="/logo.png"
                 alt="Logo"
                 fill
-                sizes="32px"
+                sizes="80px"
                 className="object-contain"
               />
             </div>
-            <span className="hidden sm:inline">
-              {intl.formatMessage({ id: 'common.title.upper', defaultMessage: 'La Congrégation des Sœurs' })}
-              <br />
-              {intl.formatMessage({ id: 'common.title.lower', defaultMessage: 'de Marie-Madeleine Postel' })}
+            <span className="hidden sm:flex sm:flex-col sm:gap-y-0 sm:leading-tight">
+              <span>{intl.formatMessage({ id: 'common.title.upper', defaultMessage: 'La Congrégation des Sœurs' })}</span>
+              <span>{intl.formatMessage({ id: 'common.title.lower', defaultMessage: 'de Marie-Madeleine Postel' })}</span>
             </span>
           </Link>
 

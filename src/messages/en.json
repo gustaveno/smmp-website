@@ -40,12 +40,12 @@
   },
   "pages": {
     "home": {
-      "hero1": "Misericordia",
+      "hero1": "Saint Mary Magdalene Postel",
       "hero2": "Love, love without limits",
       "overviewquote": "Children, love God with all your heart and show that love through sacrifice.",
       "overview": "Our Congregation",
-      "overviewdesc1": "The Congregation of the Sisters of Saint Mary Magdalene Postel, also known as the Sisters of Mercy, is a women’s religious congregation within the Roman Catholic Church founded by Saint Mary Magdalene Postel.",
-      "overviewdesc2": "Julie Postel (1756–1846) was born in Barfleur, Normandy, France. During the turbulent French Revolution, she secretly helped persecuted priests and educated poor children. Her congregation was founded in 1807 in Cherbourg; together with Sr. Jeanne-Catherine Bellot, Sr. Louisa Viel, and Sr. Angelique Ledanois, she took her religious vows and established a congregation dedicated to educating young people, instilling a love for God and a love for work, and sacrificing herself to help the poor and alleviate the suffering of as many people as possible.",
+      "overviewdesc1": "The Congregation of the Sisters of Saint Mary Magdalene Postel is a women’s religious congregation within the Roman Catholic Church founded by Saint Mary Magdalene Postel.",
+      "overviewdesc2": "Julie Postel (1756–1846) was born in Barfleur, Normandy, in northern France. During the turbulent French Revolution, she secretly aided persecuted priests and educated poor children. Her congregation was founded in 1807 in Cherbourg. Together with Sr. Jeanne-Catherine Bellot, Sr. Louise Viel, and Sr. Angelique Ledanois, she took her religious vows and established a congregation dedicated to educating young people, instilling a love for God and a love for work, and selflessly helping the poor and alleviating the suffering of as many people as possible.",
       "overviewdesc3": "That was Julie Postel’s original vision and goal in founding a religious congregation.",
       "quote": "Living for God and serving others, especially those who are suffering",
       "cite": "St. Mary Magdalene Postel",
@@ -123,7 +123,7 @@
     "charisma": {
       "title": "Charisma",
       "description": "A calling to love, to glorify, and to embody the love of Christ",
-      "subtitle1": "Charism is<br></br><highlight>Living for God</highlight>",
+      "subtitle1": "Charisma",
       "paragraph1": "Living for God and serving others, especially those who suffer. That is the charism or gift of the Congregation: a call to love, glorify, and live out the love of Christ.",
       "subtitle2": "Living for God?",
       "paragraph2": "What I mean is, the sisters were called to…",
@@ -134,7 +134,7 @@
       "point3Title": "To Live in Christ",
       "point3Desc": "Our ongoing effort makes our lives truly lived by Jesus.",
       "subtitle3": "To be a servant to those who suffer",
-      "paragraph3": "The Misericordia Sisters are soulmates to the sick, the poor, and the vulnerable. Their presence brings comfort and real hope to those who are marginalized in society. Through their sincere dedication to service, they demonstrate that compassion can be a source of strength for anyone struggling with life’s hardships.",
+      "paragraph3": "The Sisters of Saint Mary Magdalene Postel are soulmates to the sick, the poor, and the vulnerable. Their presence brings comfort and real hope to those who are marginalized in society. Through their sincere dedication to service, they demonstrate that compassion can be a source of strength for anyone struggling with life’s hardships.",
       "quote": "To live for God and to serve our neighbors, especially those in suffering.",
       "cite": "St. Mary Magdalene Postel"
     },
@@ -142,7 +142,8 @@
       "title": "History",
       "description": "Our history",
       "subtitle": "Seeds of a <highlight>Heart of Mercy</highlight> that Grow",
-      "paragraph": "The journey began with Julie Postel’s spirit of service and, through many seasons filled with challenges and hope, grew into the congregation we know today. Join us as we explore the moments that have shaped who we are.",
+      "paragraph1": "The journey of compassion began with Julie Postel’s spirit of service, which grew through various challenges, sufferings, and hopes. That journey laid the foundation for the congregation we know today.",
+      "paragraph2": "Join us in exploring the beautiful moments filled with struggle and sacrifice that have shaped our congregation.",
       "milestones": {
         "birth": {
           "title": "Birth of Julie Postel",
@@ -154,7 +155,7 @@
         },
         "godmother": {
           "title": "Becoming a Godmother",
-          "description": "Asked to be a godmother for the baptism of several infants on July 11th when she was 12 years old."
+          "description": "At the age of 12, she was asked to be a godmother for the baptisms of several babies."
         },
         "valognesStudy": {
           "title": "Education in Valognes",
@@ -162,7 +163,7 @@
         },
         "barfleur": {
           "title": "Educational Ministry in Barfleur",
-          "description": "Opened a school and boarding house for poor children. During the French Revolution, she helped a priest escape to England to save his priesthood and kept the Blessed Sacrament in her house beneath a staircase."
+          "description": "Opened schools and boarding schools for poor children. During the French Revolution, she helped a priest flee to England to save her priesthood and kept the Blessed Sacrament under a staircase."
         },
         "cherbourg": {
           "title": "Move to Cherbourg",
@@ -177,11 +178,11 @@
           "description": "Cherbourg was left behind as the Sisters of Providence returned there. She then sought a new place in Octeville L’avenel, living inside a stable."
         },
         "tamerville1": {
-          "title": "The Tamerville Period",
+          "title": "Tamerville",
           "description": "As Octeville L’avenel became inadequate, the group moved to Tamerville. Here the sisters took in 12 orphans, but jealousy towards their presence also began to emerge."
         },
         "valognes": {
-          "title": "The Valognes Period (House of the Dying)",
+          "title": "Valognes",
           "description": "Settled in Valognes, which could be likened to a deathbed house. However, she remained steadfast in continuing the struggle, even when advised to dissolve her congregation."
         },
         "hamel": {
@@ -190,7 +191,7 @@
         },
         "tamerville2": {
           "title": "Return to Tamerville",
-          "description": "The sisters were called back to Tamerville. To be recognized by the Royal government, the congregation needed to find a Motherhouse, and Fr. Lerenard secured a house for them."
+          "description": "The sisters were called back to Tamerville. In order to be recognized by the royal government, the congregation had to find a motherhouse. Father Lerenard found a house for them."
         },
         "abbaye": {
           "title": "Settling in Saint-Sauveur-le-Vicomte (L’Abbaye)",
@@ -207,7 +208,7 @@
         "present": {
           "year": "Present",
           "title": "International Mission Expansion",
-          "description": "The congregation's spirit of compassion spread to various parts of the world, serving and working in Italy, the Netherlands, England, Ireland, Congo, India, and Indonesia."
+          "description": "The congregation’s spirit of compassion reaches every corner of the world through its ministry and work on various continents."
         }
       }
     },
@@ -216,18 +217,18 @@
       "description": "Our identity"
     },
     "saints": {
-      "title": "Three Saints of Congregation",
+      "title": "Three Saints of<br></br>Congregation",
       "description": "Learn about our blessed saints",
       "subtitle": "Model of Holiness and Dedication",
-      "paragraph": "The congregation was built on a foundation of solid love and unlimited dedication. Following in the footsteps and embodying the lifestyle of our founders and key figures—Saint Mary Magdalene Postel, Beata Martha, and Beata Placida—these saints devoted their entire lives to serving others and glorifying God.",
+      "paragraph": "The Congregation is built on a solid foundation of love and boundless devotion. We follow in the footsteps of the founder and the saints of the Congregation, emulating their virtues and exemplary lives as they dedicated themselves entirely to others and to the glory of God.",
       "saint1": {
         "name": "Saint Mary Magdalene Postel",
-        "description": "The founder of the congregation was born Julie Postel. Amid the turmoil of the French Revolution, she secretly helped priests who were being persecuted by the regime and taught poor children. In 1807, she founded this congregation with a primary focus on the education of girls and the care of the sick. She led the community through difficult times of extreme poverty and succeeded in restoring the ancient monastery of Saint-Sauveur-le-Vicomte as the congregation’s headquarters before passing away at the age of 89.",
+        "description": "The founder of the congregation was born Julie Postel. Amid the turmoil of the French Revolution, she secretly helped priests who were being hunted down by revolutionaries and taught poor children. In 1807, she founded this congregation with the primary focus of educating young people, instilling in them a love for God and a spirit of hard work, and selflessly dedicating herself to helping the poor and alleviating their suffering as much as possible. She led the community through difficult times of extreme poverty and succeeded in restoring the ancient monastery of Saint-Sauveur-le-Vicomte as the congregation’s center before passing away at the age of 89.",
         "caption": "The Sturdy Chêne Tree"
       },
       "saint2": {
         "name": "Beata Placida Viel",
-        "description": "She succeeded as the second Superior General of the congregation following the death of Saint Mary Magdalene Postel. Born Eulalie Viel, she was the niece and closest disciple of the founder. Under her calm and wise leadership, the congregation experienced rapid growth, received official recognition from the Holy See, and expanded its ministry beyond France, particularly to Germany.",
+        "description": "She succeeded as the second Superior General of the congregation following the death of Saint Mary Magdalene Postel. Born Eulalie Victoire Jacqueline Viel, she was the niece and closest disciple of the founder. Under her calm and wise leadership, the congregation experienced rapid growth, received official recognition from the Holy See, and expanded its ministry beyond France, particularly to Germany.",
         "caption": "The Gentle Tilleul Tree"
       },
       "saint3": {
@@ -237,12 +238,12 @@
       }
     },
     "spirituality": {
-      "title": "Our Spirituality",
+      "title": "Spirituality",
       "description": "Learn about our spiritual practices",
       "subtitle": "Spiritual Life, <highlight>Heart of Mercy</highlight>",
-      "paragraph": "To deeply appreciate the gift of their vocation, religious ground their lives in a spirituality of compassion. This spirit is embodied by following as closely as possible the example of Jesus Christ—who was poor and humbled—and by emulating His compassion toward humanity. The tangible expression of this commitment is reflected in care, solidarity, sensitivity to the suffering of others, and sincere kindness. Through humility, they are continually called to live out these virtues in their daily ministry.",
+      "paragraph": "To deeply appreciate the gift of their vocation, the Sisters of Saint Mary Magdalene Postel ground their lives in a spirituality of compassion. This spirit is embodied by following as closely as possible the person of Jesus Christ—who was poor and humbled—and by emulating His compassion toward humanity. The tangible expression of this commitment is reflected in their care, solidarity, sensitivity to the hardships of those who suffer, and sincere hospitality. Through humility, they are continually called to live out these virtues in their daily ministry.",
       "practices": {
-        "title": "The True Character of Sister Misericordia",
+        "title": "The True Character of Sister of Saint Mary Magdalene Postel",
         "openness": {
           "title": "Openness",
           "description": "Open to changing times, adaptable, and receptive to feedback, ideas, and constructive criticism."
@@ -269,7 +270,7 @@
     },
     "services": {
       "title": "Works of Ministry",
-      "description": "To the ends of the earth to save a single soul for Christ",
+      "description": "I will go to the ends of the world to save a single soul for Christ",
       "subtitle": "Serving with a Tangible <highlight>Heart of Mercy</highlight>",
       "paragraph1": "Inspired by a passion for educating others and alleviating the suffering of their neighbors, the Sisters of St. Mary Magdalene Postel are called to manifest God’s generosity, compassion, and tenderness in the world by actively engaging in people’s lives and dedicating themselves to a wide variety of ministerial tasks, in order to show solidarity with the poor in all their forms.",
       "paragraph2": "As a tangible expression of the sisters’ commitment to alleviating the suffering of others, they actively participate in apostolic work in the fields of education, health, social services, and pastoral care. In carrying out their mission, the sisters take part in caring for the sick, teaching students in schools, and supporting the education of children who face financial difficulties in continuing their studies; they assist the poor, serve the elderly, accompany orphans, actively participate in various pastoral activities in parishes, and guide others who seek spiritual refreshment and deepening of their spirituality.",
@@ -307,7 +308,43 @@
     },
     "formation": {
       "title": "Formation",
-      "description": "Formed in Faith, Rooted in Prayer, and Sent to Serve"
+      "description": "Formed in faith, rooted in prayer, and sent forth to serve.",
+      "subtitle": "Stages of Sisters' Formation",
+      "paragraph1": "The formation of the sisters follows its own program at each level. A sister goes through the stages of formation with the following progression:",
+      "paragraph2": "The aspects of formation carried out include:",
+      "point1": "Human Formation",
+      "point2": "Christian Formation",
+      "point3": "Spirituality Formation of St. Mary Magdalene Postel",
+      "stages": {
+        "01": {
+          "title": "PRE-POSTULANCY",
+          "duration": "1 year",
+          "description": "A young woman who is interested and desires to become a sister may be driven by various reasons and motivations, such as childhood dreams, admiration for the figure of a sister, fascination with a sister's 'attributes' (veil, crucifix necklace), and others. At this stage, the sympathizer's interest develops into curiosity and a desire to get to know and understand the daily life of the sisters (daily prayer activities, apostolic works, fraternity, etc.). Candidates experience a 'live-in' within several communities while getting to know and observing the sisters' lives and daily rhythms. The candidates undergo a 1-year aspirancy period. They wear ordinary clothes (skirts and blouses) and are given an identification badge featuring the Foundress, St. Mary Magdalene Postel."
+        },
+        "02": {
+          "title": "POSTULANCY",
+          "duration": "6 months",
+          "description": "Curiosity encourages the aspirant to take the step to 'GET TO KNOW' the congregation better. At this stage, the candidate begins to discover the spirit that motivates the sisters to choose this congregation, the history of the congregation, and the vision of its founders. The postulancy period lasts for 6 months. They wear the congregation's postulancy necklace."
+        },
+        "03": {
+          "title": "NOVITIATE",
+          "duration": "2 years",
+          "description": "At this stage, a postulant feels increasingly confident and dares to make a firm choice regarding the Congregation she is entering. A postulant is willing to take the next step into the novitiate stage, undergoing the initial education and training of a prospective sister. The candidate dares to decide to become a 'NEW MAN' (NEW PERSON), formed and guided to become a sister in accordance with the spirit/spirituality of the Congregation. A novice will undergo the novitiate stage for 2 years (1st-year and 2nd-year novice). Novices receive the Congregation necklace and the Constitution book."
+        },
+        "04": {
+          "title": "JUNIORATE",
+          "duration": "maximum 9 years",
+          "description": "After 2 years in the novitiate, a novice may submit a request to proceed to the next stage, namely First Vows (temporary vows). The novice will profess the evangelical counsels (three vows)—the vows of obedience, chastity, and poverty—meaning the novice promises to live solely for God within the Congregation by obeying superiors, living poorly, and remaining unmarried. The novices enter the juniorate period where they are sent out into the works of the Congregation. The juniorate period is undertaken by a sister until her fourth year, and in her fifth year, she is permitted to apply for perpetual vows. The maximum duration of temporary vows is up to 9 years, during which a junior sister must decide to proceed to Perpetual Vows or leave."
+        },
+        "05": {
+          "title": "ONGOING FORMATION",
+          "duration": "lifelong",
+          "description": "After passing through the juniorate and professing perpetual vows, a sister's formation enters the Ongoing Formation stage. Sisters ranging from mid-senior to senior levels undergo ongoing formation stages to become increasingly integrated and deepened in all aspects of formation."
+        }
+      },
+      "called": "Feeling Called?",
+      "paragraph3": "Is your heart moved to answer God's call and live a consecrated life? Do not worry, you do not have to walk alone. Contact us anytime to talk about discerning God's will and starting the initial steps of formation.",
+      "contactUs": "Contact Us"
     }
   },
   "footer": {

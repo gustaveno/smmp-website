@@ -41,24 +41,22 @@ export default function ServicesPage() {
 
   return (
     <main className="min-h-screen bg-background">
-      {/* Hero */}
+      {/* Bilah judul */}
+      <div className="w-full bg-sky-100 py-4 text-center sm:py-1 md:py-2">
+        <h1 className="mx-auto max-w-3xl px-6 text-2xl font-bold leading-tight tracking-tight text-secondary-foreground sm:text-3xl md:text-4xl">
+          {intl.formatMessage({ id: 'pages.services.title' })}
+        </h1>
+      </div>
+
+      {/* Foto hero */}
       <section className="relative h-[50vh] min-h-[360px] w-full overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('/bg-pelayanan.jpg')",
+            backgroundImage: "url('/bg-pelayanan.jpg')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
-          <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
-            {intl.formatMessage({ id: 'pages.services.title' })}
-          </h1>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-            {intl.formatMessage({ id: 'pages.services.description' })}
-          </p>
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/40" />
       </section>
 
       {/* Intro */}
@@ -73,13 +71,13 @@ export default function ServicesPage() {
               ),
             })}
         </h2>
-        <p className="mt-6 text-lg leading-relaxed text-muted-foreground text-justify">
+        <p className="mt-6 text-lg leading-relaxed text-foreground text-justify">
           {intl.formatMessage({ id: 'pages.services.paragraph1' })}
         </p>
-        <p className="mt-6 text-lg leading-relaxed text-muted-foreground text-justify">
+        <p className="mt-6 text-lg leading-relaxed text-foreground text-justify">
           {intl.formatMessage({ id: 'pages.services.paragraph2' })}
         </p>
-        <p className="mt-6 text-lg leading-relaxed text-muted-foreground text-justify">
+        <p className="mt-6 text-lg leading-relaxed text-foreground text-justify">
           {intl.formatMessage({ id: 'pages.services.paragraph3' })}
         </p>
       </section>
@@ -113,7 +111,7 @@ export default function ServicesPage() {
                         <Icon className="h-6 w-6 text-foreground" />
                       </div>
                     </div>
-                    <figcaption className="mt-3 text-center font-serif text-base text-foreground">
+                    <figcaption className="mt-3 text-center font-serif text-base text-muted-foreground">
                       {intl.formatMessage({ id: `${base}.caption` })}
                     </figcaption>
                   </figure>
@@ -129,7 +127,7 @@ export default function ServicesPage() {
                       </h3>
                       <p
                         lang="id"
-                        className="mt-5 font-serif text-[18px] leading-relaxed text-foreground/80 text-justify hyphens-auto"
+                        className="mt-5 font-serif text-[19px] leading-relaxed text-foreground/80 text-justify hyphens-auto"
                       >
                         {intl.formatMessage({ id: `${base}.description` })}
                       </p>
@@ -141,7 +139,7 @@ export default function ServicesPage() {
                         alt={intl.formatMessage({ id: `${base}.secondaryCaption` })}
                         className="aspect-[8/5] w-full rounded-2xl object-cover shadow-md"
                       />
-                      <figcaption className="mt-3 text-center font-serif text-base text-foreground">
+                      <figcaption className="mt-3 text-center font-serif text-base text-muted-foreground">
                         {intl.formatMessage({ id: `${base}.secondaryCaption` })}
                       </figcaption>
                     </figure>

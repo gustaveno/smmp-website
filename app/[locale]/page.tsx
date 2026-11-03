@@ -17,6 +17,10 @@ const HERO_IMAGES = [
   { src: '/hero2.jpg', alt: 'Community gathering' },
   { src: '/hero3.jpg', alt: 'Sisters in prayer' },
   { src: '/hero4.jpg', alt: 'Sisters international' },
+  { src: '/hero5.jpg', alt: 'Sisters community' },
+  { src: '/hero6.jpg', alt: 'Sisters in Congo' },
+  { src: '/hero7.jpg', alt: 'Tensi' },
+  { src: '/hero8.jpg', alt: 'Sisters in School' },
 ]
 
 const HERO_AUTOPLAY_INTERVAL = 6000 // ms
@@ -200,14 +204,14 @@ export default function HomePage({ params }: HomePageProps) {
         <div className="relative z-10 container mx-auto text-center max-w-4xl flex flex-col items-center mt-10 md:mt-18">
 
           {/* Typography (Ukuran sedikit disesuaikan agar tidak menelan layar) */}
-          <h1 className="max-w-full text-[clamp(2.5rem,14vw,6rem)] text-white -mb-2 text-balance leading-[1.1] tracking-tight drop-shadow-lg"
+          <h1 className="max-w-full text-[clamp(1.5rem,7vw,3rem)] text-white -mb-2 text-balance leading-[1.1] tracking-tight drop-shadow-lg"
             style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.8))' }}>
             <span className="inline-block max-w-full animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-150 fill-mode-both">
-              Misericordia
+              {intl.formatMessage({ id: 'pages.home.hero2', defaultMessage: 'Love, love without limits' })}
             </span>
           </h1>
-          <p className="text-base italic md:text-2xl lg:text-3xl text-white/90 mb-12 text-balance max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-500 fill-mode-both leading-relaxed drop-shadow-md">
-            "{intl.formatMessage({ id: 'pages.home.hero2', defaultMessage: 'Love, love without limits' })}"
+          <p className="text-base italic md:text-xl lg:text-2xl text-white/90 mb-12 text-balance max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-500 fill-mode-both leading-relaxed drop-shadow-md">
+            - {intl.formatMessage({ id: 'pages.home.cite' })} -
           </p>
         </div>
 
@@ -247,27 +251,27 @@ export default function HomePage({ params }: HomePageProps) {
 
             {/* Overview Text */}
             <div className="md:translate-x-[-6px]">
-              <span className="inline-flex items-center gap-2 text-sm font-semibold tracking-[0.2em] text-accent mb-3">
+              <span className="inline-flex items-center italic gap-2 text-md font-semibold tracking-[0.2em] text-accent mb-3">
                 "{intl.formatMessage({ id: 'pages.home.overviewquote', defaultMessage: 'Children, love God with all your heart and show that love through sacrifice.' })}"
               </span>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">
                 {intl.formatMessage({ id: 'pages.home.overview', defaultMessage: 'Our Congregation' })}
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed text-balance">
+              <p className="text-foreground text-justify text-lg leading-relaxed text-balance">
                 {intl.formatMessage({
                   id: 'pages.home.overviewdesc1',
                   defaultMessage: 'The Congregation of the Sisters of Saint Mary Magdalene Postel, also known as the Sisters of Mercy, is a women’s religious congregation within the Roman Catholic Church founded by Saint Mary Magdalene Postel.'
                 })}
               </p>
               <br />
-              <p className="text-muted-foreground text-lg leading-relaxed text-balance">
+              <p className="text-foreground text-justify text-lg leading-relaxed text-balance">
                 {intl.formatMessage({
                   id: 'pages.home.overviewdesc2',
                   defaultMessage: 'Julie Postel (1756–1846) was born in Barfleur, Normandy, France. During the turbulent French Revolution, she secretly helped persecuted priests and educated poor children. Her congregation was founded in 1807 in Cherbourg; together with Sr. Jeanne-Catherine Bellot, Sr. Louisa Viel, and Sr. Angelique Ledanois, she took her religious vows and established a congregation dedicated to educating young people, instilling a love for God and a love for work, and sacrificing herself to help the poor and alleviate the suffering of as many people as possible.'
                 })}
               </p>
               <br />
-              <p className="text-muted-foreground text-lg leading-relaxed text-balance">
+              <p className="text-foreground text-justify text-lg leading-relaxed text-balance">
                 {intl.formatMessage({
                   id: 'pages.home.overviewdesc3',
                   defaultMessage: 'That was Julie Postel’s original vision and goal in founding a religious congregation.'
@@ -429,14 +433,20 @@ export default function HomePage({ params }: HomePageProps) {
               {intl.formatMessage({ id: 'pages.home.ctatitle', defaultMessage: 'Would you like to join our mission?' })}
             </h2>
             <p
-              className="text-lg text-primary-foreground/90 text-balance drop-shadow-lg"
+              className="text-lg italic text-primary-foreground/90 text-balance drop-shadow-lg"
               style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,1))' }}
             >
-              {intl.formatMessage({
+              "{intl.formatMessage({
                 id: 'pages.home.ctadesc',
                 defaultMessage:
                   'I will go to the ends of the earth to seek out a single soul for Jesus Christ, even if, at the end of my journey, I face martyrdom.'
-              })}
+              })}""
+            </p>
+            <p
+              className="text-lg italic text-primary-foreground/90 text-balance drop-shadow-lg"
+              style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,1))' }}
+            >
+              - {intl.formatMessage({ id: 'pages.home.cite', defaultMessage: 'St. Mary Magdalene Postel' })} -
             </p>
           </div>
         </div>

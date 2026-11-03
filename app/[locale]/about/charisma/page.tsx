@@ -16,30 +16,19 @@ export default function CharismaPage() {
               "url('/bg-kharisma.jpg')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/20" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
           <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
             {intl.formatMessage({ id: 'pages.charisma.title', defaultMessage: 'Charisma' })}
           </h1>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-            {intl.formatMessage({ id: 'pages.charisma.description', defaultMessage: 'A calling to love, to glorify, and to embody the love of Christ.' })}
-          </p>
         </div>
       </section>
 
       <section className="mx-auto max-w-4xl px-6 py-16 sm:px-8 sm:py-24 text-center">
-        <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-          {intl.formatMessage({ id: 'pages.charisma.subtitle1' },
-            {
-              br: () => <br />,
-              highlight: (chunks) => (
-                <span className="italic text-amber-700 px-1.5 py-0.5 rounded">
-                  {chunks}
-                </span>
-              ),
-            })}
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          {intl.formatMessage({ id: 'pages.charisma.subtitle1' })}
         </h2>
-        <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+        <p className="mt-6 text-2xl font-semibold leading-relaxed text-foreground">
           {intl.formatMessage({ id: 'pages.charisma.paragraph1' })}
         </p>
       </section>
@@ -50,7 +39,7 @@ export default function CharismaPage() {
             <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
               {intl.formatMessage({ id: 'pages.charisma.subtitle2' })}
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            <p className="mt-6 text-lg leading-relaxed text-foreground">
               {intl.formatMessage({ id: 'pages.charisma.paragraph2' })}
             </p>
           </div>
@@ -65,7 +54,7 @@ export default function CharismaPage() {
                   alt={intl.formatMessage({ id: 'pages.charisma.point1Title' })}
                   className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
                 />
-                <p className="text-sm leading-relaxed text-muted-foreground">
+                <p className="text-sm leading-relaxed text-foreground">
                   {intl.formatMessage({ id: 'pages.charisma.point1Desc' })}
                 </p>
               </div>
@@ -80,7 +69,7 @@ export default function CharismaPage() {
                   alt={intl.formatMessage({ id: 'pages.charisma.point2Title' })}
                   className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
                 />
-                <p className="text-sm leading-relaxed text-muted-foreground">
+                <p className="text-sm leading-relaxed text-foreground">
                   {intl.formatMessage({ id: 'pages.charisma.point2Desc' })}
                 </p>
               </div>
@@ -95,7 +84,7 @@ export default function CharismaPage() {
                   alt={intl.formatMessage({ id: 'pages.charisma.point3Title' })}
                   className="aspect-square h-35 w-25 shrink-0 rounded-md object-cover"
                 />
-                <p className="text-sm leading-relaxed text-muted-foreground">
+                <p className="text-sm leading-relaxed text-foreground">
                   {intl.formatMessage({ id: 'pages.charisma.point3Desc' })}
                 </p>
               </div>
@@ -124,7 +113,7 @@ export default function CharismaPage() {
 
           {/* Kolom 3: Deskripsi + Link */}
           <div>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-3 text-md text-justify leading-relaxed text-foreground">
               {intl.formatMessage({ id: 'pages.charisma.paragraph3' })}
             </p>
           </div>

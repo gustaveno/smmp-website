@@ -100,14 +100,11 @@ export default function ContactPage() {
               "url('/bg-kontak.jpg')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
-          <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/30" />
+        <div className="relative z-10 flex h-full flex-col items-start justify-start px-16 pt-12 text-left sm:px-20 md:px-28 md:pt-16">
+          <h1 className="max-w-3xl text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl">
             {intl.formatMessage({ id: 'pages.contact.title', defaultMessage: 'Contact Us' })}
           </h1>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
-            {intl.formatMessage({ id: 'pages.contact.description', defaultMessage: 'Reach out, visit our headquarters, or learn about our monasteries around the world.' })}
-          </p>
         </div>
       </section>
 

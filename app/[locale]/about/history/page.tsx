@@ -2,6 +2,29 @@
 
 import { useIntl } from 'react-intl'
 
+const archiveImages = [
+  '/tempat/1756.jpg',
+  '/tempat/1765.jpg',
+  '/tempat/1765-1.jpg',
+  '/tempat/1767.jpg',
+  '/tempat/1768.jpg',
+  '/tempat/1773.jpg',
+  '/tempat/1774.jpg',
+  '/tempat/1774-1.jpg',
+  '/tempat/1805.jpg',
+  '/tempat/1807.jpg',
+  '/tempat/1811.jpg',
+  '/tempat/1811-2.jpg',
+  '/tempat/1811-3.jpg',
+  '/tempat/18111.jpg',
+  '/tempat/1814.jpg',
+  '/tempat/1816.jpg',
+  '/tempat/1832.jpg',
+  '/tempat/1846.jpg',
+  '/tempat/kanon.jpg',
+  '/tempat/now.jpg',
+] as const
+
 const milestones = [
   { id: 'birth', year: '1756', image: '/tempat/1756.jpg' },
   { id: 'firstCommunion', year: '1765', image: '/tempat/1765.jpg' },
@@ -74,6 +97,9 @@ export default function HistoryPage() {
               const isLeft = index % 2 === 0
               const base = `pages.history.milestones.${m.id}`
               const yearLabel = m.year ?? intl.formatMessage({ id: `${base}.year` })
+              const mediaImages = [m.image, ...archiveImages
+                .filter((image) => image !== m.image)
+                .slice((index * 2) % (archiveImages.length - 2), ((index * 2) % (archiveImages.length - 2)) + 2)]
 
               return (
                 <div
@@ -97,18 +123,31 @@ export default function HistoryPage() {
 
                   {/* Content side */}
                   <div className="ml-14 md:ml-0 md:w-1/2 md:px-12">
-                    <div className="group overflow-hidden rounded-2xl border border-border/60 shadow-sm transition-shadow duration-300 hover:shadow-lg">
-                      <div className="relative h-44 w-full overflow-hidden">
-                        <div
-                          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
-                          style={{
-                            backgroundImage: `url('${m.image}')`,
-                          }}
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
-                        <span className="absolute bottom-3 left-4 text-3xl font-bold tracking-tight text-white drop-shadow-sm">
-                          {yearLabel}
-                        </span>
+                    <div className="group overflow-hidden rounded-2xl border border-border/60 bg-card shadow-sm transition-shadow duration-300 hover:shadow-lg">
+                      <div className="grid h-48 grid-cols-[1.6fr_1fr] gap-1.5 overflow-hidden bg-background p-1.5 sm:h-56">
+                        <div className="relative min-h-0 overflow-hidden rounded-l-xl">
+                          <img
+                            src={mediaImages[0]}
+                            alt=""
+                            className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                            loading="lazy"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
+                          <span className="absolute bottom-3 left-4 text-2xl font-bold tracking-tight text-white drop-shadow-sm sm:text-3xl">
+                            {yearLabel}
+                          </span>
+                        </div>
+                        <div className="grid min-h-0 grid-rows-2 gap-1.5 overflow-hidden rounded-r-xl">
+                          {mediaImages.slice(1).map((image, mediaIndex) => (
+                            <img
+                              key={image}
+                              src={image}
+                              alt=""
+                              className={`h-full min-h-0 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03] ${mediaIndex === 0 ? 'rounded-tr-xl' : 'rounded-br-xl'}`}
+                              loading="lazy"
+                            />
+                          ))}
+                        </div>
                       </div>
                       <div className="p-6">
                         <h3 className="text-xl font-semibold tracking-tight">
@@ -117,6 +156,21 @@ export default function HistoryPage() {
                         <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                           {intl.formatMessage({ id: `${base}.description` })}
                         </p>
+                        {m.id === 'present' && (
+                          <div className="mt-5 overflow-hidden rounded-xl border border-border/60 bg-background">
+                            <div className="relative aspect-video">
+                              <iframe
+                                className="absolute inset-0 h-full w-full"
+                                src="https://www.youtube.com/embed/0jcBr6_hnyc?si=kokGTeP3u1PjUH31"
+                                title="A Glimpse of Religious Life"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
+                              />
+                            </div>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>

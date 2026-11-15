@@ -121,62 +121,60 @@ export default function HistoryPage() {
                   {/* Horizontal connector line (mobile) */}
                   <div className="absolute left-4 top-10 h-px w-8 bg-foreground/25 md:hidden" />
 
-                  {/* Content side */}
-                  <div className="ml-14 md:ml-0 md:w-1/2 md:px-12">
-                    <div className="group overflow-hidden rounded-2xl border border-border/60 bg-card shadow-sm transition-shadow duration-300 hover:shadow-lg">
-                      <div className="grid h-48 grid-cols-[1.6fr_1fr] gap-1.5 overflow-hidden bg-background p-1.5 sm:h-56">
-                        <div className="relative min-h-0 overflow-hidden rounded-l-xl">
+                  {/* Archival media */}
+                  <div className="ml-14 flex flex-col gap-3 md:ml-0 md:w-1/2 md:px-12">
+                    <div className="group overflow-hidden rounded-2xl shadow-md transition-shadow duration-300 hover:shadow-xl">
+                      <div className="grid h-48 grid-cols-[1.6fr_1fr] gap-1.5 sm:h-56">
+                        <div className="relative min-h-0 overflow-hidden rounded-l-2xl">
                           <img
                             src={mediaImages[0]}
                             alt=""
                             className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                             loading="lazy"
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
-                          <span className="absolute bottom-3 left-4 text-2xl font-bold tracking-tight text-white drop-shadow-sm sm:text-3xl">
-                            {yearLabel}
-                          </span>
                         </div>
-                        <div className="grid min-h-0 grid-rows-2 gap-1.5 overflow-hidden rounded-r-xl">
+                        <div className="grid min-h-0 grid-rows-2 gap-1.5 overflow-hidden rounded-r-2xl">
                           {mediaImages.slice(1).map((image, mediaIndex) => (
                             <img
                               key={image}
                               src={image}
                               alt=""
-                              className={`h-full min-h-0 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03] ${mediaIndex === 0 ? 'rounded-tr-xl' : 'rounded-br-xl'}`}
+                              className={`h-full min-h-0 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03] ${mediaIndex === 0 ? 'rounded-tr-2xl' : 'rounded-br-2xl'}`}
                               loading="lazy"
                             />
                           ))}
                         </div>
                       </div>
-                      <div className="p-6">
-                        <h3 className="text-xl font-semibold tracking-tight">
-                          {intl.formatMessage({ id: `${base}.title` })}
-                        </h3>
-                        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                          {intl.formatMessage({ id: `${base}.description` })}
-                        </p>
-                        {m.id === 'present' && (
-                          <div className="mt-5 overflow-hidden rounded-xl border border-border/60 bg-background">
-                            <div className="relative aspect-video">
-                              <iframe
-                                className="absolute inset-0 h-full w-full"
-                                src="https://www.youtube.com/embed/0jcBr6_hnyc?si=kokGTeP3u1PjUH31"
-                                title="A Glimpse of Religious Life"
-                                loading="lazy"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerPolicy="strict-origin-when-cross-origin"
-                                allowFullScreen
-                              />
-                            </div>
-                          </div>
-                        )}
-                      </div>
                     </div>
+                    {m.id === 'present' && (
+                      <div className="overflow-hidden rounded-2xl shadow-md">
+                        <div className="relative aspect-video">
+                          <iframe
+                            className="absolute inset-0 h-full w-full"
+                            src="https://www.youtube.com/embed/0jcBr6_hnyc?si=kokGTeP3u1PjUH31"
+                            title="A Glimpse of Religious Life"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                          />
+                        </div>
+                      </div>
+                    )}
                   </div>
 
-                  {/* Spacer for the other half on desktop */}
-                  <div className="hidden md:block md:w-1/2" />
+                  {/* Milestone text */}
+                  <div className="ml-14 flex flex-col justify-center py-5 md:ml-0 md:w-1/2 md:px-12 md:py-8">
+                    <span className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                      {yearLabel}
+                    </span>
+                    <h3 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+                      {intl.formatMessage({ id: `${base}.title` })}
+                    </h3>
+                    <p className="mt-4 max-w-prose text-base leading-relaxed text-muted-foreground sm:text-lg">
+                      {intl.formatMessage({ id: `${base}.description` })}
+                    </p>
+                  </div>
                 </div>
               );
             })}

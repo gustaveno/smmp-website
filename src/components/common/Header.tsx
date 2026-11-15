@@ -30,7 +30,7 @@ export default function Header({ locale }: HeaderProps) {
             href={`/${locale}`}
             className="flex items-center space-x-2 font-bold text-lg transition-colors hover:text-primary"
           >
-            <div className="w-20 h-20 relative">
+            <div className="w-15 h-20 relative bg-radial from-amber-500 to-amber-950 rounded-[30px] p-1">
               <Image
                 src="/logo.png"
                 alt="Logo"

@@ -271,7 +271,7 @@ export default function HomePage({ params }: HomePageProps) {
                 })}
               </p>
               <br />
-              <p className="text-foreground text-justify text-lg leading-relaxed text-balance">
+              <p className="text-foreground text-justify text-lg leading-relaxed">
                 {intl.formatMessage({
                   id: 'pages.home.overviewdesc3',
                   defaultMessage: 'That was Julie Postel’s original vision and goal in founding a religious congregation.'

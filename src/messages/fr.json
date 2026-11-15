@@ -44,18 +44,18 @@
       "hero2": "L'amour, l'amour sans limites",
       "overviewquote": "Enfants, aimez Dieu de tout votre cœur et montrez cet amour par le sacrifice.",
       "overview": "Notre Congrégation",
-      "overviewdesc1": "La Congrégation des Sœurs de Sainte Marie-Madeleine Postel est une congrégation religieuse féminine au sein de l'Église catholique romaine, fondée par Sainte Marie-Madeleine Postel.",
-      "overviewdesc2": "Julie Postel (1756–1846) est née à Barfleur, en Normandie, dans le nord de la France. Pendant la période tumultueuse de la Révolution française, elle a secrètement aidé les prêtres persécutés et s’est occupée de l’éducation des enfants pauvres. Sa congrégation a été fondée en 1807 à Cherbourg. Avec Sœur Jeanne-Catherine Bellot, Sœur Louise Viel et Sœur Angélique Ledanois, elle a prononcé ses vœux religieux et fondé une congrégation destinée à éduquer les jeunes, à leur inculquer l’amour de Dieu et l’amour du travail, ainsi qu’à se sacrifier pour venir en aide aux pauvres et soulager autant que possible les souffrances du plus grand nombre.",
-      "overviewdesc3": "C'était la vision et l'objectif original de Julie Postel dans la fondation d'une congrégation religieuse.",
+      "overviewdesc1": "La Congrégation des Sœurs de Sainte Marie-Madeleine Postel est une congrégation religieuse féminine au sein de l'Église Catholique Romaine, fondée par Sainte Marie-Madeleine Postel.",
+      "overviewdesc2": "Julie Postel (1756–1846) est née à Barfleur, en Normandie, dans le Nord de la France. Pendant la tumultueuse période de la Révolution française, elle a secrètement aidé les prêtres persécutés. Elle s’est occupée de l’éducation des enfants pauvres. Sa congrégation a été fondée en 1807 à Cherbourg. Accompagnées par Sœur Jeanne-Catherine Bellot, Sœur Louise Viel et Sœur Angélique Ledanois, elle a prononcé ses vœux religieux. Elle a fondé sa congrégation destinée à éduquer les jeunes, à leur inculquer l’amour de Dieu et l’amour du travail, ainsi qu’à se sacrifier pour venir en aide aux pauvres et soulager autant que possible les souffrances du plus grand nombre.",
+      "overviewdesc3": "C'était l'origine de la vision et l'objectif pour de sa congrégation religieuse.",
       "quote": "Vivre pour Dieu et servir les autres, surtout ceux qui souffrent",
       "cite": "St. Marie-Madeleine Postel",
       "articlesub": "Explorez notre communauté",
       "articletitle": "Ce que nous offrons",
-      "articledesc": "Découvrez les programmes et activités spirituels de notre communauté, conçus pour nourrir la foi et favoriser les liens entre les personnes.",
+      "articledesc": "Découvrez les programmes et activités spirituels de notre communauté, conçus pour nourrir la foi et favoriser les liens fraternels entre nous.",
       "news": "Dernières Nouvelles",
       "newsviewall": "Voir Tout",
       "ctatitle": "Souhaitez-vous rejoindre notre mission ?",
-      "ctadesc": "Je vais aller jusqu'aux extrémités de la terre pour chercher une seule âme pour Jésus-Christ, même si, à la fin de mon voyage, je dois faire face à un martyre."
+      "ctadesc": "Je vais aller jusqu'aux extrémités de la terre pour chercher une seule âme pour Jésus-Christ, même si, à la fin de mon voyage, je dois me faire un martyre."
     },
     "news": {
       "title": "Actualités",
@@ -121,10 +121,10 @@
       "paragraph3": "Passez la souris sur un repère pour découvrir l'emplacement de chaque monastère. Sur mobile, appuyez sur un repère pour afficher les détails."
     },
     "charisma": {
-      "title": "Charisme",
+      "title": "Notre Charisme",
       "description": "Une vocation à aimer, à glorifier et à incarner l'amour du Christ",
-      "subtitle1": "Charisme",
-      "paragraph1": "Vivre pour Dieu et servir les autres, en particulier ceux qui souffrent. Tel est le charisme, ou don, de la Congrégation : un appel à aimer, à glorifier et à vivre l’amour du Christ.",
+      "subtitle1": "Notre Charisme",
+      "paragraph1": "Vivre pour Dieu et servir les autres, en particulier ceux qui souffrent. C'est le charisme, ou elle don, de la Congrégation : c'est un appel à aimer, à glorifier et à vivre de l’amour du Christ.",
       "subtitle2": "Vivre pour Dieu?",
       "paragraph2": "Ce que je veux dire, c'est que les sœurs ont été appelées à…",
       "point1Title": "Aimer Dieu",
@@ -133,8 +133,8 @@
       "point2Desc": "Vivre pour glorifier Dieu encore plus.",
       "point3Title": "Vivre en Christ",
       "point3Desc": "Notre effort continu rend nos vies véritablement vécues par Jésus.",
-      "subtitle3": "Être un serviteur de ceux qui souffrent",
-      "paragraph3": "Les sœurs de Sainte Marie-Madeleine Postel sont les amies de cœur des malades, des pauvres et des plus démunis. Leur présence apporte réconfort et espoir concret à ceux qui sont en marge de la société. Par la sincérité de leur dévouement, elles prouvent que la compassion peut être un soutien pour tous ceux qui luttent contre les difficultés de la vie.",
+      "subtitle3": "Être serviteur de ceux qui souffrent",
+      "paragraph3": "Les sœurs de Sainte Marie-Madeleine Postel sont les amies de l'âme des malades, des pauvres et des plus démunis. Leur présence apporte le réconfort et l'espoir concret à ceux qui sont marginalisés de la société. Par la sincérité de leur dévouement, elles prouvent que la compassion peut être un soutien pour tous ceux qui luttent contre les difficultés de la vie.",
       "quote": "Vivre pour Dieu et servir nos proches, surtout ceux qui souffrent.",
       "cite": "St. Marie-Madeleine Postel"
     },
@@ -240,13 +240,13 @@
     "spirituality": {
       "title": "Spiritualité",
       "description": "Découvrez nos pratiques spirituelles",
-      "subtitle": "Vie spirituelle, <highlight>Cœur de miséricorde</highlight>",
-      "paragraph": "Pour vivre pleinement le don de leur vocation, les sœurs de Sainte Marie-Madeleine Postel fondent leur vie sur une spiritualité de miséricorde. Cet esprit se concrétise en suivant de près la personne de Jésus-Christ, pauvre et humilié, et en imitant sa miséricorde envers l’humanité. Cette expérience se traduit concrètement par la bienveillance, la solidarité, la sensibilité aux difficultés de ceux qui souffrent et une hospitalité sincère. Dans l’humilité, elles sont sans cesse appelées à vivre ces vertus dans leur service quotidien.",
+      "subtitle": "Vie spirituelle, <highlight>Cœur miséricordieux</highlight>",
+      "paragraph": "Pour vivre pleinement le don de leur vocation, les sœurs de Sainte Marie-Madeleine Postel fondent leur vie sur une spiritualité de la miséricorde. Cette spiritualité se concrétise en suivant de près le Seigneur Jésus-Christ, pauvre et humble, et en imitant sa miséricorde envers l’humanité. Cet engagement se réalisé par la bienveillance, la solidarité, la sensibilité aux difficultés de ceux qui souffrent et une hospitalité sincère. Dans l’humilité, elles sont sans cesse appelées à vivre ces vertus dans leur service quotidien.",
       "practices": {
-        "title": "Le caractère d'une vraie sœur de Sainte-Marie-Madeleine Postel",
+        "title": "Les caractères authentiques d'une sœur de Sainte-Marie-Madeleine Postel",
         "openness": {
           "title": "l'ouverture",
-          "description": "Ouvert aux temps qui changent, adaptable, et réceptif aux commentaires, idées et critiques constructives."
+          "description": "L'ouverture aux temps qui changent, adaptable, et réceptif aux idées et critiques constructives."
         },
         "simplicity": {
           "title": "la simplicité",

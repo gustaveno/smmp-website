@@ -1,25 +1,191 @@
 'use client'
 
+import { useRef, useState } from 'react'
 import { useIntl } from 'react-intl'
 
-const milestones = [
-  { id: 'birth', year: '1756', image: '/tempat/1756.jpg' },
-  { id: 'firstCommunion', year: '1765', image: '/tempat/1765.jpg' },
-  { id: 'godmother', year: '1767', image: '/tempat/1767.jpg' },
-  { id: 'valognesStudy', year: '1768–1774', image: '/tempat/1773.jpg' },
-  { id: 'barfleur', year: '1774–1805', image: '/tempat/1774.jpg' },
-  { id: 'cherbourg', year: '1805', image: '/tempat/1805.jpg' },
-  { id: 'foundation', year: '1807', image: '/tempat/1807.jpg' },
-  { id: 'octeville', year: '1811', image: '/tempat/1811.jpg' },
-  { id: 'tamerville1', year: '1811–1813', image: '/tempat/1811-2.jpg' },
-  { id: 'valognes', year: '1813–1814', image: '/tempat/1768.jpg' },
-  { id: 'hamel', year: '1814–1816', image: '/tempat/1814.jpg' },
-  { id: 'tamerville2', year: '1816–1832', image: '/tempat/1816.jpg' },
-  { id: 'abbaye', year: '1832', image: '/tempat/1832.jpg' },
-  { id: 'death', year: '1846', image: '/tempat/1846.jpg' },
-  { id: 'canonization', year: '1925', image: '/tempat/kanon.jpg' },
-  { id: 'present', year: null, image: '/tempat/now.jpg' },
-] as const
+type MediaItem =
+  | { type: 'image'; src: string; alt?: string }
+  | { type: 'video'; src: string; poster: string; alt?: string }
+
+type Milestone = {
+  id: string
+  year: string | null
+  media: readonly MediaItem[]
+}
+
+const milestones: readonly Milestone[] = [
+  {
+    id: 'birth',
+    year: '1756',
+    media: [
+      { type: 'image', src: '/tempat/1756.jpg' },
+    ],
+  },
+  {
+    id: 'firstCommunion',
+    year: '1765',
+    media: [
+      { type: 'image', src: '/tempat/1765.jpg' },
+    ],
+  },
+  { id: 'godmother', year: '1767', media: [{ type: 'image', src: '/tempat/1767.jpg' }] },
+  {
+    id: 'valognesStudy',
+    year: '1768–1774',
+    media: [
+      { type: 'image', src: '/tempat/1773.jpg' },
+    ],
+  },
+  {
+    id: 'barfleur',
+    year: '1774–1805',
+    media: [
+      { type: 'image', src: '/tempat/1774.jpg' },
+      { type: 'video', src: '/tempat/barfleur.mp4', poster: '/tempat/poster-barfleur.jpg' },
+    ],
+  },
+  { id: 'cherbourg', year: '1805', media: [{ type: 'image', src: '/tempat/1805.jpg' }] },
+  { id: 'foundation', year: '1807', media: [{ type: 'image', src: '/tempat/1807.jpg' }] },
+  {
+    id: 'octeville',
+    year: '1811',
+    media: [
+      { type: 'image', src: '/tempat/1811.jpg' },
+      { type: 'video', src: '/video/octeville1.mp4', poster: '/tempat/poster-octeville1.jpg' },
+      { type: 'video', src: '/video/octeville2.mp4', poster: '/tempat/poster-octeville2.jpg' },
+    ],
+  },
+  { id: 'tamerville1', year: '1811–1813', media: [{ type: 'image', src: '/tempat/1811-2.jpg' }] },
+  { id: 'valognes', year: '1813–1814', media: [{ type: 'image', src: '/tempat/1768.jpg' }] },
+  { id: 'hamel', year: '1814–1816', media: [{ type: 'image', src: '/tempat/1814.jpg' }] },
+  {
+    id: 'tamerville2',
+    year: '1816–1832',
+    media: [
+      { type: 'image', src: '/tempat/1811-3.jpg' },
+      { type: 'image', src: '/tempat/1816.jpg' },
+    ],
+  },
+  { id: 'abbaye', year: '1832', media: [{ type: 'image', src: '/tempat/1832.jpg' }] },
+  { id: 'death', year: '1846', media: [{ type: 'image', src: '/tempat/1846.jpg' }] },
+  { id: 'canonization', year: '1925', media: [{ type: 'image', src: '/tempat/kanon.jpg' }] },
+  { id: 'present', year: null, media: [{ type: 'image', src: '/tempat/now.jpg' }] },
+]
+
+function MediaTile({
+  item,
+  zoom = 'group-hover:scale-105',
+  compact = false,
+}: {
+  item: MediaItem
+  zoom?: string
+  compact?: boolean
+}) {
+  const intl = useIntl()
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const [playing, setPlaying] = useState(false)
+
+  if (item.type === 'image') {
+    return (
+      <img
+        src={item.src}
+        alt={item.alt ?? ''}
+        loading="lazy"
+        className={`h-full w-full object-cover transition-transform duration-700 ease-out ${zoom}`}
+      />
+    )
+  }
+
+  const handlePlay = () => {
+    setPlaying(true)
+    videoRef.current?.play().catch(() => setPlaying(false))
+  }
+
+  return (
+    <div className="relative h-full w-full bg-black">
+      <video
+        ref={videoRef}
+        src={item.src}
+        poster={item.poster}
+        preload="none"
+        playsInline
+        controls={playing}
+        aria-label={item.alt}
+        onEnded={() => setPlaying(false)}
+        onPause={() => {
+          // Kembali ke tampilan poster jika video dihentikan di awal
+          if (videoRef.current && videoRef.current.currentTime === 0) setPlaying(false)
+        }}
+        className="h-full w-full object-cover"
+      />
+
+      {!playing && (
+        <button
+          type="button"
+          onClick={handlePlay}
+          // aria-label={intl.formatMessage({
+          //   id: 'pages.history.playVideo',
+          //   defaultMessage: 'Play video',
+          // })}
+          className="absolute inset-0 flex items-center justify-center bg-black/30 transition-colors hover:bg-black/45 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+        >
+          <span
+            className={`flex items-center justify-center rounded-full bg-white/90 pl-0.5 text-black shadow-lg transition-transform hover:scale-110 ${compact ? 'h-8 w-8 text-sm' : 'h-14 w-14 text-xl'
+              }`}
+          >
+            ▶
+          </span>
+        </button>
+      )}
+    </div>
+  )
+}
+
+function MilestoneMedia({ media }: { media: readonly MediaItem[] }) {
+  const visible = media.slice(0, 3)
+  const extra = media.length - visible.length
+
+  return (
+    <div className="group overflow-hidden rounded-2xl shadow-md transition-shadow duration-300 hover:shadow-xl">
+      {visible.length === 1 && (
+        <div className="h-48 overflow-hidden sm:h-56">
+          <MediaTile item={visible[0]} />
+        </div>
+      )}
+
+      {visible.length === 2 && (
+        <div className="grid h-48 grid-cols-2 gap-1.5 sm:h-56">
+          {visible.map((item) => (
+            <div key={item.src} className="min-h-0 overflow-hidden">
+              <MediaTile item={item} compact />
+            </div>
+          ))}
+        </div>
+      )}
+
+      {visible.length >= 3 && (
+        <div className="grid h-48 grid-cols-[1.6fr_1fr] gap-1.5 sm:h-56">
+          <div className="min-h-0 overflow-hidden">
+            <MediaTile item={visible[0]} />
+          </div>
+          <div className="grid min-h-0 grid-rows-2 gap-1.5">
+            <div className="min-h-0 overflow-hidden">
+              <MediaTile item={visible[1]} zoom="group-hover:scale-[1.03]" compact />
+            </div>
+            <div className="relative min-h-0 overflow-hidden">
+              <MediaTile item={visible[2]} zoom="group-hover:scale-[1.03]" compact />
+              {extra > 0 && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black/55 text-lg font-semibold text-white">
+                  +{extra}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
 
 export default function HistoryPage() {
   const intl = useIntl()
@@ -95,34 +261,23 @@ export default function HistoryPage() {
                   {/* Horizontal connector line (mobile) */}
                   <div className="absolute left-4 top-10 h-px w-8 bg-foreground/25 md:hidden" />
 
-                  {/* Content side */}
-                  <div className="ml-14 md:ml-0 md:w-1/2 md:px-12">
-                    <div className="group overflow-hidden rounded-2xl border border-border/60 shadow-sm transition-shadow duration-300 hover:shadow-lg">
-                      <div className="relative h-44 w-full overflow-hidden">
-                        <div
-                          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
-                          style={{
-                            backgroundImage: `url('${m.image}')`,
-                          }}
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
-                        <span className="absolute bottom-3 left-4 text-3xl font-bold tracking-tight text-white drop-shadow-sm">
-                          {yearLabel}
-                        </span>
-                      </div>
-                      <div className="p-6">
-                        <h3 className="text-xl font-semibold tracking-tight">
-                          {intl.formatMessage({ id: `${base}.title` })}
-                        </h3>
-                        <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                          {intl.formatMessage({ id: `${base}.description` })}
-                        </p>
-                      </div>
-                    </div>
+                  {/* Archival media */}
+                  <div className="ml-14 flex flex-col gap-3 md:ml-0 md:w-1/2 md:px-12">
+                    <MilestoneMedia media={m.media} />
                   </div>
 
-                  {/* Spacer for the other half on desktop */}
-                  <div className="hidden md:block md:w-1/2" />
+                  {/* Milestone text */}
+                  <div className="ml-14 flex flex-col justify-center py-5 md:ml-0 md:w-1/2 md:px-12 md:py-8">
+                    <span className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                      {yearLabel}
+                    </span>
+                    <h3 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+                      {intl.formatMessage({ id: `${base}.title` })}
+                    </h3>
+                    <p className="mt-4 max-w-prose text-base leading-relaxed text-muted-foreground sm:text-lg">
+                      {intl.formatMessage({ id: `${base}.description` })}
+                    </p>
+                  </div>
                 </div>
               );
             })}

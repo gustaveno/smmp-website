@@ -9,9 +9,9 @@ type LanguageSwitcherProps = {
 }
 
 const languageNames: Record<string, string> = {
-  id: 'Indonesian',
   en: 'English',
   fr: 'French',
+  id: 'Indonesian',
 }
 
 export default function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
